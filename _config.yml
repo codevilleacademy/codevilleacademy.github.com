@@ -1,3 +1,5 @@
 name: The Codeville Academy
 markdown: redcarpet
 highlighter: pygments
+baseurl: ""
+header-img: img/bg.jpg
