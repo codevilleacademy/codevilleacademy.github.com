@@ -58,6 +58,36 @@
         </ul>
     </nav-->
 
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">The Codeville Logo</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li>
+                    <a href="#about" onclick = $("#menu-close").click(); >What we do?</a>
+                </li>
+                <li>
+                    <a href="#services" onclick = $("#menu-close").click(); >What we offer?</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick = $("#menu-close").click(); >Wanna meet us?</a>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -233,7 +263,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container" id="contact">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>The Codeville Academy</strong>
