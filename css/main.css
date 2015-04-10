@@ -39,3 +39,9 @@
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #203242;
 }
+
+
+a[class="constant-link"] {text-decoration: none;color:#FFF;}      /* unvisited link */
+a[class="constant-link"]:visited {text-decoration: none;color:#FFF;}  /* visited link */
+a[class="constant-link"]:hover {text-decoration: none;color:#FFF;}  /* mouse over link */
+a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected link */
