@@ -125,7 +125,9 @@ hr.small {
 }
 .intro-header {
   background: no-repeat center center;
+  background: url(../img/bg-min.jpg) no-repeat center center scroll;
   background-color: #203242;
+  /*background-color: #c0392b;*/
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
