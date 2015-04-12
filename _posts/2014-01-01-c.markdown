@@ -1,0 +1,16 @@
+---
+category:	course-c
+---
+
+<p>Introduction to C Language goes</p>
+
+<table class="table table-hover">
+<thead>
+	<tr>
+		<th>Title</th>
+	</tr>
+</thead>
+{% tablerow lecture in site.categories.course-c-page %}
+  <a href="{{ lecture.url }}">{{ lecture.title }}</a>
+{% endtablerow %}
+</table>

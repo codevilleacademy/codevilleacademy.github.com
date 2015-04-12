@@ -17,7 +17,7 @@ title: Codeville Courses
                             <div class="service-item">
                                 <img class="course-icon" src="{{course.icon}}" alt="logo" />
                                 <h3>
-                                    <a href="#"><strong>{{ course.name }}</strong></a>
+                                    <a href="{{ course.url | prepend site:baseurl }}"><strong>{{ course.name }}</strong></a>
                                 </h3>
                                 <h5><p>{{ course.desc }}</p></h5>
                             </div>

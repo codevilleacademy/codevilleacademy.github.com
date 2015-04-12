@@ -84,3 +84,9 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
         }
     }
 }
+
+
+.course-heading {
+    font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-top: 60px;
+}
