@@ -64,3 +64,23 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
     background-color: rgba(0,0,0,0.7);
     text-decoration: none;
 }
+
+
+.share-page {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5px 0px;
+
+    a {
+        font-weight: 700;
+        color: #fff;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+    }
+}

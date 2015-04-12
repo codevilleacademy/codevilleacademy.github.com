@@ -1,0 +1,25 @@
+---
+layout: page
+title: The Codeville Blog
+---
+
+
+            <div class="row text-center">
+                
+                    <div class="row">
+                        {% for blogcat in site.data.projects %}
+                        <div class="col-md-6 col-sm-12">
+                            <div class="service-item">
+                                <img class="blogcat-icon" src="{{blogcat.icon}}" alt="logo" />
+                                <h3>
+                                    <a href="#"><strong>{{ blogcat.name }}</strong></a>
+                                </h3>
+                                <h5><p>{{ blogcat.desc }}</p></h5>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- /.row (nested) -->
+                
+            </div>
+            <!-- /.row -->
