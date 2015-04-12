@@ -45,3 +45,22 @@ a[class="constant-link"] {text-decoration: none;color:#FFF;}      /* unvisited l
 a[class="constant-link"]:visited {text-decoration: none;color:#FFF;}  /* visited link */
 a[class="constant-link"]:hover {text-decoration: none;color:#FFF;}  /* mouse over link */
 a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected link */
+
+
+.btn-desc-dark {
+    font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    padding: 10px 16px;
+    border-radius: 0px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    text-decoration: none;
+}
+
+.btn-desc-dark:hover,
+.btn-desc-dark:focus,
+.btn-desc-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    text-decoration: none;
+}

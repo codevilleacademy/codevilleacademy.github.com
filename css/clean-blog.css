@@ -322,22 +322,21 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
+  font-family: "Source Sans Pro",'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
   letter-spacing: 1px;
   border-radius: 0;
   padding: 15px 25px;
 }
 .btn-lg {
-  font-size: 16px;
+  font-size: 24px;
   padding: 25px 35px;
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #203242;
+  border: 1px solid #203242;
   color: white;
 }
 .pager {
