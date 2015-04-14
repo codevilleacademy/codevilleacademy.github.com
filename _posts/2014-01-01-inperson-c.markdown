@@ -29,5 +29,7 @@ and an edge over others in this competitive world.
 </table-->
 
 <strong><p>In-person course is starting from 6th May 2015 in Amravati, Maharashtra.</p></strong>
-<p>Detailed Brochure can be downloaded <a href="{{ "/files/Codeville-C-language-Brochure.pdf" | prepend site:baseurl }}">here</a>. [112.2 KB]</p>
+<p>Detailed brochure can be found <a href="{{ "/files/Codeville-C-language-Brochure.pdf" | prepend site:baseurl }}">here</a>. [109 KB]</p>
+<p>2 paged minimal brochure can be found <a href="{{ "/files/Codeville-C-language-Minimal.pdf" | prepend site:baseurl }}">here</a>. [109 KB]</p>
+
 <p>This brochure contains all the information about the course, the faculty, the practical sessions and a brief plan.</p>
