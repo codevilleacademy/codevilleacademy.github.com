@@ -2,18 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head prefox="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Codeville is a platform for personalized learning, where anyone can learn new stuff at their own pace. There are several computer courses out here to learn and explore. We are focussing on making these courses fun and we are re-designing the traditional way of learning new technologies.">
     <meta name="keywords" content="education, computers, c, blog, legends, c-language, articles, free, in-person, coaching, classes"/>
-    <meta property="og:title" content="The Codeville Academy" />
+
+    <meta property="fb:app_id"                            content="302184056577324" /> 
+    <meta property="og:type"                              content="business.business" /> 
+    <meta property="og:url"                               content="http://codeville.org.in/" /> 
+  <meta property="og:title"                             content="Codeville | Learn" /> 
+  <meta property="og:image"                             content="http://codeville.org.in/img/cover.png" /> 
+  <!--meta property="business:contact_data:street_address" content="Sample Contact data: Street Address" /> 
+  <meta property="business:contact_data:locality"       content="Sample Contact data: Locality" /> 
+  <meta property="business:contact_data:postal_code"    content="Sample Contact data: Postal Code" /> 
+  <meta property="business:contact_data:country_name"   content="Sample Contact data: Country Name" /> 
+  <meta property="place:location:latitude"              content="Sample Location: Latitude" /> 
+  <meta property="place:location:longitude"             content="Sample Location: Longitude" /--> 
     <meta property="og:site_name" content="Codeville" />
-    <meta property="og:url" content="http://codeville.org.in/" />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="http://codeville.org.in/img/cover.png" />
     <meta property="og:description" content="Codeville is a platform for personalized learning, where anyone can learn new stuff at their own pace. There are several computer courses out here to learn and explore. We are focussing on making these courses fun and we are re-designing the traditional way of learning new technologies." />
     <meta name="author" content="Arpit Bhayani">
     <link rel="image_src" href="http://codeville.org.in/img/cover.png" / >
@@ -29,6 +37,23 @@
 </head>
 
 <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '355878411287172',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
     {% include nav.html %}
 
