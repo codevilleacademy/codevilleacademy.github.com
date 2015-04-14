@@ -34,4 +34,4 @@ and an edge over others in this competitive world.
 
 <p>Detailed brochure can be found <a href="{{ "/files/Codeville-C-language-Brochure.pdf" | prepend site:baseurl }}">here</a>. [109 KB]</p>
 
-<p>This brochure contains all the information about the course, course content, faculty, practical sessions and a brief plan.</p>
+<p>This brochure contains information about the course, course content, faculty, practical sessions and a brief plan.</p>

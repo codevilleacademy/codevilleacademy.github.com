@@ -28,4 +28,5 @@ and an edge over others in this competitive world.
 {% endtablerow %}
 </table-->
 
-<strong><p>Online lectures and course material will soon be added</p></strong>
+<strong><p>Online lectures and course material will be added soon.</p></strong>
+<p>For in-person course on C Language please visit this <a href="{{ "/pages/in-person/c/" | prepend site:baseurl }}">link</a>.
