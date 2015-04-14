@@ -1,0 +1,31 @@
+---
+layout: page
+title: Codeville In-person Courses
+---
+            <div class="row text-center">
+                        {% for course in site.data.in-person %}
+                        {% cycle 'group 1':'<div class="row">', '', '', '' %}
+                        {% if forloop.length == 1 %}
+                            <div class="col-md-12 col-sm-12">
+                        {% elsif forloop.length == 2 %}
+                            <div class="col-md-6 col-sm-6">
+                        {% elsif forloop.length == 3 %}
+                            <div class="col-md-4 col-sm-4">
+                        {% else %}
+                            <div class="col-md-3 col-sm-6">
+                        {% endif %}
+                            <div class="service-item">
+                                <img class="course-icon" src="{{course.icon}}" alt="logo" />
+                                <h3>
+                                    <a href="{{ course.url | prepend site:baseurl }}"><strong>{{ course.name }}</strong></a>
+                                </h3>
+                                <h5><p>{{ course.desc }}</p></h5>
+                            </div>
+                        </div>
+                        {% cycle 'group 2':'', '', '', '</div>' %}
+                        {% endfor %}
+                        {% if forloop.length % 4 != 0 %}
+                        </div>
+                        {% endif %}
+            </div>
+            <!-- /.row -->

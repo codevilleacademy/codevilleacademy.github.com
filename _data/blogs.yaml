@@ -1,8 +1,4 @@
 ---
 - name: Meet the legends
   desc: Know the legends in the field of Computers.
-  icon: img/expert.png
-
-- name: Tech Experiments
-  desc: Experiences with various technologies.
-  icon: img/experiment.png
+  icon: /img/expert.png

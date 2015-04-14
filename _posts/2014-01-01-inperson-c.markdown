@@ -1,5 +1,5 @@
 ---
-category:	course-c
+category:	course-in-person-c
 ---
 
 <p>The C programming language is a general purpose
@@ -28,4 +28,6 @@ and an edge over others in this competitive world.
 {% endtablerow %}
 </table-->
 
-<strong><p>Online lectures and course material will soon be added</p></strong>
+<strong><p>In-person course is starting from 6th May 2015 in Amravati, Maharashtra.</p></strong>
+<p>Detailed Brochure can be downloaded <a href="{{ "/files/Codeville-C-language-Brochure.pdf" | prepend site:baseurl }}">here</a>. [112.2 KB]</p>
+<p>This brochure contains all the information about the course, the faculty, the practical sessions and a brief plan.</p>
