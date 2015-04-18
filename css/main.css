@@ -2,7 +2,7 @@
   font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(255, 255, 255, 1);
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 14px;
@@ -45,6 +45,10 @@ a[class="constant-link"] {text-decoration: none;color:#FFF;}      /* unvisited l
 a[class="constant-link"]:visited {text-decoration: none;color:#FFF;}  /* visited link */
 a[class="constant-link"]:hover {text-decoration: none;color:#FFF;}  /* mouse over link */
 a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected link */
+
+a[class="text-link"] {
+  color: #EEE;
+}
 
 
 .btn-desc-dark {
@@ -89,4 +93,8 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
 .course-heading {
     font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     padding-top: 60px;
+}
+
+.black {
+    border-color: #000;
 }

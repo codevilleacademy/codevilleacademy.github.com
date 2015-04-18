@@ -22,7 +22,7 @@
     <meta name="author" content="Codeville" />
     <link rel="image_src" href="http://codeville.org.in/img/cover.png" / >
 
-    <title>Codeville</title>
+    <title>Codeville | Learn everyday</title>
 
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/stylish-codeville-blue.css" rel="stylesheet"/>
@@ -85,7 +85,7 @@
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>This is what we have for you</h2>
-                    <hr class="small">
+                    <hr class="small" />
                     <div class="row">
                         <div class="col-md-4 col-sm-12">
                             <div class="service-item">
@@ -96,7 +96,7 @@
                                     </span>
                                 </a>
                                     <h4>
-                                        <strong>In-person courses</strong>
+                                        <strong><a href="{{ "/pages/in-person/" | prepend: site.baseurl }}" class="text-link">In-person courses</a></strong>
                                     </h4>
                                     <p>Find the information about our in-person courses.</p>
                                 <a href="{{ "/pages/in-person/" | prepend: site.baseurl }}" class="btn btn-light">Learn more</a>
@@ -111,7 +111,7 @@
                                     </span>
                                 </a>
                                     <h4>
-                                        <strong>Online courses</strong>
+                                        <strong><a href="{{ "/pages/courses/" | prepend: site.baseurl }}" class="text-link">Online courses</a></strong>
                                     </h4>
                                     <p>Check out our online course offerings.</p>
                                 <a href="{{ "/pages/courses/" | prepend: site.baseurl }}" class="btn btn-light">Learn more</a>
@@ -141,7 +141,7 @@
                                 </span>
                                 </a>
                                 <h4>
-                                    <strong>Blog</strong>
+                                    <strong><a href="{{ "/pages/blog/" | prepend: site.baseurl }}" class="text-link">Blog</a></strong>
                                 </h4>
                                 <p>Insights of the field of Computer Science.</p>
                                 <a href="{{ "/pages/blog/" | prepend: site.baseurl }}" class="btn btn-light">Read more</a>
@@ -170,19 +170,21 @@
         <!-- /.container -->
     </section>    
 
-    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Footer >
     <footer>
         <div class="container" id="contact">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Codeville</strong>
                     </h4>
-                    <!--p>Arpit Bhayani<br>Near Satidham Temple<br>Jaistambh Square, Rallies Plot<br>Amravati</p>
+                    <p>Arpit Bhayani<br>Near Satidham Temple<br>Jaistambh Square, Rallies Plot<br>Amravati</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (+91) 9652602714</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">arpit.b.bhayani@gmail.com</a>
                         </li>
-                    </ul-->
+                    </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
@@ -194,7 +196,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

@@ -43,6 +43,7 @@ audio:not([controls]) {
 template {
   display: none;
 }
+
 a {
   background-color: transparent;
 }
@@ -50,6 +51,7 @@ a:active,
 a:hover {
   outline: 0;
 }
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -1372,7 +1374,7 @@ a.text-danger:hover {
   color: #843534;
 }
 .bg-primary {
-  color: #fff;
+  color: #eee;
   background-color: #203242;
 }
 a.bg-primary:hover {
