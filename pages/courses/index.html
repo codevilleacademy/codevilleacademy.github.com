@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Codeville Courses
+title: Codeville Online Courses
+command: Have a look
 ---
             <div class="row text-center">
                         {% for course in site.data.courses %}
@@ -15,11 +16,13 @@ title: Codeville Courses
                             <div class="col-md-3 col-sm-6">
                         {% endif %}
                             <div class="service-item">
-                                <img class="course-icon" src="{{course.icon}}" alt="logo" />
-                                <h3>
-                                    <a href="{{ course.url | prepend site:baseurl }}"><strong>{{ course.name }}</strong></a>
+                                <a href="{{ course.url | prepend site:baseurl }}" class="constant-link">
+                                    <img class="course-icon" src="{{course.icon}}" alt="logo" />
+                                </a>
+                                <h3 class="heading3">
+                                    <a href="{{ course.url | prepend site:baseurl }}" class="heading5 cmn-t-colour black"><strong>{{ course.name }}</strong></a>
                                 </h3>
-                                <h5><p>{{ course.desc }}</p></h5>
+                                <h5 class="heading5">{{ course.desc }}</h5>
                             </div>
                         </div>
                         {% cycle 'group 2':'', '', '', '</div>' %}

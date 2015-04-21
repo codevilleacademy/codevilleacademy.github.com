@@ -4,16 +4,15 @@ layout: default
 
 <!-- Page Header -->
 <!--header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')"-->
-<header class="intro-header" style="">
+{% if page.header-type != 'small' %}
+<header class="intro-header" style="padding-top: 50px;background-image: url('{% if page.header-img %}{{page.header-img}}{% else %}{{site.header-img}}{% endif %}');">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>{% if page.title %}
-                            {{ page.title }}
-                        {% else %}
-                            The Codeville Blog
-                        {% endif %}</h1>
+                    <h1 class="codeville_logo">{{ page.title }}</h1>
+                    <br/>
+                    <a href="#article" class="ghost-button-border-color large_button">{{ page.command }}</a>
                     <!--span class="subheading">{{ page.description }}</span-->
                     <!--div class="text-vertical-center">
                         <br>
@@ -24,9 +23,37 @@ layout: default
         </div>
     </div>
 </header>
+{% else %}
+<header style="padding: 10px;background-image: url('{% if page.header-img %}{{page.header-img}}{% else %}{{site.header-img}}{% endif %}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-sm-12">
+                <div class="row">
+                    <div class="course-heading">
+                        {% if page.icon %}
+                            <div class="col-md-2 col-sm-12">
+                                <img class="course-icon" src="{{ page.icon | prepend: site.baseurl }}" alt="{{page.title}}" />
+                            </div>
+                            <div class="col-md-10 col-sm-12">
+                                    <h2 class="orange">{{ page.title }}</h2>
+                                    <p class="lead black">{{ page.subtitle }}</p>
+                            </div>
+                        {% else %}
+                            <div class="col-md-10 col-sm-12">
+                                    <h2 class="orange">{{ page.title }}</h2>
+                                    <p class="lead black">{{ page.subtitle }}</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endif %}
 
 <!-- Post Content -->
-<article>
+<article id="article">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
@@ -35,5 +62,3 @@ layout: default
         </div>
     </div>
 </article>
-
-<hr>

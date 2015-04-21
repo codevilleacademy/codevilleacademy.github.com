@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Codeville Blog
+command: Have a look
 ---
 
 
@@ -17,11 +18,13 @@ title: Codeville Blog
                             <div class="col-md-3 col-sm-6">
                         {% endif %}
                             <div class="service-item">
-                                <img class="blogcat-icon" src="{{blogcat.icon}}" alt="logo" />
-                                <h3>
-                                    <a href="#"><strong>{{ blogcat.name }}</strong></a>
+                                <a href="{{ blogcat.url }}" class="constant-link">
+                                    <img class="blogcat-icon" src="{{blogcat.icon}}" alt="{{ blogcat.name }}" />
+                                </a>
+                                <h3 class="heading3">
+                                    <a href="{{ blogcat.url }}" class="heading5 cmn-t-colour black"><strong>{{ blogcat.name }}</strong></a>
                                 </h3>
-                                <h5><p>{{ blogcat.desc }}</p></h5>
+                                <h5 class="heading5">{{ blogcat.desc }}</h5>
                             </div>
                         </div>
                         {% cycle 'group 2':'', '', '', '</div>' %}

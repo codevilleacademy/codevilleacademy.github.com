@@ -1,10 +1,12 @@
 <!-- Footer -->
-    <footer style="font-size:14px;background:#EEE">
+    <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    About Us | Contact Us | Blog 
-                    <hr class="medium black" />
+                    <a href="{{ "/about.html" | prepend: site.baseurl }}" class="heading5 cmn-t-colour black">About Us</a> | 
+                    <a href="{{ "/contact.html" | prepend: site.baseurl }}" class="heading5 cmn-t-colour black">Contact Us</a> | 
+                    <a href="{{ "/pages/blog/" | prepend: site.baseurl }}" class="heading5 cmn-t-colour black">Blog</a>
+                    <hr class="small black" />
                 </div>
             </div>
             <div class="row">
