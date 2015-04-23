@@ -1,6 +1,5 @@
 footer {
   font-size:14px;
-  background-image: url('/img/bg-min.png');
 }
 
 .dotted {
@@ -20,8 +19,9 @@ article {
 }
 
 .services {
-    background-color: #FFFFFF;
-    height: 100%;
+  color: #FFFFFF;
+    background-color: #FF4E00;
+    margin-top: 50px;
     /*background: repeating-linear-gradient(
         45deg, 
         rgba(255,78,0,0.2), 
@@ -32,37 +32,12 @@ article {
 }
 /* repeating-linear-gradient(45deg, rgba(255,78,0,0.2), #FFF 1px, #FFF 10px, #FFF 20px) repeat scroll 0% 0% transparent */
 .contact {
-    background-color: #FFFFFF;
-    height: 100%;
+    background-color: transparent;
 }
 
-.codeville_logo {
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
-    font-size: 56px;
-    font-family: 'Bad Script', cursive;
-    color:#534E4C;
-}
-
-.codeville_logo .first-letter {
-    color: #FF4E00;
-    font-size: 72px;
-}
-
-.codeville_logo_small {
-    color:#534E4C;
-}
-
-.codeville_logo_small .first-letter {
-    color: #FF4E00;
-    font-size: 36px;
-}
-
-.image_brain {
-    bottom:0;
-    right:0;
-    z-index: 999;
+img.codeville_logo {
+    width: 500px;
+    height: 200px;
 }
 
 /* Navigation bar links */
@@ -97,6 +72,8 @@ article {
   color: #000000;
 }
 
+
+
 /* Navigation bar */
 
 #custom-bootstrap-menu.navbar-default .codeville_logo_banner {
@@ -130,41 +107,41 @@ article {
     color: rgba(17, 17, 17, 1);
 }
 #custom-bootstrap-menu.navbar-default {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: transparent;
     border-width: 1px;
     border-radius: 0px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    font-family: 'Bree Serif', serif;
-    font-size: 16px;
-    font-weight: 200;
+    font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
     color: #DD2A13;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: transparent;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
     color: rgba(83, 78, 76, 1);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: transparent;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(83, 78, 76, 1);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: transparent;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
     border-color: rgba(83, 78, 76, 0.2);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 #custom-bootstrap-menu.navbar-default {
     border-color: rgba(83, 78, 76, 0.2);
@@ -212,9 +189,9 @@ article {
     border-radius: 0px;
 }
 #custom-bootstrap-menu.robin .navbar-nav>li>a {
-    font-family: 'Bree Serif', serif;
+    font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
     font-size: 16px;
-    font-weight: 150;
+    font-weight: 400;
     color: #FFFFFF;
     background-color: transparent;
 }
@@ -254,7 +231,7 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
 
 
 .btn-desc-dark {
-    font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
     font-size: 18px;
     padding: 10px 16px;
     border-radius: 0px;
@@ -293,7 +270,7 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
 
 
 .course-heading {
-    font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
     padding-top: 60px;
 }
 
@@ -304,7 +281,7 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
 
 .large_button {
     width: 250px;
-    font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
     font-size: 22px;
 }
 
@@ -334,6 +311,7 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
   width: auto;
   padding: 7px;
   color: #534E4C;
+  background-color: #FFFFFF;
   border: 1px solid #534E4C;
   text-align: center;
   outline: none;
@@ -388,33 +366,67 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
     border-color: #534E4C;
 }
 
+.white {
+    color:#FFFFFF;
+    border-color:#FFFFFF;
+}
+
 .orange {
     color:#FF4E00;
     border-color:#FF4E00 ;
 }
 
 .heading1 {
-    font-family: 'Bree Serif', serif;
+    font-family: "Source Sans Pro", Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
 }
 
 .heading3 {
     font-weight: 400;
-    font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
 }
 
 .heading4 {
     font-weight: 400;
     border-bottom: 1px solid;
-    font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
 }
 
 .heading5 {
   padding-right: 10px;
   padding-left: 10px;
     font-weight: 400;
-    font-family: 'Roboto Condensed',"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
 }
 
-.heading1:before, .heading1:after {
-    content: '  \2600  ';
+
+
+/* Slopes */
+.diagonal {
+    z-index: 1;
+    padding: 3em;
+}
+.diagonal:before {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    left: -10%;
+    z-index: -1;
+    width: 110%;
+    height: 75%;
+    background: #FF4E00;
+}
+
+section {
+    position: relative;
+    background: #FF4E00;
+    text-align: center;
+}
+section:before {
+    position: absolute;
+    content:'';
+}
+section.diagonal {
+    background: #FF4E00;
 }

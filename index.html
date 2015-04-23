@@ -28,9 +28,9 @@
     <link href="css/stylish-codeville-blue.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
     <!--link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"-->
-    <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+    <!--link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'/>
-    <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'-->
     <!--script src="/js/codeville.js"></script-->
 
 </head>
@@ -59,14 +59,16 @@
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1 class="codeville_logo">Codeville Academy</h1>
-            <br>
+        <!--div class="col-lg-12 col-md-12 text-vertical-center">
+            <div class="row text-center">
+                <img src="/img/codeville_large.png"></img>
+            </div>
             <a href="#offer" class="ghost-button-border-color large_button">Start Learning</a>
-        </div>
+        </div -->
         <div class="text-vertical-center">
             <div class="image_brain"/>
-                <img src="/img/brain.png" />
+                <img src="/img/codeville_large.png"/>
+                <h1 class="text-muted">Learn to code for free</h1>
             </div>
         </div>
     </header>
@@ -87,104 +89,25 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="offer" class="services">
+    <section class="services diagonal">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h1 class="heading1 orange text-center">This is what we have for you</h1>
-                    <hr class="small orange" /><br/>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                                <a href="{{ "/pages/courses/" | prepend: site.baseurl }}" class="constant-link">
-                                    <!--span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-desktop fa-stack-1x icon_color"></i>
-                                    </span-->
-                                    <img src="/img/online.png" alt="Online courses"/>
-                                </a>
-                                    <h4>
-                                        <strong><a href="{{ "/pages/courses/" | prepend: site.baseurl }}" class="heading4 blue cmn-t-colour">Online courses</a></strong>
-                                    </h4>
-                                    <p class="black">Check out our online course offerings.</p>
-                                <a href="{{ "/pages/courses/" | prepend: site.baseurl }}" class="ghost-button-border-color-small">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                                <a href="{{ "/pages/in-person/" | prepend: site.baseurl }}" class="constant-link">
-                                    <!--span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-book fa-stack-1x icon_color"></i>
-                                    </span-->
-                                    <img src="/img/inperson.png" alt="In-person courses"/>
-                                </a>
-                                    <h4>
-                                        <strong><a href="{{ "/pages/in-person/" | prepend: site.baseurl }}" class="heading4 blue cmn-t-colour">In-person courses</a></strong>
-                                    </h4>
-                                    <p class="black">Find the information about our in-person courses.</p>
-                                <a href="{{ "/pages/in-person/" | prepend: site.baseurl }}" class="ghost-button-border-color-small">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                                <a href="{{ "/pages/blog/" | prepend: site.baseurl }}" class="constant-link">
-                                <!--span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rocket fa-stack-1x icon_color"></i>
-                                </span-->
-                                <img src="/img/blog.png" alt="Blog"/>
-                                </a>
-                                <h4>
-                                    <strong><a href="{{ "/pages/blog/" | prepend: site.baseurl }}" class="heading4 cmn-t-colour blue">Blog</a></strong>
-                                </h4>
-                                <p class="black">Insights of the field of Computer Science.</p>
-                                <a href="{{ "/pages/blog/" | prepend: site.baseurl }}" class="ghost-button-border-color-small">Read more</a>
-                            </div>
-                        </div>
-                        <!--div class="col-md-4 col-sm-12">
-                            <div class="service-item">
-                                <a href="{{ "/arena.html" | prepend: site.baseurl }}" class="constant-link">
-                                    <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-connectdevelop fa-stack-1x icon_color"></i>
-                                    </span>
-                                </a>
-                                    <h4>
-                                        <strong>The Physics Arena</strong>
-                                    </h4>
-                                    <p>From particle physics to astrophysics.</p>
-                                <a href="{{ "/arena.html" | prepend: site.baseurl }}" class="btn btn-light">Know more</a>
-                            </div>
-                        </div-->
-                        
-                        <!--div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-phone fa-stack-1x icon_color"></i>
-                            </span>
-                                <h4>
-                                    <strong>Wanna meet us?</strong>
-                                </h4>
-                                <p>Get in touch.</p>
-                                <a href="/contact.html" class="btn btn-light">Contact</a>
-                            </div>
-                        </div-->
+                <!--div class="col-lg-10 col-lg-offset-1">
+                    <h2 class="heading2 white">C101 : Begineers course on C language</h2>
+                </div-->
+                <div class="text-vertical-center">
+                    <div class="image_brain"/>
+                        <img src="/img/brain.png" />
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
+                <div class="text-vertical-center">
+                    <h1 class="codeville_logo">C101: Introduction to C language</h1>
+                    <br>
+                    <a href="{{ "/pages/courses/c/" | prepend: site.baseurl }}" class="btn btn-default large_button">Start Learning</a>
+                </div>
             </div>
-            <div class="row text-center">
-                <br/><br/><br/>
-                <a href="#contact" class="ghost-button-border-color-circle large_button">&#x21E9;</a>
-            </div>
-            <!-- /.row -->
         </div>
-
-        <!-- /.container -->
-    </section>    
+    </section>
 
     <section id="contact" class="contact bg-primary">
         <div class="container">
@@ -242,10 +165,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row text-center">
-                <br/><br/><br/>
-                <a href="#footer" class="ghost-button-border-color-circle large_button">&#x21E9;</a>
             </div>
         </div>        
     </section> 
