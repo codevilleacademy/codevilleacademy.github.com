@@ -68,7 +68,7 @@ article {
 /* Navigation bar links */
 .cmn-t-underline {
   position: relative;
-  color: #DD2A13;
+  color: #000000;
 }
 .cmn-t-underline:after {
   display: block;
@@ -77,12 +77,12 @@ article {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: #DD2A13;
+  background-color: #000000;
   content: "";
   transition: width 0.3s;
 }
 .cmn-t-underline:hover {
-  color: #DD2A13;
+  color: #000000;
 }
 .cmn-t-underline:hover:after {
   width: 100%;
@@ -94,25 +94,37 @@ article {
 }
 .cmn-t-colour:hover {
   text-decoration: none;
-  color: #FF4E00;
+  color: #000000;
 }
 
-/* Navigation bar links end */
+/* Navigation bar */
 
-#custom-bootstrap-menu.sticky {
-  padding-left: 20px;
+#custom-bootstrap-menu.navbar-default .codeville_logo_banner {
+  background: url(/img/codeville_small.png) no-repeat;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 175px; /* Width of new image */
+  height: 70px; /* Height of new image */
+  margin-top: 15px;
 }
 
-#custom-bootstrap-menu {
+#custom-bootstrap-menu.navbar-default .navbar-brand,
+#custom-bootstrap-menu.navbar-default .navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+
+#custom-bootstrap-menu.navbar-default {
   transition: all 0.4s ease;
 }
 
-#custom-bootstrap-menu .navbar-brand {
-    font-family: 'Bad Script', cursive;
-    font-size: 28px;
-    line-height: 28px;
+#custom-bootstrap-menu.navbar-default .navbar-brand img {
+    margin-top: 15px;
+    max-height:70px;
 }
-#custom-bootstrap-menu.navbar-collapse {
+#custom-bootstrap-menu.navbar-default .navbar-collapse {
 }
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(17, 17, 17, 1);
@@ -156,6 +168,83 @@ article {
 }
 #custom-bootstrap-menu.navbar-default {
     border-color: rgba(83, 78, 76, 0.2);
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+#custom-bootstrap-menu.robin .codeville_logo_banner {
+  background: url(/img/codeville_invert_small.png) no-repeat;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 175px; /* Width of new image */
+  height: 50px; /* Height of new image */
+}
+
+#custom-bootstrap-menu.robin .navbar-brand,
+#custom-bootstrap-menu.robin .navbar-nav li a {
+    line-height: 25px;
+    height: 50px;
+}
+
+#custom-bootstrap-menu.robin {
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: all 0.4s ease;
+}
+
+#custom-bootstrap-menu.robin .navbar-brand img {
+    margin-top: 0px;
+    max-height: 50px;
+}
+#custom-bootstrap-menu.robin .navbar-collapse {
+}
+#custom-bootstrap-menu.robin .navbar-brand {
+    color: rgba(17, 17, 17, 1);
+}
+#custom-bootstrap-menu.robin {
+    background-color: #FF4E00;
+    border-width: 1px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.robin .navbar-nav>li>a {
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    font-weight: 150;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+#custom-bootstrap-menu.robin .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.robin .navbar-nav>li>a:focus {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+#custom-bootstrap-menu.robin .navbar-nav>.active>a,
+#custom-bootstrap-menu.robin .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.robin .navbar-nav>.active>a:focus {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+#custom-bootstrap-menu.robin .navbar-toggle {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+#custom-bootstrap-menu.robin .navbar-toggle:hover,
+#custom-bootstrap-menu.robin .navbar-toggle:focus {
+    background-color: transparent;
+}
+#custom-bootstrap-menu.robin .navbar-toggle .icon-bar {
+    background-color: transparent;
+}
+#custom-bootstrap-menu.robin .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.robin .navbar-toggle:focus .icon-bar {
+    background-color: transparent;
+}
+#custom-bootstrap-menu.robin {
+    border-color: transparent;
 }
 
 a[class="constant-link"] {text-decoration: none;color:#FFF;}      /* unvisited link */

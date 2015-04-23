@@ -6,6 +6,16 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
+
+    $(window).load(function() {
+        if ( $('nav').hasClass("navbar-default") == true ) {
+            $('nav').removeClass("navbar-default");
+        }
+        if ( $('nav').hasClass("robin") == false ) {
+            $('nav').addClass("robin");
+        }
+    });
+
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
