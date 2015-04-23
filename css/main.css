@@ -99,6 +99,13 @@ article {
 
 /* Navigation bar links end */
 
+#custom-bootstrap-menu.sticky {
+  padding-left: 20px;
+}
+
+#custom-bootstrap-menu {
+  transition: all 0.4s ease;
+}
 
 #custom-bootstrap-menu .navbar-brand {
     font-family: 'Bad Script', cursive;
@@ -321,8 +328,4 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
 
 .heading1:before, .heading1:after {
     content: '  \2600  ';
-}
-
-.small_header {
-  
 }
