@@ -113,8 +113,8 @@ img.codeville_logo {
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
     font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: bold;
     color: #DD2A13;
     background-color: transparent;
 }
@@ -191,7 +191,7 @@ img.codeville_logo {
 #custom-bootstrap-menu.robin .navbar-nav>li>a {
     font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
     color: #FFFFFF;
     background-color: transparent;
 }
