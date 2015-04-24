@@ -278,11 +278,45 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
     border-color: #000;
 }
 
+.codeville_button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
 
 .large_button {
     width: 250px;
     font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
     font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    transition: all 0.3s ease-out,
+              color 0.3s ease-out;
+}
+
+.large_button:hover, .large_button:active, .large_button:focus {
+  text-decoration: none;
+  color: #FF4E00;
+  transition: all 0.3s in,
+              color 0.3s ease-in;
 }
 
 .ghost-button-border-color {
@@ -398,7 +432,16 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
     font-family: "Source Sans Pro", Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
 }
 
+.course_index_title {
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
+}
 
+.course_index_description {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
 
 /* Slopes */
 .diagonal {
