@@ -464,8 +464,8 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
 
 .course_index_description {
   font-size: 18px;
-  font-weight: normal;
-  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-family: sans-serif,Verdana;
 }
 
 /* Slopes */
