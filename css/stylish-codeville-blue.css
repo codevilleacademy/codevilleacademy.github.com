@@ -21,10 +21,10 @@ body {
     font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
 }
 
-section {
+/*section {
     padding-top: 50px;
 }
-
+*/
 .text-vertical-center {
     display: table-cell;
     text-align: center;
