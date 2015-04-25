@@ -68,7 +68,7 @@
         <div class="text-vertical-center">
             <div class="image_brain"/>
                 <img src="/img/codeville_large.png"/>
-                <h1 class="text-muted">Develop a knack for coding today</h1>
+                <div class="site-tagline clay">Develop a <span class="quoted orange">knack</span> for coding today</div>
             </div>
         </div>
     </header>
@@ -108,7 +108,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="contact" class="contact bg-primary">
         <div class="container">
             <div class="row">
@@ -206,6 +206,15 @@
     <!-- Custom Theme JavaScript -->
     <script>
 
+    $(window).load(function() {
+        if ( $('nav').hasClass("navbar-default") == true ) {
+            $('nav').removeClass("navbar-default");
+        }
+        if ( $('nav').hasClass("robin") == false ) {
+            $('nav').addClass("robin");
+        }
+    });
+/*
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1){
             $('nav').addClass("robin");
@@ -216,7 +225,7 @@
             $('nav').addClass("navbar-default");
         }
     });
-
+*/
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
