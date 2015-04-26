@@ -5,6 +5,7 @@
   font-variant: normal;
   font-weight: 500;
   line-height: 25.4px;
+  padding-top: 30px;
 }
 
 .site-tagline:first-letter {
@@ -13,8 +14,18 @@
   line-height: 25.4px;
 }
 
-.aim {
-  padding: 40px;
+.site-aim {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.quote-reference {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 .quoted:before {
@@ -60,10 +71,8 @@ article {
   padding-bottom: 50px;
 }
 
-.services {
-    background-color: #8E44AD;
+.section_content {
     color: #FFFFFF;
-    margin-top: 50px;
     /*background: repeating-linear-gradient(
         45deg, 
         rgba(255,78,0,0.2), 
@@ -263,7 +272,7 @@ img.codeville_logo {
     background-color: transparent;
 }
 #custom-bootstrap-menu.robin {
-    border-color: transparent;
+    border-bottom: 4px solid #BF5330 ;
 }
 
 a[class="constant-link"] {text-decoration: none;color:#FFF;}      /* unvisited link */
@@ -447,6 +456,10 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
     border-color:#FFFFFF;
 }
 
+.green {
+  color: #2EC866;
+}
+
 .orange {
     color:#FF4E00;
     border-color:#FF4E00 ;
@@ -498,7 +511,7 @@ section:before {
     z-index: 1;
     padding: 3em;
 }
-.services.diagonal:before {
+.section_content.diagonal:before {
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
     -webkit-transform-origin: 3% 0;
@@ -510,6 +523,28 @@ section:before {
     height: 75%;
     background-color: #22313F;
 }
-.services.diagonal {
+.section_content.diagonal {
     background-color: #22313F;
+}
+
+
+/* pArallax */
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
 }
