@@ -14,25 +14,17 @@
   
     <meta property="fb:app_id"                            content="302184056577324" /> 
     <meta property="og:type"                              content="article" /> 
-  <meta property="og:title"                             content="Codeville | Learn" /> 
-  <meta property="og:url"    content="http://codeville.org.in/" /> 
-  <meta property="og:image"                             content="http://codeville.org.in/img/cover.png" /> 
+    <meta property="og:title"                             content="Codeville | Learn" /> 
+    <meta property="og:url"    content="http://codeville.org.in/" /> 
+    <meta property="og:image"                             content="http://codeville.org.in/img/cover.png" /> 
     <meta property="og:site_name" content="Codeville" />
     <meta property="og:description" content="Codeville is a platform for personalized learning, where you can learn new computer technologies." />
     <meta name="author" content="Codeville" />
     <link rel="image_src" href="http://codeville.org.in/img/cover.png" / >
-
     <title>Learn a programming language today :: Codeville</title>
-
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/stylish-codeville-blue.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
-    <!--link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"-->
-    <!--link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'/>
-    <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'-->
-    <!--script src="/js/codeville.js"></script-->
-
 </head>
 
 <body>
@@ -54,56 +46,29 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-
     {% include nav.html %}
     
-    <!-- Header -->
     <header id="top" class="header">
-        <!--div class="col-lg-12 col-md-12 text-vertical-center">
-            <div class="row text-center">
-                <img src="/img/codeville_large.png"></img>
-            </div>
-            <a href="#offer" class="ghost-button-border-color large_button">Start Learning</a>
-        </div -->
         <div class="text-vertical-center">
             <div class="image_brain"/>
-                <img src="/img/codeville_large.png"/>
-                <div class="site-tagline clay" style="padding-top: 40px;">Develop a <span class="quoted orange">knack</span> for coding today</div>
+                <img src="/img/codeville_invert_large.png"/>
+                <div class="site-tagline white" style="padding-top: 40px;">Develop a <span class="quoted orange">knack</span> for coding today</div>
             </div>
         </div>
     </header>
 
-    <!-- About -->
-    <!--section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>We provide the best trainings in computer technologies.</h2>
-                    <!--p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
-                </div>
-            </div>
-            <!-- /.row >
-        </div>
-        <!-- /.container>
-    </section -->
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section class="section_content diagonal">
         <div class="container">
             <div class="row">
-                <!--div class="col-lg-10 col-lg-offset-1">
-                    <h2 class="heading2 white">C101 : Begineers course on C language</h2>
-                </div-->
                 <div class="col-md-6 text-vertical-center text-center">
                     <div class="image_brain">
-                        <a href="{{ "/pages/courses/c/" | prepend: site.baseurl }}"><img src="/img/c_index.png" /></a>
+                        <a href="{{ "/pages/courses/c101/" | prepend: site.baseurl }}"><img src="/img/c_index.png" /></a>
                     </div>
                 </div>
                 <div class="col-md-6 text-vertical-center">
                     <h1 class="course_index_title heading1">C101 - Introduction to C language</h1><br/>
                     <p class="course_index_description">An introductory course on C language that will build a rock solid foundation for problem solving, competitive programming and computer science fundamentals.</h4><br><br>
-                    <a href="{{ "/pages/courses/c/" | prepend: site.baseurl }}" class="codeville_button orange large_button">Launch C101</a>
+                    <a href="{{ "/pages/courses/c101/" | prepend: site.baseurl }}" class="codeville_button orange large_button">Launch C101</a>
                 </div>
             </div>
         </div>
@@ -123,84 +88,8 @@
                 </div>
             </div>
         </div>        
-    </section> 
-
+    </section>
+    {% include low_head.html %}
     {% include footer.html %}
-
-    <!-- Footer >
-    <footer>
-        <div class="container" id="contact">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Codeville</strong>
-                    </h4>
-                    <p>Arpit Bhayani<br>Near Satidham Temple<br>Jaistambh Square, Rallies Plot<br>Amravati</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (+91) 9652602714</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">arpit.b.bhayani@gmail.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/pages/The-Codeville-Academy/1432398190392641?ref=aymt_homepage_panel"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Codeville 2015</p>
-                </div>
-            </div>
-        </div>
-    </footer -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-
-    $(window).load(function() {
-        if ( $('nav').hasClass("navbar-default") == true ) {
-            $('nav').removeClass("navbar-default");
-        }
-        if ( $('nav').hasClass("robin") == false ) {
-            $('nav').addClass("robin");
-        }
-    });
-
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-
 </body>
-
 </html>

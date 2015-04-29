@@ -72,7 +72,7 @@ article {
 }
 
 .section_content {
-    color: #FFFFFF;
+    color: #22313F;
     /*background: repeating-linear-gradient(
         45deg, 
         rgba(255,78,0,0.2), 
@@ -161,9 +161,20 @@ img.codeville_logo {
     color: rgba(17, 17, 17, 1);
 }
 #custom-bootstrap-menu.robin {
-    background-color: #E26633;
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #136A8A),
+  color-stop(1, #136A8A)
+);
+background-image: -o-linear-gradient(bottom, #136A8A 0%, #136A8A 100%);
+background-image: -moz-linear-gradient(bottom, #136A8A 0%, #136A8A 100%);
+background-image: -webkit-linear-gradient(bottom, #136A8A 0%, #136A8A 100%);
+background-image: -ms-linear-gradient(bottom, #136A8A 0%, #136A8A 100%);
+background-image: linear-gradient(to bottom, #136A8A 0%, #136A8A 100%);
     transition: all 0.4s ease;
-    border-width: 1px;
+    border-width: 0px;
     border-radius: 0px;
 }
 #custom-bootstrap-menu.robin .navbar-nav>li>a {
@@ -199,7 +210,7 @@ img.codeville_logo {
     background-color: transparent;
 }
 #custom-bootstrap-menu.robin {
-    border-bottom: 4px solid #BF5330 ;
+    border-bottom: 0px solid #BF5330 ;
 }
 
 a[class="constant-link"] {text-decoration: none;color:#FFF;}      /* unvisited link */
@@ -285,13 +296,13 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
     font-size: 21px;
     font-weight: normal;
     background-color: #fff;
-    border: none;
-    color: #FF4E00;
+    border: 1px solid #136A8A;
+    color: #22313F;
 }
 
 .large_button:hover, .large_button:active, .large_button:focus {
   text-decoration: none;
-  color: #FF4E00;
+  color: #136A8A;
 }
 
 .ghost-button-border-color {
@@ -416,11 +427,12 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
 
 .course_index_title {
   padding-bottom: 8px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #22313F;
 }
 
 .course_index_description {
-  font-size: 18px;
+  font-family: "Open Sans",sans-serif !important;
+  font-size: 16px;
   font-weight: normal;
   font-family: Verdana, sans-serif;
 }
@@ -448,7 +460,7 @@ section:before {
     z-index: -1;
     width: 110%;
     height: 75%;
-    background-color: #22313F;
+    background-color: #FFFFFF;
 }
 .section_content.diagonal {
     background-color: #22313F;
