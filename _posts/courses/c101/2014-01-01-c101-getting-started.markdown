@@ -4,7 +4,7 @@ title: "Getting started"
 category:	c101
 ---
 
-<p>Getting started</p>
+<p>Upload and test hello world</p>
 
 <!--table class="table table-hover">
 <thead>

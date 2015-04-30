@@ -298,11 +298,12 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
     background-color: #fff;
     border: 1px solid #136A8A;
     color: #22313F;
+    transition: all 0.4s ease;
 }
 
 .large_button:hover, .large_button:active, .large_button:focus {
   text-decoration: none;
-  color: #136A8A;
+  color: #22313F;
 }
 
 .ghost-button-border-color {
