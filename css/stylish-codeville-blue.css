@@ -51,14 +51,14 @@ hr.small {
     linear,
     left top,
     left bottom,
-    color-stop(0, #136A8A),
-    color-stop(1, #267871)
+    color-stop(0, #3A6073),
+    color-stop(1, #16222A)
 );
-background-image: -o-linear-gradient(bottom, #136A8A 0%, #267871 100%);
-background-image: -moz-linear-gradient(bottom, #136A8A 0%, #267871 100%);
-background-image: -webkit-linear-gradient(bottom, #136A8A 0%, #267871 100%);
-background-image: -ms-linear-gradient(bottom, #136A8A 0%, #267871 100%);
-background-image: linear-gradient(to bottom, #136A8A 0%, #267871 100%);
+background-image: -o-linear-gradient(bottom, #3A6073 0%, #16222A 100%);
+background-image: -moz-linear-gradient(bottom, #3A6073 0%, #16222A 100%);
+background-image: -webkit-linear-gradient(bottom, #3A6073 0%, #16222A 100%);
+background-image: -ms-linear-gradient(bottom, #3A6073 0%, #16222A 100%);
+background-image: linear-gradient(to bottom, #3A6073 0%, #16222A 100%);
     /*background: #c0392b;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;

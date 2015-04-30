@@ -1,0 +1,41 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    <p>Add answers here</p>
+    <form method="POST" action="https://vast-eyrie-2726.herokuapp.com/addanswer" name="ansform" id="ansform" enctype="multipart/form-data">
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>ID &lt; course-id:question-d &gt; :</label>
+                <input type="text" name="_id" class="form-control" placeholder="_id here" id="_id">
+            </div>
+        </div>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Type:</label>
+                <input type="text" name="type" class="form-control" placeholder="type here" id="type">
+            </div>
+        </div>
+        <!--div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Asnwer</label>
+                <textarea name="ans" rows="5" class="form-control" placeholder="answer here" id="ans"></textarea>
+            </div>
+        </div-->
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Ans File:</label>
+                <input type="file" name="ans" accept="*">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="form-group col-xs-12">
+                <input type="submit" value="Save Answer"/>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
