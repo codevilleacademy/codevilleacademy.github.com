@@ -1,6 +1,6 @@
 {% assign v = include.qid %}
 <form class="code-upload" method="POST" action="https://vast-eyrie-2726.herokuapp.com/eval" name="ansform" id="ansform" enctype="multipart/form-data">
-<!--form class="code-upload ansform" method="POST" action="http://localhost:5000/eval" name="ansform" enctype="multipart/form-data"-->
+<!--form class="code-upload ansform" method="POST" action="http://localhost:5000/eval" id="ansform" name="ansform" enctype="multipart/form-data"-->
     <input type="hidden" value="{{v}}" name="_id" class="form-control" placeholder="_id here" id="_id">
     <input type="file" name="ans" accept="*">
     <input type="submit" value="Check!"/>
