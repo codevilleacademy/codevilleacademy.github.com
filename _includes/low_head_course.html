@@ -1,24 +1,25 @@
-<!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
+<!-- jQuery -->    
 
     <!-- Custom Theme JavaScript -->
     <script>
     $(function() {
-        $("#check_button").click(function() {
-            alert("Hi");
+        $("#notification-box").hide();
+        $(document).ready(function() { 
+            $('.ansform').ajaxForm(function showResponse(responseJson, statusText, xhr, $form)  { 
+                $("#notification-box").removeAttr('class');
+                switch(responseJson['ec']) {
+                    case 0:
+                        $("#notification-box").attr('class', 'alert alert-success');
+                        break;
+                    case 1:
+                        $("#notification-box").attr('class', 'alert alert-danger');
+                        break;
+                    case -2:
+                        $("#notification-box").attr('class', 'alert alert-warning');
+                        break;
+                }
+                $("#notification-box").text(responseJson['msg']).show().delay(5000).fadeOut();
+            });
         });
     });
-
-
-        // wait for the DOM to be loaded 
-        $(document).ready(function() { 
-            // bind 'myForm' and provide a simple callback function 
-            $('#ansform').ajaxForm(function() { 
-                alert("Thank you for your comment!"); 
-            }); 
-        }); 
-
     </script>

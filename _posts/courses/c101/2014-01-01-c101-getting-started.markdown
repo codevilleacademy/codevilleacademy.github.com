@@ -3,7 +3,6 @@ layout: course_page
 title: "Get, Set, Go!"
 category:	c101
 ---
-
 <h2 class="clay bold">Get, Set, Go!</h2>
 <p>Let us test your Hello, World!</p>
 

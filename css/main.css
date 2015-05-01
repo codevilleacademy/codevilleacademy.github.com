@@ -1,3 +1,9 @@
+#notification-box {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+}
+
 /* COntact Us form */
 .floating-label-form-group {
   font-size: 14px;
