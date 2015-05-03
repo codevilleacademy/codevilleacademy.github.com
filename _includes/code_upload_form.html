@@ -1,7 +1,17 @@
-{% assign v = include.qid %}
-<form class="code-upload" method="POST" action="https://vast-eyrie-2726.herokuapp.com/eval" name="ansform" id="ansform" enctype="multipart/form-data">
-<!--form class="code-upload ansform" method="POST" action="http://localhost:5000/eval" id="ansform" name="ansform" enctype="multipart/form-data"-->
-    <input type="hidden" value="{{v}}" name="_id" class="form-control" placeholder="_id here" id="_id">
-    <input type="file" name="ans" accept="*">
-    <input type="submit" value="Check!"/>
+{% assign qid = include.qid %}
+{% assign ipdownload = include.ipdownload %}
+<form class="form-inline ansform" method="POST" action="https://vast-eyrie-2726.herokuapp.com/eval" name="ansform" enctype="multipart/form-data">
+	<input class="btn btn-default" type="hidden" value="{{qid}}" name="_id" class="form-control" placeholder="_id here" id="_id">
+	<div class="form-group">
+		<a class="btn btn-default" href="{{ipdownload}}" role="button">Download</a>
+	</div>
+	<div class="input-group">
+		<span class="input-group-btn">
+			<span class="btn btn-default btn-file">
+				Browse&hellip; <input class="" type="file" name="ans" accept="*"/>
+			</span>
+		</span>
+		<input type="text" class="form-control" readonly>
+	</div>
+	<button type="submit" class="btn btn-default">Verify</button>
 </form>

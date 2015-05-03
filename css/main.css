@@ -1,3 +1,42 @@
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.code-statement {
+  border: 1px solid #000;
+  padding: 10px;
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+.code-question:before {
+  content: 'Q';
+  font-size: 32px;
+}
+
+.code-upload input {
+  margin: 10px;
+}
+
 #notification-box {
   position: fixed;
   top: 0%;
