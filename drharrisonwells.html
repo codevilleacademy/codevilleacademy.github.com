@@ -1,0 +1,91 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    <!--form method="POST" action="https://vast-eyrie-2726.herokuapp.com/addanswer" name="ansform" id="ansform" enctype="multipart/form-data">
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>ID &lt; course-id:question-d &gt; :</label>
+                <input type="text" name="_id" class="form-control" placeholder="_id here" id="_id">
+            </div>
+        </div>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Ans File:</label>
+                <input type="file" name="ans" accept="*">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="form-group col-xs-12">
+                <input type="submit" value="Save Answer"/>
+            </div>
+        </div>
+    </form-->
+    <div class="container" style="margin-top: 50px;">
+        <form method="POST" class="form-horizontal" action="https://vast-eyrie-2726.herokuapp.com/addanswer" name="ansform" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="h3 col-sm-4 col-sm-offset-2 text-center">Upload Expected Output</label>
+            </div>
+            <div class="form-group">
+                <label for="course_name" class="col-sm-2 control-label">Course</label>
+                <div class="col-sm-4">
+                    <select class="form-control">
+                        {% for c in site.data.courses %}
+                            <option value="{{c.id}}">{{c.name}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question_number" class="col-sm-2 control-label">Q. No.</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="question_number" placeholder="Question Number">
+                </div>
+            </div>
+            <div class="input-group col-sm-offset-2 col-sm-6">
+                <input class="" type="file" name="ans" accept="*"/>
+            </div>
+            <div class="form-group" style="padding-top:20px;">
+                <div class="col-sm-2 col-sm-offset-2">
+                    <button type="submit" class="btn btn-default">Save Output</button>
+                </div>
+            </div>
+        </form>
+
+
+        <form method="POST" class="form-horizontal" action="https://vast-eyrie-2726.herokuapp.com/updateanswer" name="ansform" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="h3 col-sm-4 col-sm-offset-2 text-center">Update Expected Output</label>
+            </div>
+            <div class="form-group">
+                <label for="course_name" class="col-sm-2 control-label">Course</label>
+                <div class="col-sm-4">
+                    <select class="form-control">
+                        {% for c in site.data.courses %}
+                            <option value="{{c.id}}">{{c.name}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question_number" class="col-sm-2 control-label">Q. No.</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="question_number" placeholder="Question Number">
+                </div>
+            </div>
+            <div class="input-group col-sm-offset-2 col-sm-6">
+                <input class="" type="file" name="ans" accept="*"/>
+            </div>
+            <div class="form-group" style="padding-top:20px;">
+                <div class="col-sm-2 col-sm-offset-2">
+                    <button type="submit" class="btn btn-default">Update Output</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

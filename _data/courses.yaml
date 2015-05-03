@@ -1,5 +1,3 @@
 ---
-- name: The C Language
-  desc: Learn C language in 4 weeks/ 4 games.
-  icon: /img/c.png
-  url: c
+- name: C101 - Intoduction to C Language
+  id: c101
