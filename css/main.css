@@ -394,15 +394,16 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif, Ubuntu;
     font-size: 21px;
     font-weight: normal;
-    background-color: #fff;
-    border: 1px solid #136A8A;
-    color: #22313F;
+    background-color: #3A6073;
+    border: none;
+    color: #FFFFFF;
     transition: all 0.4s ease;
 }
 
 .large_button:hover, .large_button:active, .large_button:focus {
   text-decoration: none;
-  color: #22313F;
+  color: #FFFFFF;
+  background-color: #3A5360;
 }
 
 .ghost-button-border-color {
@@ -474,8 +475,30 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
               color 0.4s ease-in;
 }
 
+.thought {
+  padding: 10px;
+  border: 2px dashed #000;
+  border-radius: 5px;
+}
+
+.thought:first-letter {
+  font-size: 150%;
+}
+
+.arial {
+  font-family: Arial, "Open Sans", sans-serif;
+}
+
 .bold {
-  font-weight: 500;
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.super_bold {
+  font-weight: 400;
 }
 
 .clay {
@@ -500,6 +523,7 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
 
 .green {
   color: #2EC866;
+  border-color:#2EC866 ;
 }
 
 .orange {
