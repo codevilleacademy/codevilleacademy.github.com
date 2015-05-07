@@ -1,0 +1,10 @@
+---
+layout: course_page
+title: "Brief history of C Language"
+category:	c101
+---
+<h2 class="clay">{{page.title}}</h2>
+<hr class="large orange" />
+
+<br/>
+<a class="btn btn-default" href="{{ "" }}">Read Next</a>
