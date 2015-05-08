@@ -282,7 +282,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Arial, Ubuntu, Helvetica Neue, Helvetica, sans-serif;
+  font-family: Helvetica Neue, Arial, Ubuntu, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333;

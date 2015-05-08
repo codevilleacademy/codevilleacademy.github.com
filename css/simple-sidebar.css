@@ -33,18 +33,19 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
+   
     background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(0, #3A6073),
-    color-stop(1, #16222A)
+    color-stop(0, #CD1363),
+    color-stop(1, #FB6140)
 );
-background-image: -o-linear-gradient(bottom, #3A6073 0%, #16222A 100%);
-background-image: -moz-linear-gradient(bottom, #3A6073 0%, #16222A 100%);
-background-image: -webkit-linear-gradient(bottom, #3A6073 0%, #16222A 100%);
-background-image: -ms-linear-gradient(bottom, #3A6073 0%, #16222A 100%);
-background-image: linear-gradient(to bottom, #3A6073 0%, #16222A 100%);
+background-image: -o-linear-gradient(to right bottom, #CD1363 0%, #FB6140 100%);
+background-image: -moz-linear-gradient(to right bottom, #CD1363 0%, #FB6140 100%);
+background-image: -webkit-linear-gradient(to right bottom, #CD1363 0%, #FB6140 100%);
+background-image: -ms-linear-gradient(to right bottom, #CD1363 0%, #FB6140 100%);
+background-image: linear-gradient(to to right bottom, #CD1363 0%, #FB6140 100%);
 
 }
 

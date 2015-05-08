@@ -1,4 +1,5 @@
 <script>
+
 $(document).on('change', '.btn-file :file', function() {
   var input = $(this),
       numFiles = input.get(0).files ? input.get(0).files.length : 1,
@@ -18,6 +19,30 @@ $(document).ready( function() {
             if( log ) alert(log);
         }
         
+    });
+    $(function() {
+      return $("h2, h3, h4, h5, h6").each(function(i, el) {
+        var $el, icon, id;
+        $el = $(el);
+        id = $el.attr('id');
+        icon = '&#8267';
+        if (id) {
+            return $el.prepend($("<a/>").addClass("header-link").attr("href", "#" + id).html(icon));
+        }
+      });
+    });
+    $(function() {
+      return $("#agenda").each(function(i, el) {
+        var $el, h="";
+        $el = $(el);
+
+        $("h3, h4, h5, h6").each(function(j, e) {
+            var id = $(e).attr('id');
+            var li = $('<li/>').appendTo($el);
+            var aa = $('<a/>').attr("href", "#" + id).html($(e).text().replace("⁋","")).appendTo(li);
+        });
+        return $el;
+      });
     });
 });
 
