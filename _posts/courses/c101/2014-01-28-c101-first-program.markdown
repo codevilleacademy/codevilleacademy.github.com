@@ -31,13 +31,33 @@ category: c101
 
 <p><span class="light-green">Step 1</span>: Create a empty text file and name it as <span class="italic">hello.c</span></p>
 <p><span class="light-green">Step 2</span>: Put the following content into the file.</p>
-
 {% highlight cpp %}
 #include <stdio.h>
 int main() {
 	printf("Hello, Master!");
+	return 0;
 }
 {% endhighlight %}
+<p><span class="light-green">Step 3</span>: Compile the file using GCC compiler.</p>
+{% highlight bash %}
+gcc hello.c
+{% endhighlight %}
+<p>Above process will create a binary file called <span class="italic">a.out</span>. This a.out file is an executable file that we will now execute on our operating system.
+<p><span class="light-green">Step 4</span>: Execute the a.out file.</p>
+{% highlight bash %}
+./a.out
+{% endhighlight %}
+<p>If everything goes well, you should see the following output on your console.</p>
+{% highlight bash %}
+Hello, Master!
+{% endhighlight %}
+<p>The output we get over here is the required output; and thus our task is accomplished.</p>
+<p><span class="bold orange">Congratulations!</span>, you have successfully written your first program in C language.</p>
+
+<br/>
+<h3 id="break-the-code">Break the code!</h3>
+<hr class="large orange" />
+<p>We will now try to understand the code that we just wrote, compiled and executed successfully. Lets dissect the code and get the meaning out of it.</p>
 
 <br/>
 <div class="arial bold italic text-center clay thought"><span class="orange">Practice</span> makes everyone <span class="orange">perfect</span>.</div>
