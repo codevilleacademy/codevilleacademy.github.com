@@ -5,10 +5,12 @@ category: c101
 ---
 <h2 id="what-is-c" class="clay">{{page.title}}</h2>
 <hr class="large orange" />
+<ul id="agenda"></ul>
+
 <p>C language is a general-purpose computer programming language; with general purpose it is implied that the C language is used to create general-purpose applications, that is, it is not meant to do some specific tasks only, rather it is designed to suit any system in the world and can be used to create any application possible. C language hands down beats other programming languages in terms of speed. The ability of C language to be able to execute efficiently on any system makes it an important language to learn. It is believed that C language creates a foundation that is very useful in learning any higher level languages.</p>
 
 <br/>
-<h2 id="capabilities-of-c" class="clay">Cool just got cooler</h2>
+<h3 id="capabilities-of-c" class="clay">Cool just got cooler</h2>
 <hr class="large orange" />
 <p>Here are some of the applications and devices that primarily use C language for its operation. The most important task that C can do most efficiently is the development of <span class="bold italic">Operating Systems</span>. Most of the operating systems has it core section implemented completely in C language. Unix and Linux operating systems are based completely on C language.</p>
 <p>Right from <span class="bold italic">supercomputers</span> to <span class="bold italic">embedded systems</span>, most of the devices somehow depend on C language for its operation. The high-definition <span class="bold italic">computer games</span> that you play on your computer, or the songs that you hear, or the video that you see are processed using C language.</p>
@@ -17,7 +19,7 @@ category: c101
 <div class="arial bold italic text-center clay thought">C language was originally developed by <span class="orange">Dennis Ritchie</span> between 1969 and 1973 at AT&T Bell Labs.</div>
 
 <br/>
-<h2 id="characterisitcs-of-c" class="clay">Characteristics of C Language</h2>
+<h3 id="characterisitcs-of-c" class="clay">Characteristics of C Language</h2>
 <hr class="large orange" />
 <p>C language exhibits following characteristics. Some of you may find some terms used below tough to understand, but you need not worry these characteristics are listed just to give an emphasis on the greatness of C language.</p>
 <ul>

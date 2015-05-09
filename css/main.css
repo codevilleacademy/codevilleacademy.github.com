@@ -638,6 +638,20 @@ section:before {
   background-color: #FFFFFF;
 }
 
+
+.list li {
+  list-style: none;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.list li:before {
+  content: "+";
+  font-size: 100%;
+  padding-right: 5px;
+}
+
+
 .note:before {
   font-style: italic;
   content: "Note:";

@@ -57,10 +57,53 @@ Hello, Master!
 <br/>
 <h3 id="break-the-code">Break the code!</h3>
 <hr class="large orange" />
-<p>We will now try to understand the code that we just wrote, compiled and executed successfully. Lets dissect the code and get the meaning out of it.</p>
+<p>We will now try to understand the code that we just wrote, compiled and executed successfully. Lets dissect the code.</p>
+
+<p>The first line we encounter is</p>
+{% highlight cpp %}
+#include <stdio.h>
+{% endhighlight %}
+<p>This line indicates the preprocessor to include the file <span class="italic">stdio.h</span> before the compilation. Now you might wonder, what is preprocessor? The simple answer to it is that, the first step of compilation is preprocessing, that is, all the preprocessor directives are processed before the process of compilation starts.</p>
+<ul class="list">
+	<li><span class="italic light-green">#</span> : is the standard prefix used for introducing the preprocessor statement.</li>
+	<li><span class="italic light-green">include</span> : is the keyword that dictates the preprocessor to include the file mentioned after.</li>
+	<li><span class="italic light-green">stdio.h</span> : is the header file that defines three variable types, several macros and various function for performing input and output.</li>
+</ul>
+
+<p>The next line we encounter is</p>
+{% highlight cpp %}
+int main() {
+{% endhighlight %}
+<p>This line marks the start of <span class="italic">main</span> function. The main function is the most important function in C; as it acts as an entry point to the execution. Whenever we execute the C program, the execution starts from the <span class="italic">main</span> function. Hence this function is the function that must be present in the C code.</p>
+<ul class="list">
+	<li><span class="italic light-green">int</span> : is the data-type in C, which in this context is the return-type of the function. This implies that the function will return the value whose type is <span class="italic">int</span>. We will go into the data-types later in the discussion.</li>
+	<li><span class="italic light-green">main</span> : is the keyword which is the name of the function that will be starting point of the program execution. Hence if the name is changed then executor, in no way will understand where to start the execution.</li>
+</ul>
+
+<p>The next line we encounter is</p>
+{% highlight cpp %}
+	printf("Hello, Master!");
+{% endhighlight %}
+<p><span class="italic">printf</span> is a function that is defined in the file <span class="italic">stdio.h</span>. It is primarily used to print something on the screen. When we want to provide output to the user, we use <span class="italic">printf</span> function. The function contains a sentence <span class="italic">"Hello, Master"</span>, which is the exact same sentence that we wanted to print on the screen, in our objective. This implies that the sentence we pass to the <span class="italic">printf</span> function will be directly printed on the screen; this is nothing but the job of the <span class="italic">printf</span> function.</p>
+
+<p>The next line we encounter is</p>
+{% highlight cpp %}
+	return 0;
+{% endhighlight %}
+<ul class="list">
+	<li><span class="italic light-green">return</span> is a keyword in C language that signifies the return from the execution of a function. As soon as the function encounters the return statement, it will immediately get out of the function.</li>
+	<li><span class="italic light-green">0</span> : is an integer that will now act as the return value from the <span class="italic">main</span> function. If you recall from line number 2 that we had mentioned the return type of the <span class="italic">main</span> function to be an integer, and 0 is of type integer. Hence this value, 0, is returned as the <span class="bold">exit status</span> of the program.</li>
+</ul>
+
+<p>The next line we encounter is</p>
+{% highlight cpp %}
+}
+{% endhighlight %}
+<p>This is a closing curly bracket which implies the end of the scope of function <span class="italic">main</span>. The scope of the <span class="italic">main</span> function begins at line number 2, with an opening curly bracket and it ends on this line, at the closing curly bracket.</p>
+
 
 <br/>
-<div class="arial bold italic text-center clay thought"><span class="orange">Practice</span> makes everyone <span class="orange">perfect</span>.</div>
+<div class="arial bold italic text-center clay thought"><span class="orange">Practice</span> will make you <span class="orange">perfect</span>.</div>
 
 <br/>
 <a class="btn btn-default" href="{{ "" }}">Read Next</a>
