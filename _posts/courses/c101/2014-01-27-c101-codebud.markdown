@@ -1,6 +1,6 @@
 ---
 layout: course_page
-title: "Codebud"
+title: "Inroducing Codebud"
 category: c101
 ---
 <h2 id="first-program" class="clay">{{page.title}}</h2>
@@ -58,6 +58,7 @@ category: c101
 	</p>
 	{% include code_upload_form.html qid="c101:0" %}
 </div>
+
 <br/>
 <div class="arial italic note purple">
 	<p>This is very similar to the last task that you performed, which was to print on the screen "Hello, Master!". Follow the steps of the codebud mentioned above and you should be do it with ease.</p>
