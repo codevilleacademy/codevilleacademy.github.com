@@ -1,3 +1,5 @@
 ---
 - name: C101 - Intoduction to C Language
   id: c101
+- name: CQ101 - Quest for C101
+  id: cq101
