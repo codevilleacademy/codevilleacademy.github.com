@@ -1,7 +1,7 @@
 {% assign qid = include.qid %}
 {% assign ipdownload = include.ipdownload %}
 <form class="form-inline ansform" method="POST" action="https://vast-eyrie-2726.herokuapp.com/eval" name="ansform" enctype="multipart/form-data">
-<!--form class="form-inline ansform" method="POST" action="http://localhost:5000/eval" name="ansform" enctype="multipart/form-data"-->
+<!-- <form class="form-inline ansform" method="POST" action="http://localhost:5000/eval" name="ansform" enctype="multipart/form-data"> -->
 	<input class="btn btn-default" type="hidden" value="{{qid}}" name="_id" class="form-control" placeholder="_id here" id="_id">
 	{% if ipdownload %}
 	<div class="form-group">
