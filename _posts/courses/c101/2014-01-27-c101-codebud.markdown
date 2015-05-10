@@ -51,12 +51,12 @@ category: c101
 <br/>
 <h3 id="first-task">Your first task</h3>
 <hr class="large orange" />
-{% include code_upload_form.html qid="c101:0" %}
+
 <div class="code-statement clay">
 	<p class="code-question">
 		Write a program that prints the statement "Hello, Codeville C101!".
 	</p>
-	<p class="code-form"></p>
+	{% include code_upload_form.html qid="c101:0" %}
 </div>
 <br/>
 <div class="arial italic note purple">
