@@ -6,7 +6,7 @@ category: c101
 <h2 id="what-is-c" class="clay">{{page.title}}</h2>
 <hr class="large orange" />
 <ul id="agenda"></ul>
-
+<br/>
 <p>C language is a general-purpose computer programming language; with general purpose it is implied that the C language is used to create general-purpose applications, that is, it is not meant to do some specific tasks only, rather it is designed to suit any system in the world and can be used to create any application possible. C language hands down beats other programming languages in terms of speed. The ability of C language to be able to execute efficiently on any system makes it an important language to learn. It is believed that C language creates a foundation that is very useful in learning any higher level languages.</p>
 
 <br/>

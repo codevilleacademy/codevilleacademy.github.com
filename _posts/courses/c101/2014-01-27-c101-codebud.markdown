@@ -8,7 +8,6 @@ category: c101
 
 <ul id="agenda"></ul>
 
-<br/>
 <h3 id="what-is-codebud">What is Codebud?</h3>
 <hr class="large orange" />
 <p><span class="orabge bold">Codebud</span> is your on-the-go buddy that will tell you if you solved a problem-statement well or not. Codebud is available 24 x 7, and will help you through the learning process. Following are the steps that you will follow to test your program logic.</p>
@@ -67,7 +66,7 @@ category: c101
 <br/>
 <h3 id="codebud-messages">Codebud Messages</h3>
 <hr class="large orange" />
-<p>Whenever you will verify your output via Codebud, you will receive following feedback messages. Each message has a meaning associated with it. Following table will give you an idea of what each message means</p>
+<p>After the verification is done by Codebud, a feedback message will show up at the top of the page. The message contains some terms and each term has the meaning associated with it. Following table describes the meaning associated with each term.</p>
 <table class="table table-hover">
 <thead>
 	<tr>

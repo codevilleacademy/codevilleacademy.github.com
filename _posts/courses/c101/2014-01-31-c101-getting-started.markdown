@@ -6,6 +6,8 @@ category:	c101
 <h2 id="getting-started" class="clay">{{page.title}}</h2>
 <hr class="large orange" />
 <ul id="agenda"></ul>
+
+<br/>
 <p>The best way to learn any programming language is to practice it; and in order to practice it you need to have an environment set up on your machine. Every programming language has its own environment requirements. These requirements vary depending on the operating system. This tutorial will help you set up a working environment on Linux (Ubuntu). So, lets get started ...</p>
 
 <br/>
