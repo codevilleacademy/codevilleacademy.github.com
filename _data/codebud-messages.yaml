@@ -1,0 +1,5 @@
+---
+- msg: Accepted
+  des: Your output was absolutely correct for all the inputs.
+- msg: Incorrect
+  des: Your output was incorrect for at least one of the inputs.

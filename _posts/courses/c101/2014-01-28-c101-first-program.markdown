@@ -101,9 +101,13 @@ int main() {
 {% endhighlight %}
 <p>This is a closing curly bracket which implies the end of the scope of function <span class="italic">main</span>. The scope of the <span class="italic">main</span> function begins at line number 2, with an opening curly bracket and it ends on this line, at the closing curly bracket.</p>
 
+<h3 id="codebud">Codebud - Online evaluator</h3>
+<p>After knowing everything about your first C program, let us see if you can code for this problem statement. For automatic evaluation, we introduce <span class="bold italic orange">Codebud</span>. Codebud is an online evaluator of the programs that you write. Here is how you will use it.</p>
+<p>For a given</p>
+
 
 <br/>
 <div class="arial bold italic text-center clay thought"><span class="orange">Practice</span> will make you <span class="orange">perfect</span>.</div>
 
 <br/>
-<a class="btn btn-default" href="{{ "" }}">Read Next</a>
+<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-27-c101-codebud %}">Read Next</a>

@@ -1,7 +1,7 @@
 ---
 layout: course_page
 title: "Programming Fundamentals"
-category:	c101
+category:	NO
 ---
 <h2 id="programming-fundamentals" class="clay">{{page.title}}</h2>
 <hr class="large orange" />
