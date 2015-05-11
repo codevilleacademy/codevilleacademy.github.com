@@ -495,6 +495,21 @@ a[class="constant-link"]:active {text-decoration: none;color:#FFF;}  /* selected
   border-color:#2EC866 ;
 }
 
+.off-white {
+  color: #EEE;
+  border-color:#EEE ;
+}
+
+.green-blue {
+  color: #199099;
+  border-color: #199099;
+}
+
+.dark-red {
+  color: #D51515;
+  border-color: #D51515;
+}
+
 .orange {
     color:#FF4E00;
     border-color:#FF4E00 ;
@@ -630,6 +645,12 @@ background-image: linear-gradient(to to right bottom, #CD1363 0%, #FB6140 100%);
   padding-left: 0;
 }
 
+.note ol li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .note li {
   list-style: none;
   text-indent: -1em;
@@ -646,6 +667,36 @@ background-image: linear-gradient(to to right bottom, #CD1363 0%, #FB6140 100%);
   border: 1px dashed #AAA;
   border-radius: 5px;
   background-color: #FFFFFF;
+}
+
+.tip {
+  padding: 10px;
+  border: 1px dashed #AAA;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.tip ul li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.tip ol li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.tip:before {
+  font-style: italic;
+  content: "Tip:";
+}
+
+.tip li:before {
+  content: "⁙";
+  font-size: 120%;
+  padding-right: 5px;
 }
 
 /* hEader Links */

@@ -90,4 +90,4 @@ category: c101
 <div class="arial bold italic text-center clay thought"><span class="orange">Well</span> begun is <span class="orange">half done</span>.</div>
 
 <br/>
-<a class="btn btn-default" href="{{ "" }}">Read Next</a>
+<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-26-c101-datatypes-in-c %}">Read Next</a>

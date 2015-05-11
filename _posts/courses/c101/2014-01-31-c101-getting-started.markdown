@@ -40,7 +40,7 @@ category:	c101
 <p>Before proceeding to the next tutorial, make sure you have a text editor to work with and GCC installed on your system. If so then you are ready to go on the next tutorial. See you there!</p>
 
 <br/>
-<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-30-c101-computer-fundamentals %}">Read Next</a>
+<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-29-c101-history-of-c %}">Read Next</a>
 
 <!--div class="code-statement clay">
 	<p class="code-question">
