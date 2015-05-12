@@ -232,4 +232,4 @@ Above example makes size of var_3 to be 4 bytes and it allows only non-negative 
 <div class="arial bold italic text-center clay thought"><span class="orange">Practice</span> will make you <span class="orange">perfect</span>.</div>
 
 <br/>
-<a class="btn btn-default" href="">Read Next</a>
+<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-25-c101-input-output %}">Read Next</a>
