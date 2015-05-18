@@ -2,6 +2,5 @@ name: Codeville
 markdown: redcarpet
 highlighter: pygments
 baseurl: ""
-header-img: /img/bg-min.png
 title: Codeville
 url: /

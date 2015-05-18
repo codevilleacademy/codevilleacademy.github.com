@@ -1,0 +1,73 @@
+.zone-box {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding-bottom: 30px;
+	margin-top: 20px;
+}
+
+.zone-content {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.zone_heading {
+	font-weight: 700;
+	color: #313131;
+	line-height: 30px;
+	font-size: 18px;
+}
+
+.zone_abstract {
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 14px;
+	color: #515151;
+}
+
+.zone_button {
+	color: #FFFFFF;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif, Ubuntu;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #52A256;
+    border-radius: 5px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    transition: all 0.4s ease;
+}
+
+.zone_button:hover, .zone_button:active, .zone_button:focus {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #659067;
+}
+
+.notice-box {
+	margin-top: 20px;
+	background-color: #E05252;
+	border: transparent;
+	border-radius: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.notice-body {
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.notice-body:first-letter {
+	font-size: 25px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.notice-body a {
+	text-decoration: none;
+	color: #FFFFFF;
+}

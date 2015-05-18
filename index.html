@@ -22,10 +22,9 @@
     <meta property="og:description" content="Codeville is a platform for personalized learning, where you can learn new computer technologies." />
     <meta name="author" content="Codeville" /> -->
     <!-- <link rel="image_src" href="http://codeville.org.in/img/cover.png" / > -->
-    <title>Learn a programming language today :: Codeville</title>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/stylish-codeville-blue.css" rel="stylesheet"/>
-    <link href="css/main.css" rel="stylesheet"/>
+    <title>Learn programming languages, share scripts and practice :: Codeville</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet"/>
     <script src="/js/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 </head>
@@ -49,45 +48,114 @@
    }(document, 'script', 'facebook-jssdk'));
 </script-->
 
-    {% include nav.html %}
-    
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <div class="image_brain"/>
-                <img src="/img/codeville_invert_large.png"/>
-                <div class="site-tagline white" style="padding-top: 40px;">Develop a <span class="quoted orange">knack</span> for coding today</div>
+    {% include cv_nav.html %}
+
+    <div class="landing_page">
+        <div class="container text-center">
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="huge_image"/>
+                        <img src="/img/logo/Codeville_orange_slant.png"/>
+                        <div class="site-tagline" style="padding-top: 40px;">Develop a <span class="quoted orange">knack</span> for coding today</div>
+                    </div>
+                </div>
             </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="{{ "/codelearn/" | prepend: site.baseurl }}" class="large_button">Codelearn</a>
+                    <a href="{{ "/codescript/" | prepend: site.baseurl }}" class="large_button">Codescript</a>
+                    <a href="{{ "/codezone/" | prepend: site.baseurl }}" class="large_button">Codezone</a>
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
         </div>
-    </header>
-    <section class="section_content diagonal">
+    </div>
+    <!--section class="section_content diagonal">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-vertical-center text-center">
-                    <div class="image_brain">
-                        <a href="{{ "/courses/c101/" | prepend: site.baseurl }}"><img src="/img/c_index.png" /></a>
+                    <div class="slant_image">
+                        <a href="{{ "/codelearn/" | prepend: site.baseurl }}"><img src="/img/logo/Codelearn_orange_slant.png" /></a>
                     </div>
                 </div>
                 <div class="col-md-6 text-vertical-center">
-                    <h1 id="fly-it" class="course_index_title heading1">C101 - Introduction to C language</h1><br/>
-                    <p class="course_index_description">An introductory course on C language that will build a rock solid foundation for problem solving, competitive programming and computer science fundamentals.</h4><br><br>
-                    <a href="{{ "/courses/c101/" | prepend: site.baseurl }}" class="codeville_button white super_bold large_button">Launch C101</a>
-                    <!--a href="{{ "/courses/cq101/" | prepend: site.baseurl }}" class="codeville_button white super_bold large_button">C101 Q n A</a-->
+                    <h1 class="course_index_title heading1">Codelearn</h1><br/>
+                    <p class="course_index_description">Want to learn some of the best programming languages? Codelearn is the place for you. Start learning today!.</h4><br><br>
+                    <a href="{{ "/codelearn/" | prepend: site.baseurl }}" class="codeville_button white super_bold large_button">Visit Codelearn</a>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section id="aim" class="site-aim">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
-                    <div class="site-aim clay" >Most <span class="quoted orange">good programmers</span> do programming not because<br/> they expect to get paid or get adulation by the public,<br/> but because it is <span class="orange">fun to program</span>.</div>
-                    <div class="quote-reference black">- Linus Torvalds</div>
+                    <div class="site-aim white" >Coding is fun!.</div>
+                    <div class="quote-reference black"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="site-aim white" ></div>
                 </div>
             </div>
         </div>        
     </section>
+
+    <section class="section_content diagonal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-vertical-center text-center">
+                    <div class="slant_image">
+                        <a href="{{ "/codescript/" | prepend: site.baseurl }}"><img src="/img/logo/Codescript_orange_slant.png" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-vertical-center">
+                    <h1 class="course_index_title heading1">Codescript</h1><br/>
+                    <p class="course_index_description">Codescript is a place where you can share and show off your scripting skills. Wrote some useful scripts? Share with the world and brag about it.</h4><br><br>
+                    <a href="{{ "/codescript/" | prepend: site.baseurl }}" class="codeville_button white super_bold large_button">Visit Codescript</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aim" class="site-aim">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="site-aim white" >Coding is fun!.</div>
+                    <div class="quote-reference black"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="site-aim white" ></div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="section_content diagonal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-vertical-center text-center">
+                    <div class="slant_image">
+                        <a href="{{ "/codezone/" | prepend: site.baseurl }}"><img src="/img/logo/Codezone_orange_slant.png" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-vertical-center">
+                    <h1 class="course_index_title heading1">Codezone</h1><br/>
+                    <p class="course_index_description">Codezone is a place with lots of programming questions to practice and learn online. Here you can find various questions and trivia about programming.</h4><br><br>
+                    <a href="{{ "/codezone/" | prepend: site.baseurl }}" class="codeville_button white super_bold large_button">Visit Codezone</a>
+                </div>
+            </div>
+        </div>
+    </section -->
+
     {% include low_head.html %}
-    {% include footer.html %}
+    {% include white_footer.html %}
 </body>
 </html>

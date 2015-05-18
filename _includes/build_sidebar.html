@@ -1,8 +1,8 @@
 {% assign var=include.course-id %}
 {% for lec in site.categories[var] %}
     {% if page.url == lec.url %}
-      <li class="active"><a href="{{lec.url}}" class="active">{{lec.title}}</a></li>
+      <li class="active"><a href="{{lec.url}}" class="active orange">{{lec.title}}</a></li>
     {% else %}
-      <li><a href="{{lec.url}}">{{lec.title}}</a></li>
+      <li><a href="{{lec.url}}" class="orange">{{lec.title}}</a></li>
     {% endif %}
 {% endfor %}
