@@ -14,7 +14,7 @@ category: c101
 		Need of input and output
 	</div>
 	<div class="para">
-		The task of any programming language is to automate some time-consuming task that we do manually, for example, in olden days we used to perform arithmetic operations like addition, subtraction, multiplication and division, manually which eventually ended up consuming lot of our time. Hence we invented computers and calculators that can compute these very very fast.
+		The task of any programming language is to automate some time-consuming task that we do manually, for example, in olden days we used to perform arithmetic operations like addition, subtraction, multiplication and division manually which eventually ended up consuming lot of our time. Hence we invented computers and calculators that can compute these very very fast.
 	</div>
 	<div class="para">
 		As we know, computers are very very fast at performing task, we give one of our task to it to perform, the computer then performs the task at a lightning speed and throws back the desired results to us.
@@ -224,7 +224,7 @@ Value of a is 10 and value of b is !
 		scanf
 	</div>
 	<div class="para">
-		<emphasis class="highlight">scanf</emphasis> is a standard built-in function that is used to read the formatted input from the standard input. It is similar to print but in opposite direction. It reads a character from the standard input, interprets them according to the format string specified and stores the result in the corresponding argument. The basic function function prototype looks like this:
+		<emphasis class="highlight">scanf</emphasis> is a standard built-in function that is used to read the formatted input from the standard input. It is similar to print but in opposite direction. It reads a character from the standard input, interprets them according to the format string specified and stores the result in the corresponding argument. The basic function prototype looks like this:
 
 {% highlight cpp %}
 int scanf( char * format, ... );

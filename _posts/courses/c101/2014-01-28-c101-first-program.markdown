@@ -108,7 +108,7 @@ Hello, Master!
 			<emphasis class="code">include</emphasis> : is the keyword that dictates the preprocessor to include the file mentioned after.
 		</li>
 		<li>
-			<emphasis class="code">stdio.h</emphasis> : is the header file that defines three variable types, several macros and various function for performing input and output.
+			<emphasis class="code">stdio.h</emphasis> : is the header file that defines three variable types, several macros and various functions for performing input and output.
 		</li>
 	</ul>
 </div>
@@ -142,7 +142,7 @@ int main() {
 {% endhighlight %}
 
 <div class="para">
-	<emphasis class="code">printf</emphasis> is a function that is defined in the file <emphasis class="code">stdio.h</emphasis>. It is primarily used to print something on the screen. When we want to provide output to the user, we use <emphasis class="code">printf</emphasis> function. The function contains a sentence <emphasis class="quoted">Hello, Master</emphasis>, which is the exact same sentence that we wanted to print on the screen, in our objective. This implies that the sentence we pass to the <emphasis class="code">printf</emphasis> function will be directly printed on the screen; this is nothing but the job of the <emphasis class="code">printf</emphasis> function.
+	<emphasis class="code">printf</emphasis> is a function that is defined in the file <emphasis class="code">stdio.h</emphasis>. It is primarily used to print something on the screen. When we want to provide output to the user, we use <emphasis class="code">printf</emphasis> function. The function contains a sentence <emphasis class="quoted">Hello, Master!</emphasis>, which is the exact same sentence that we wanted to print on the screen, in our objective. This implies that the sentence we pass to the <emphasis class="code">printf</emphasis> function will be directly printed on the screen; this is nothing but the job of the <emphasis class="code">printf</emphasis> function.
 </div>
 
 <div class="para">

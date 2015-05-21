@@ -10,7 +10,7 @@ category:	c101
 
 <section>
 	<div class="para">
-		The best way to learn any programming language is to practice it; and in order to practice it you need to have an environment set up on your machine. Every programming language has its own environment requirements. These requirements vary depending on the operating system. This tutorial will help you set up a working environment on Linux (Ubuntu). So, lets get started ...
+		The best way to learn any programming language is to practice it, and for practicing you require to have an environment set up on your machine. Every programming language has its own environment requirements. These requirements vary depending on the operating system. This tutorial will help you to set up a working environment on Linux (Ubuntu). So, lets get started ...
 	</div>
 </section>
 
@@ -24,10 +24,10 @@ category:	c101
 		To create a development environment for C language, we will require the following:
 		<ol>
 			<li>
-				<emphasis class="italic">Text Editor</emphasis> - A place where we will write our C programs.
+				<emphasis class="italic">Text Editor</emphasis> - Software where you will write your C programs.
 			</li>
 			<li>
-				<emphasis class="italic">Compiler</emphasis> - A simple software that will change your program into something magical.
+				<emphasis class="italic">Compiler</emphasis> - Software that will change your program into something executable.
 			</li>
 		</ol>
 	</div>
@@ -39,7 +39,7 @@ category:	c101
 <section>
 	<div id="text-editor" class="section-title">Text Editor</div>
 	<div class="para">
-		There are lots of good text editors in the market. You can use any one of your choice, it is not mandatory to use one. If you do not have any preference of your own then we recommend you to use <emphasis class="italic quoted">Sublime Text</emphasis>. This editor is very smooth and has a lot of in-built functionalities and features, like
+		There are lots of good text editors in the market. You can use any one of your choice, it is not mandatory to use specific one. If you do not have any preference of your own then we recommend you to use <emphasis class="italic quoted">Sublime Text</emphasis>. This editor is very smooth and has a lot of in-built functionalities and features, like
 		<ul>
 			<li>Auto-completion</li>
 			<li>Syntax Highlighting</li>
@@ -53,7 +53,7 @@ category:	c101
 <section>
 	<div id="compiler" class="section-title">Compiler</div>
 	<div class="para">
-		There are various C compilers present in the market like GNU C Compiler, Turbo C, Borland C, etc. Instead of working with varied compilers we will focus to work on the most standard compiler, the <emphasis class="italic">GNU Compiler Collection (GCC) - the GNU C Compiler</emphasis>.
+		There are various C compilers present in the market like GNU C Compiler, Turbo C, Borland C etc. Instead of working with varied compilers we will focus to work on the most standard compiler, that is the <emphasis class="italic">GNU Compiler Collection (GCC) - the GNU C Compiler</emphasis>.
 	</div>
 	<div class="para">
 		Before proceeding to the next tutorial, make sure you have a text editor to work with and GCC installed on your system. If so then you are ready to go on the next tutorial. See you there!

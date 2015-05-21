@@ -17,7 +17,7 @@ category: c101
 		<emphasis class="highlight">Variables</emphasis> are the basic data objects that are changed continuously during the program execution. Thus we infer that the variable is an entity in C language that are used to store and retrieve some values that we may require during our program execution.
 	</div>
 	<div class="para">
-		Every variable is identified by its variable name. This variable name are bounded by some rule, this implies, that you can give your variables any name unless they break the variable naming convention.
+		Every variable is identified by its variable name. This variable names are bounded by some rule, this implies, that you can give your variables any name unless they break the variable naming convention.
 	</div>
 	<div class="para">
 		<emphasis class="bold">Variable Naming conventions:</emphasis>
@@ -104,7 +104,7 @@ category: c101
 		Data Types and Sizes
 	</div>
 	<div class="para">
-		<emphasis class="highlight">Data Type</emphasis> in simple terms is "type of the data". Data type of a variable tells whit type of data will be stored in the variable.
+		<emphasis class="highlight">Data Type</emphasis> in simple terms is "type of the data". Data type of a variable tells which type of data will be stored in the variable.
 	</div>
 	<div class="para">
 		There are only few data types in C, these are
@@ -143,7 +143,7 @@ category: c101
 		Constants
 	</div>
 	<div class="para">
-		<emphasis class="highlight">Constants</emphasis> are data objects that contains a constant value of a particular type. There are some specific ways to use constants of specific types. Following table gives you and overview of using constants of specific types:
+		<emphasis class="highlight">Constants</emphasis> are data objects that contains a constant value of a particular type. There are some specific ways to use constants of specific types. Following table gives you an overview of using constants of specific types:
 	</div>
 	<table class="table">
 		<thead>
@@ -195,7 +195,7 @@ category: c101
 {% endhighlight %}
 
 <div class="para">
-	Above example declares 3 variables namely, <emphasis class="code">var_1</emphasis>, <emphasis class="code">count</emphasis> and <emphasis class="code">age</emphasis> of type <emphasis class="code">int</emphasis>; which implies that we can store integer values in these variables.
+	Above example declares 3 variables namely <emphasis class="code">var_1</emphasis>, <emphasis class="code">count</emphasis> and <emphasis class="code">age</emphasis> of type <emphasis class="code">int</emphasis>, which implies that we can store integer values in these variables.
 </div>
 
 <div class="para">
