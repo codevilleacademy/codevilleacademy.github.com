@@ -1,93 +1,133 @@
 ---
-layout: course_page
+layout: lecture-session
 title: "Introducing Codebud"
 category: c101
 ---
-<h2 id="first-program" class="clay">{{page.title}}</h2>
-<hr class="large orange" />
+<div class="lecture-title">
+	{{page.title}}
+</div>
 
-<ul id="agenda"></ul>
+{% include agenda.html %}
 
-<h3 id="what-is-codebud">What is Codebud?</h3>
-<hr class="large orange" />
-<p><span class="orabge bold">Codebud</span> is your on-the-go buddy that will tell you if you solved a problem-statement well or not. Codebud is available 24 x 7, and will help you through the learning process. Following are the steps that you will follow to test your program logic.</p>
+<section>
+	<div id="what-is-codebud" class="section-title">
+		What is Codebud?
+	</div>
+	<div class="para">
+		<emphasis class="highlight">Codebud</emphasis> is your on-the-go buddy that will tell you if you solved a problem-statement well or not. Codebud is available 24x7, and will help you through the learning process. Following are the steps that you will follow to test your program logic.
+	</div>
+</section>
 
-<br/>
-<h3 id="steps">The steps of Codebud</h3>
-<hr class="large orange" />
-<span class="light-green">Step 1</span> : Download the file of inputs.<p>Input file contains some inputs for which your program should produce correct answers. Click the button
-	<a class="btn btn-default" href="" role="button">Download</a>
-</p>
-<div class="arial italic note purple">
-	<p>The Download button may or may not be present.</p>
-</div><br/>
-<span class="light-green">Step 2</span> : Compile the program.<p>Suppose your program name is <span class="italic">program1.c</span>; then you will compile it as</p>
+<section>
+	<div id="steps" class="section-title">The steps of Codebud</div>
+	<div class="para">
+		<emphasis class="bold">Step 1</emphasis> : Download the file of inputs.
+	</div>
+	<div class="para">
+		Input file contains some inputs for which your program should produce correct answers. Click the button
+		<a class="btn btn-default" href="" role="button">Download</a>
+		<div class="note-box">
+			The Download button may or may not be present.
+		</div>
+	</div>
+	<div class="para">
+		<emphasis class="bold">Step 2</emphasis> : Compile the program.
+	</div>
+	<div class="para">
+		Suppose your program name is <emphasis class="code">program1.c</emphasis>; then you will compile it as
+	</div>
+
 {% highlight bash %}
 	gcc program1.c
 {% endhighlight %}
-<span class="light-green">Step 3</span> : Execute the program and get the output.<br/><p>You will execute the program with the file you just downloaded like this:</p>
+
+<div class="para">
+	<emphasis class="bold">Step 3</emphasis> : Execute the program and get the output.
+</div>
+<div class="para">
+	You will execute the program with the file you just downloaded like this:
+</div>
+
 {% highlight bash %}
 	./a.out < path_to_the_input_file > out.txt
 {% endhighlight %}
-<p>For example</p>
+
+<div class="para">
+	For example
+</div>
+
 {% highlight bash %}
 	./a.out < in.txt > out.txt
 {% endhighlight %}
 
-<p>But if there was no Download button for the question then follow this</li>
+<div class="para">
+	But if there was no Download button for the question then follow this
+</div>
+
 {% highlight bash %}
 	./a.out > out.txt
 {% endhighlight %}
 	
-<p>This step will generate the file <span class="italic">out.txt</span> which will contain the output of the program.</p>
+<div class="para">
+	This step will generate the file <emphasis class="code">out.txt</emphasis> which will contain the output of the program.
+</div>
 	
-<p><span class="light-green">Step 4</span> : Upload the <span class="italic">out.txt</span> you just generated.
+<div class="para">
+	<emphasis class="bold">Step 4</emphasis> : Upload the <emphasis class="code">out.txt</emphasis> you just generated.
 	<a class="btn btn-default" href="" role="button">Browse the code</a>
-</p>
-<p><span class="light-green">Step 5</span> : Click Verify button.
+</div>
+
+<div class="para">
+	<emphasis class="bold">Step 5</emphasis> : Click Verify button.
 	<a class="btn btn-default" href="" role="button">Verify</a>
-</p>
-<br/>
-<h3 id="first-task">Your first task</h3>
-<hr class="large orange" />
+</div>
+</section>
 
-<div class="code-statement clay">
-	<p class="code-question">
-		Write a program that prints the statement "Hello, Codeville C101!".
-	</p>
-	{% include code_upload_form.html qid="c101:0" %}
+<section>
+	<div id="first-task" class="section-title">
+		Your first task
+	</div>
+	<div class="code-statement">
+		<div class="code-question">
+			Write a program that prints the statement "Hello, Codeville C101!".
+		</div>
+
+{% include code_upload_form.html qid="c101:0" %}
+	
 </div>
 
-<br/>
-<div class="arial italic note purple">
-	<p>This is very similar to the last task that you performed, which was to print on the screen "Hello, Master!". Follow the steps of the codebud mentioned above and you should be do it with ease.</p>
+<div class="para">
+	This is very similar to the last task that you performed, which was to print on the screen <emphasis class="code">Hello, Master!</emphasis>. Follow the steps of the codebud mentioned above and you should be do it with ease.
 </div>
+</section>
 
-<br/>
-<h3 id="codebud-messages">Codebud Messages</h3>
-<hr class="large orange" />
-<p>After the verification is done by Codebud, a feedback message will show up at the top of the page. The message contains some terms and each term has the meaning associated with it. Following table describes the meaning associated with each term.</p>
-<table class="table table-hover">
-<thead>
-	<tr>
-		<th>Message</th>
-		<th>What it means?</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>Accepted</td>
-		<td>Your output was absolutely correct for all the inputs.</td>
-	</tr>
-	<tr>
-		<td>Incorrect</td>
-		<td>Your output was incorrect for at least one of the inputs.</td>
-	</tr>
-</tbody>
-</table>
+<section>
+	<div id="codebud-messages" class="section-title">
+		Codebud Messages
+	</div>
+	<div class="para">
+		After the verification is done by Codebud, a feedback message will show up at the top of the page. The message contains some terms and each term has the meaning associated with it. Following table describes the meaning associated with each term.
+	</div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Message</th>
+				<th>What it means?</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Accepted</td>
+				<td>Your output was absolutely correct for all the inputs.</td>
+			</tr>
+			<tr>
+				<td>Incorrect</td>
+				<td>Your output was incorrect for at least one of the inputs.</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
 
-<br/>
-<div class="arial bold italic text-center clay thought"><span class="orange">Well</span> begun is <span class="orange">half done</span>.</div>
-
-<br/>
-<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-26-c101-datatypes-in-c %}">Read Next</a>
+<section>
+	<a class="button" href="{% post_url /courses/c101/2014-01-26-c101-datatypes-in-c %}">Read Next</a>
+</section>

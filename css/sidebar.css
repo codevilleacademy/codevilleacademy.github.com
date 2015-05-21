@@ -1,0 +1,146 @@
+
+/****************/
+/*	  Sidebar   */
+/****************/
+.lecture-link {
+    display: block;
+    font-size: 13px;
+    color: #337AB7;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+
+.lecture-link:hover,
+.lecture-link:focus,
+.lecture-link:active {
+    text-decoration: none;
+    background-color: rgba(51, 122, 183, 0.8);
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.lecture-link.active {
+    text-decoration: none;
+    background-color: rgba(51, 122, 183, 0.8);
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 210px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 210px;
+    width: 0;
+    height: 100%;
+    margin-left: -210px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    box-shadow: 5px 5px 5px #888888;
+
+    border-right: 0px dashed #FF4E00;
+    background-color: transparent;
+
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 210px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 13px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 15px;
+    color: #212121;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -210px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 210px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 210px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 210px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.sidebar-brand img {
+    display: block;
+    max-width:190px;
+    max-height:95px;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1em;
+}
+
+/********************/
+/*  Course Content  */
+/********************/

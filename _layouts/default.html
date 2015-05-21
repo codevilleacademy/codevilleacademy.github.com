@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 {% include head.html %}
 {% include head_course.html %}
+{% if page.product == 'codelearn' %}
+	{% include cl_head.html %}
+{% endif %}
 <body>
+	{% if page.product == 'codelearn' %}
+		{% include cl_nav.html %}
+	{% endif %}
 	{{content}}
-	{% include low_head.html %}
 </body>
+{% include low_head.html %}
+{% include white_footer.html %}
 </html>

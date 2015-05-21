@@ -1,5 +1,5 @@
 ---
-layout: course_page
+layout: lecture-session
 title: "Getting Started"
 category:	cq101
 ---

@@ -1,0 +1,7 @@
+{% assign elem=include.elem %}
+{% assign content=include.content %}
+
+{% if elem == 'page-title' %}
+<h2 class="lecture-title">{{ content }}</h2>
+<hr/>
+{% endif %}

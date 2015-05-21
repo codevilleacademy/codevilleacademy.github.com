@@ -1,41 +1,44 @@
 ---
-layout: course_page
+layout: lecture-session
 category: c101
-title: "C101"
+title: "C101 - Introduction to C Language"
 ---
 
-<h2 class="clay"> C101 - Introduction to C Language </h2>
-<hr class="large orange" />
-<p>Greetings fellow programmers! Codeville welcomes you to C101 - Introduction to C language.</p>
-<p>This course is essentially the first step of yours into the world of hardcore programming. The world of programming is itself very fascinating, but we will try to add some bits of our own to make is even more fun to learn.</p>
+<div class="lecture-title">
+	{{page.title}}
+</div>
 
-<ul id="agenda"></ul>
+<section>
+	<div class="para">
+		Greetings fellow programmers! Codeville welcomes you to C101 - Introduction to C language.
+	</div>
 
-<br/>
-<h3 id="why-c" class="clay">Why learn C language?</h3>
-<hr class="large orange" />
-<p>C language is a general purpose programming language that is used to develop anything and
-everything that you see around, right from operating systems to spreadsheets to expert systems. C language is a very good example of a <span class="italic">"Middle Level Language"</span> because it has the capability to access the system's low level that is, machine level functions. It does not spoon-feed you with all the functionalities you need to develop something, instead it gives you basic building blocks to work with and develop some of the most amazing things.</p>
+	<div class="para">
+		This course is essentially the first step of yours into the world of hardcore programming. The world of programming is itself very fascinating, but we will try to add some bits of our own to make is even more fun to learn.
+	</div>
+</section>
 
-<br/>
-<h3 id="why-c101" class="clay">Why choose course C101?</h3>
-<hr class="large orange" />
-<p>The course C101, is designed in a manner to make you understand C language completely. This course will help you understand the basic concepts plus advanced concepts very easily. Behind every successful programmer that is a lot of programming practice; so in this course you will practice a lot on-line and solve a lot of practical programming questions that will help you understand the concepts well and solve any real world problems easily with C language.</p>
+{% include agenda.html %}
 
-<p>The icing on the cake is the 4 real world applications that you will build by the end of this course. The primary idea to build these application is the fact that</p>
-<br/>
-<div class="arial bold italic text-center clay thought">Why play games created by others, if you can <span class="orange">create</span> one by yourself.</div>
-<br/>
-<p>The 4 applications are:</p>
-<ol>
-	<li><span class="italic orange">Guess the number!</span> - A number game</li>
-	<li><span class="italic orange">Tic Tac Toe</span> - A game we all love</li>
-	<li><span class="italic orange">Game score management</span> - Learn how you can store scores of games</li>
-	<li><span class="italic orange">Chat application</span> - Similar to any chat application you use</li>
-</ol>
+<section>
+	<div id="why-c" class="section-title">
+		Why learn C language?
+	</div>
+	<div class="para">C language is a general purpose programming language that is used to develop anything and everything that you see around, right from operating systems to spreadsheets to expert systems. C language is a very good example of a <emphasis class="quoted">Middle Level Language</emphasis> because it has the capability to access the system's low level that is, machine level functions. It does not spoon-feed you with all the functionalities you need to develop something, instead it gives you basic building blocks to work with and develop some of the most amazing things.</div>
+</section>
 
-<br/>
-<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-31-c101-getting-started %}">Let's begin</a>
+<section>
+	<div id="why-c101" class="section-title">
+		Why choose course C101?
+	</div>
+	<div class="para">
+		The course C101, is designed in a manner to make you understand C language completely. This course will help you understand the basic concepts plus advanced concepts very easily. Behind every successful programmer that is a lot of programming practice; so in this course you will practice a lot on-line and solve a lot of practical programming questions that will help you understand the concepts well and solve any real world problems easily with C language.
+	</div>
+</section>
+
+<section>
+	<a class="button" href="{% post_url /courses/c101/2014-01-31-c101-getting-started %}">Let's begin</a>
+</section>
 
 <!-- {% for post in site.posts %}
     {% if post.tags contains "index" %}

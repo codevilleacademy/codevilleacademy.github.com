@@ -1,46 +1,68 @@
 ---
-layout: course_page
+layout: lecture-session
 title: "Getting Started"
 category:	c101
 ---
-<h2 id="getting-started" class="clay">{{page.title}}</h2>
-<hr class="large orange" />
-<ul id="agenda"></ul>
 
-<br/>
-<p>The best way to learn any programming language is to practice it; and in order to practice it you need to have an environment set up on your machine. Every programming language has its own environment requirements. These requirements vary depending on the operating system. This tutorial will help you set up a working environment on Linux (Ubuntu). So, lets get started ...</p>
+<div class="lecture-title">
+	{{page.title}}
+</div>
 
-<br/>
-<h3 id="requirements" class="clay">Requirements</h4>
-<hr class="orange medium"/>
-<p>To create a development environment for C language, we will require the following:</p>
-<ol>
-	<li><span class="italic">A Text editor</span> - A place where we will write our C programs.</li>
-	<li><span class="italic">A compiler</span> - A simple software that will change your program into something magical.</li>
-</ol>
-<p>So let us start setting up one by one. (Here we assume you have a Linux or Unix based operating system)</p>
+<section>
+	<div class="para">
+		The best way to learn any programming language is to practice it; and in order to practice it you need to have an environment set up on your machine. Every programming language has its own environment requirements. These requirements vary depending on the operating system. This tutorial will help you set up a working environment on Linux (Ubuntu). So, lets get started ...
+	</div>
+</section>
 
-<br/>
-<h3 id="text-editor" class="clay">Text Editor</h3>
-<hr class="orange medium"/>
-<p>There are lots of good text editors in the market. You can use any one of your choice, it is not mandatory to use one. If you do not have any preference of your own then we recommend you to use <span class="italic">"Sublime Text"</span>. This editor is very smooth and has a lot of in-built functionalities and features, like</p>
-<ul>
-	<li>Auto-completion</li>
-	<li>Syntax Highlighting</li>
-	<li>Quick Suggestions</li>
-	<li>Distraction Free mode</li>
-	<li>Quick Goto</li>
-</ul>
+{% include agenda.html %}
 
-<br/>
-<h3 id="compiler" class="clay">Compiler</h3>
-<hr class="orange medium"/>
-<p>There are various C compilers present in the market like GNU C Compiler, Turbo C, Borland C, etc. Instead of working with varied compilers we will focus to work on the most standard compiler, the <span class="italic">GNU Compiler Collection (GCC) - the GNU C Compiler</span>.</p>
+<section>
+	<div id="requirements" class="section-title">
+		Requirements
+	</div>
+	<div class="para">
+		To create a development environment for C language, we will require the following:
+		<ol>
+			<li>
+				<emphasis class="italic">Text Editor</emphasis> - A place where we will write our C programs.
+			</li>
+			<li>
+				<emphasis class="italic">Compiler</emphasis> - A simple software that will change your program into something magical.
+			</li>
+		</ol>
+	</div>
+	<div class="para">
+		So let us start setting up one by one. (Here we assume you have a Linux or Unix based operating system)
+	</div>
+</section>
 
-<p>Before proceeding to the next tutorial, make sure you have a text editor to work with and GCC installed on your system. If so then you are ready to go on the next tutorial. See you there!</p>
+<section>
+	<div id="text-editor" class="section-title">Text Editor</div>
+	<div class="para">
+		There are lots of good text editors in the market. You can use any one of your choice, it is not mandatory to use one. If you do not have any preference of your own then we recommend you to use <emphasis class="italic quoted">Sublime Text</emphasis>. This editor is very smooth and has a lot of in-built functionalities and features, like
+		<ul>
+			<li>Auto-completion</li>
+			<li>Syntax Highlighting</li>
+			<li>Quick Suggestions</li>
+			<li>Distraction Free mode</li>
+			<li>Quick Goto</li>
+		</ul>
+	</div>
+</section>
 
-<br/>
-<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-29-c101-history-of-c %}">Read Next</a>
+<section>
+	<div id="compiler" class="section-title">Compiler</div>
+	<div class="para">
+		There are various C compilers present in the market like GNU C Compiler, Turbo C, Borland C, etc. Instead of working with varied compilers we will focus to work on the most standard compiler, the <emphasis class="italic">GNU Compiler Collection (GCC) - the GNU C Compiler</emphasis>.
+	</div>
+	<div class="para">
+		Before proceeding to the next tutorial, make sure you have a text editor to work with and GCC installed on your system. If so then you are ready to go on the next tutorial. See you there!
+	</div>
+</section>
+
+<section>
+	<a class="button" href="{% post_url /courses/c101/2014-01-29-c101-history-of-c %}">Read Next</a>
+</section>
 
 <!--div class="code-statement clay">
 	<p class="code-question">

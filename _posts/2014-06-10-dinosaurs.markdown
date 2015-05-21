@@ -1,5 +1,5 @@
 ---
-layout: course_page
+layout: lecture-session
 title: "Day 1: Introduction to C Language"
 subtitle: ""
 logo: "/img/c.png"

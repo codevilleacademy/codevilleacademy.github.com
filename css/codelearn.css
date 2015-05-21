@@ -1,10 +1,16 @@
 .course-box {
+	font-family: 'PT Sans', Arial, Ubuntu, sans-serif;
+	font-size: 13px;
+
 	border: 0px solid #212121;
 	border-radius: 5px;
+	
 	padding-top: 10px;
 	padding-bottom: 30px;
 	margin-top: 20px;
+	
 	box-shadow: 0px 10px 5px #888888;
+	
 	background-color: #FFFFFF;
 }
 
@@ -33,7 +39,7 @@
 .course_abstract {
 	font-weight: 400;
 	line-height: 1.5;
-	font-size: 14px;
+	font-size: 15px;
 	color: #515151;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
@@ -48,46 +54,17 @@
 
 .course-meta-info {
 	line-height: 1.5em;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .course_instructor {
 	color: #2980B9;
 	line-height: 1.5em;
-	font-size: 13px;
-	font-weight: 400;
 }
 
 .course-actions {
 	text-align: right;
 }
-
-.course_button {
-	color: #FFFFFF;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif, Ubuntu;
-    font-size: 13px;
-    font-weight: bold;
-    background-color: #16A085;
-    border-radius: 5px;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-
-    -webkit-transition:all 0.3s ease;
-	-moz-transition:all 0.3s ease;
-	-ms-transition:all 0.3s ease;
-	-o-transition:all 0.3s ease;
-	transition:all 0.3s ease;
-}
-
-.course_button:hover, .course_button:active, .course_button:focus {
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #1abc9c;
-}
-
 
 .notice-box {
 	background-color: #405266;
@@ -114,34 +91,6 @@
 	color: #FFFFFF;
 }
 
-.share-zone {
-	text-align: right;
-	font-size: 13px;
-	color: #EFEFEF;
-	border-radius: 3px;
-}
-
-.share-zone a {
-	margin-left: 0;
-	margin-right: 0;
-	padding: 8px;
-	font-size: 13px;
-	font-weight: 700;
-	color: #FFFFFF;
-}
-
-.share-zone a:hover {
-	text-decoration: none;
-}
-
-.share_button {
-	-webkit-transition:all 0.3s ease;
-	-moz-transition:all 0.3s ease;
-	-ms-transition:all 0.3s ease;
-	-o-transition:all 0.3s ease;
-	transition:all 0.3s ease;
-}
-
 .facebook {
 	background-color: #3B5998;
 }
@@ -164,4 +113,254 @@
 
 .google-plus:hover {
 	background-color: #ac2d1e;
+}
+
+
+/*****************************/
+/*    Section Title Links    */
+/*****************************/
+.header-link {
+	opacity: 0;
+	text-decoration: none;
+	
+	-webkit-transition: opacity 0.3s ease-in-out 0.1s;
+	-moz-transition: opacity 0.3s ease-in-out 0.1s;
+	-ms-transition: opacity 0.3s ease-in-out 0.1s;
+	-o-transition:opacity 0.3s ease-in-out 0.1s;
+	transition:opacity 0.3s ease-in-out 0.1s;
+}
+
+.section-title:hover .header-link {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.get_link_button {
+	display: inline-block;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-size: 12px;
+    font-weight: 700;
+    
+    /*background-color: #4CAF50;
+    border-radius: 5px;
+    color: #EFEFEF;*/
+    border: 1px solid #4CAF50;
+
+    background-color: #FEFEFE;
+    border-radius: 5px;
+    color: #4CAF50;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+
+.get_link_button:hover, .get_link_button:active, .get_link_button:focus {
+  text-decoration: none;
+  border: none;
+  color: #8BC34A;
+  border: 1px solid #8BC34A;
+  /*color: #FEFEFE;*/
+  /*background-color: #8BC34A;*/
+}
+
+/*****************************/
+/* Lecture Session Sidelinks */
+/*****************************/
+.lecture-session-links {
+	padding-left: 0;
+}
+
+.list-title {
+	color: #717171;
+	border-bottom: 3px solid #717171;
+}
+
+.lecture-session-links li {
+    text-indent: 5px;
+    line-height: 30px;
+    list-style-type: none;
+}
+
+.lecture-link {
+	display: block;
+	font-size: 13px;
+	color: #337AB7;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+
+.lecture-link:hover,
+.lecture-link:focus,
+.lecture-link:active {
+	text-decoration: none;
+	background-color: rgba(51, 122, 183, 0.8);
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+.lecture-link.active {
+	text-decoration: none;
+	background-color: rgba(51, 122, 183, 0.8);
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+
+/*****************************/
+/*  Lecture Session content  */
+/*****************************/
+
+section {
+	margin-top: 20px;
+}
+
+section li {
+	line-height: 1.8;
+}
+
+.lecture-session-content{
+	font-family: 'PT Sans', Arial, Ubuntu, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: justify;
+	line-height: 1.5;
+	color: #515151;
+}
+
+.lecture-title {
+	font-weight: 700;
+	font-size: 28px;
+	color: #34495E;
+
+	border-bottom: 1px solid #B6B6B6;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 20px;
+	color: #34495E;
+
+	border-bottom: 1px solid #B6B6B6;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+
+	cursor: pointer;
+
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+
+.section-title:hover {
+	
+}
+
+.para {
+	margin-bottom: 10px;
+	/*font-family: 'PT Sans', Ubuntu, Arial, sans-serif;*/
+	/*font-family: "Source Sans Pro", Ubuntu, Arial, sans-serif;*/
+}
+
+emphasis {
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+
+emphasis[class="italic"] {
+	font-style: italic;
+}
+
+emphasis[class="bold"] {
+	font-weight: bold;
+}
+
+emphasis[class="highlight"] {
+	font-weight: 400;
+	color: #FEFEFE;
+
+	padding: 5px;
+	border-radius: 5px;
+
+	background-color: #8BC34A;
+
+	cursor: pointer;
+}
+
+emphasis[class="highlight"]:hover {	
+	background-color: #0288D1;
+}
+
+emphasis[class="code"] {
+	font-family: Courier, Ubuntu, Arial;
+	font-weight: 400;
+	color: #FEFEFE;
+
+	padding: 5px;
+	border-radius: 5px;
+
+	background-color: #95A5A6;
+}
+
+/*****************************/
+/*      Lecture Aganeda      */
+/*****************************/
+#agenda:before {
+	font-weight: 700;
+	font-style: italic;
+	content: "Quick-links";
+}
+
+#agenda ul li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#agenda li {
+	list-style: none;
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+#agenda li:before {
+	/*content: "⁍";*/
+	padding-right: 5px;
+}
+
+#agenda li a {
+	color: #337AB7;
+}
+
+#agenda li a:hover,
+#agenda li a:focus,
+#agenda li a:active {
+	text-decoration: none;
+	border-bottom: 1px dashed #337AB7;
+}
+
+#agenda {
+	padding: 10px;
+	background-color: #FEFEFE;
+	box-shadow: 0px 3px 3px #777777;
 }

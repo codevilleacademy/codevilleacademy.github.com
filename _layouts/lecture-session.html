@@ -1,0 +1,25 @@
+---
+layout: basic-page
+product: codelearn
+---
+<div class="row">
+    <div class="col-md-9 col-md-offset-0">
+        <div class="lecture-session-content">
+            {{content}}
+        </div>
+    </div>
+    <div class="col-md-3 col-md-offset-0">
+        <ul class="lecture-session-links">
+            <li class="list-title">
+                Lecture Sessions
+            </li>
+            {% assign course-id = page.category %}
+            {% include build_sidebar.html course-id=course-id %}
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-9 col-md-offset-0">
+        {% include share.html %}
+    </div>
+</div>

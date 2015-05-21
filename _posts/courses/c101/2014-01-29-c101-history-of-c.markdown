@@ -1,34 +1,51 @@
 ---
-layout: course_page
-title: "Brief history of C language"
+layout: lecture-session
+title: "History of C language"
 category: c101
 ---
-<h2 id="what-is-c" class="clay">{{page.title}}</h2>
-<hr class="large orange" />
-<ul id="agenda"></ul>
-<br/>
-<p>C language is a general-purpose computer programming language; with general purpose it is implied that the C language is used to create general-purpose applications, that is, it is not meant to do some specific tasks only, rather it is designed to suit any system in the world and can be used to create any application possible. C language hands down beats other programming languages in terms of speed. The ability of C language to be able to execute efficiently on any system makes it an important language to learn. It is believed that C language creates a foundation that is very useful in learning any higher level languages.</p>
 
-<br/>
-<h3 id="capabilities-of-c" class="clay">Cool just got cooler</h2>
-<hr class="large orange" />
-<p>Here are some of the applications and devices that primarily use C language for its operation. The most important task that C can do most efficiently is the development of <span class="bold italic">Operating Systems</span>. Most of the operating systems has it core section implemented completely in C language. Unix and Linux operating systems are based completely on C language.</p>
-<p>Right from <span class="bold italic">supercomputers</span> to <span class="bold italic">embedded systems</span>, most of the devices somehow depend on C language for its operation. The high-definition <span class="bold italic">computer games</span> that you play on your computer, or the songs that you hear, or the video that you see are processed using C language.</p>
+<div class="lecture-title">
+	{{page.title}}
+</div>
 
-<br/>
-<div class="arial bold italic text-center clay thought">C language was originally developed by <span class="orange">Dennis Ritchie</span> between 1969 and 1973 at AT&T Bell Labs.</div>
+<section>
+	<div class="para">
+		C language is a general-purpose computer programming language; with general purpose it is implied that the C language is used to create general-purpose applications, that is, it is not meant to do some specific tasks only, rather it is designed to suit any system in the world and can be used to create any application possible. C language hands down beats other programming languages in terms of speed. The ability of C language to be able to execute efficiently on any system makes it an important language to learn. It is believed that C language creates a foundation that is very useful in learning any higher level languages.
+	</div>
+</section>
 
-<br/>
-<h3 id="characterisitcs-of-c" class="clay">Characteristics of C Language</h2>
-<hr class="large orange" />
-<p>C language exhibits following characteristics. Some of you may find some terms used below tough to understand, but you need not worry these characteristics are listed just to give an emphasis on the greatness of C language.</p>
-<ul>
-	<li>There are large number of arithmetic and logical operators available.</li>
-	<li>More than one assignment can be performed in one statement.</li>
-	<li>User defined types and heterogeneous types possible to define.</li>
-	<li>Low level access to computer memory is possible.</li>
-	<li>Conditional compilation is possible with the use of macros.</li>
-</ul>
+{% include agenda.html %}
 
-<br/>
-<a class="btn btn-default" href="{% post_url /courses/c101/2014-01-28-c101-first-program %}">Read Next</a>
+<section>
+	<div id="capabilities-of-c" class="section-title">Cool just got cooler</div>
+	<div class="para">
+		Here are some of the applications and devices that primarily use C language for its operation. The most important task that C can do most efficiently is the development of <emphasis class="italic">Operating Systems</emphasis>. Most of the operating systems has it core section implemented completely in C language. Unix and Linux operating systems are based completely on C language.
+	</div>
+	<div class="para">
+		Right from <emphasis class="italic">supercomputers</emphasis> to <emphasis class="italic">embedded systems</emphasis>, most of the devices somehow depend on C language for its operation. The high-definition <emphasis class="italic">computer games</emphasis> that you play on your computer, or the songs that you hear, or the video that you see are processed using C language.
+	</div>
+</section>
+
+<section>
+	<div class="fact-box">
+		C language was originally developed by <emphasis class="quoted">Dennis Ritchie</emphasis> between 1969 and 1973 at AT&T Bell Labs.
+	</div>
+</section>
+
+<section>
+	<div id="characterisitcs-of-c" class="section-title">Characteristics of C Language</div>
+	<div class="para">
+		C language exhibits following characteristics. Some of you may find some terms used below tough to understand, but you need not worry these characteristics are listed just to give an emphasis on the greatness of C language.
+		<ul>
+			<li>There are large number of arithmetic and logical operators available.</li>
+			<li>More than one assignment can be performed in one statement.</li>
+			<li>User defined types and heterogeneous types possible to define.</li>
+			<li>Low level access to computer memory is possible.</li>
+			<li>Conditional compilation is possible with the use of macros.</li>
+		</ul>
+	</div>
+</section>
+
+<section>
+	<a class="button" href="{% post_url /courses/c101/2014-01-28-c101-first-program %}">Read Next</a>
+</section>

@@ -21,13 +21,14 @@ $(document).ready( function() {
         
     });
     $(function() {
-      return $("h2, h3, h4, h5, h6").each(function(i, el) {
+      return $(".section-title").each(function(i, el) {
         var $el, icon, id;
         $el = $(el);
         id = $el.attr('id');
-        icon = '&#8267';
+        icon = 'Get Link';
         if (id) {
-            return $el.prepend($("<a/>").addClass("header-link").attr("href", "#" + id).html(icon));
+            /*return $el.append($("<a/>").addClass("header-link").attr("href", "#" + id).html(icon));*/
+            return $el.append($("<a/>").addClass("header-link get_link_button").attr("href", "#" + id).html(icon));
         }
       });
     });
@@ -36,10 +37,10 @@ $(document).ready( function() {
         var $el, h="";
         $el = $(el);
 
-        $("h3, h4, h5, h6").each(function(j, e) {
+        $(".section-title").each(function(j, e) {
             var id = $(e).attr('id');
             var li = $('<li/>').appendTo($el);
-            var aa = $('<a/>').attr("href", "#" + id).html($(e).text().replace("⁋","")).appendTo(li);
+            var aa = $('<a/>').attr("href", "#" + id).html($(e).text().replace("Get Link","")).appendTo(li);
         });
         return $el;
       });
