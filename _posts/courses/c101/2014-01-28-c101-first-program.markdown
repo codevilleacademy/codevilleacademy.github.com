@@ -26,7 +26,7 @@ category: c101
 		Please greet me!
 	</div>
 	<div class="para">
-		Suppose, you are the master of the universe and you are in total control of everything that exists. Now you want that every computer in the universe should display "Hello, Master!", when they start. You being a naive programmer will have to write a program that will print "Hello, Master!" on the screen when it is executed.
+		Suppose, you are the master of the universe and you are in total control of everything that exists. Now you want that every computer in the universe should display <emphasis class="bold">"Hello, Master!"</emphasis>, when they start. You being a naive programmer will have to write a program that will print <emphasis class="bold">"Hello, Master!"</emphasis> on the screen when it is executed.
 	</div>
 	<div class="para">
 		Given this task, you will write a program and that will be stored it in a text file called <emphasis class="code">hello.c</emphasis>
@@ -122,10 +122,10 @@ int main() {
 {% endhighlight %}
 
 <div class="para">
-	This line marks the start of <emphasis class="code">main</emphasis> function. The main function is the most important function in C; as it acts as an entry point to the execution. Whenever we execute the C program, the execution starts from the <emphasis class="code">main</emphasis> function. Hence this function is the function that must be present in the C code.
+	This line marks the start of <emphasis class="bold">main</emphasis> function. The main function is the most important function in C; as it acts as an entry point to the execution. Whenever we execute the C program, the execution starts from the <emphasis class="code">main</emphasis> function. Hence this function is the function that must be present in the C code.
 	<ul>
 		<li>
-			<emphasis class="code">int</emphasis> : is the data-type in C, which in this context is the return-type of the function. This implies that the function will return the value whose type is <emphasis class="italic">int</emphasis>. We will go into the data-types later in the discussion.
+			<emphasis class="code">int</emphasis> : is the data-type in C, which in this context is the return-type of the function. This implies that the function will return the value whose type is <emphasis class="bold">int</emphasis>. We will go into the data-types later in the discussion.
 		</li>
 		<li>
 			<emphasis class="code">main</emphasis> : is the keyword which is the name of the function that will be starting point of the program execution. Hence if the name is changed then executor, in no way will understand where to start the execution.
@@ -142,7 +142,7 @@ int main() {
 {% endhighlight %}
 
 <div class="para">
-	<emphasis class="code">printf</emphasis> is a function that is defined in the file <emphasis class="code">stdio.h</emphasis>. It is primarily used to print something on the screen. When we want to provide output to the user, we use <emphasis class="code">printf</emphasis> function. The function contains a sentence <emphasis class="quoted">Hello, Master!</emphasis>, which is the exact same sentence that we wanted to print on the screen, in our objective. This implies that the sentence we pass to the <emphasis class="code">printf</emphasis> function will be directly printed on the screen; this is nothing but the job of the <emphasis class="code">printf</emphasis> function.
+	<emphasis class="code">printf</emphasis> is a function that is defined in the file <emphasis class="code">stdio.h</emphasis>. It is primarily used to print something on the screen. When we want to provide output to the user, we use <emphasis class="code">printf</emphasis> function. The function contains a sentence <emphasis class="bold">"Hello, Master!"</emphasis>, which is the exact same sentence that we wanted to print on the screen, in our objective. This implies that the sentence we pass to the <emphasis class="code">printf</emphasis> function will be directly printed on the screen; this is nothing but the job of the <emphasis class="code">printf</emphasis> function.
 </div>
 
 <div class="para">
@@ -177,3 +177,5 @@ This is a closing curly bracket which implies the end of the scope of function <
 <section>
 	<a class="button" href="{% post_url /courses/c101/2014-01-27-c101-codebud %}">Read Next</a>
 </section>
+
+{% include keywords.html %}

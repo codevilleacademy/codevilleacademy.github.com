@@ -131,3 +131,5 @@ category: c101
 <section>
 	<a class="button" href="{% post_url /courses/c101/2014-01-26-c101-datatypes-in-c %}">Read Next</a>
 </section>
+
+{% include keywords.html %}

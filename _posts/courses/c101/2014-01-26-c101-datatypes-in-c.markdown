@@ -244,7 +244,7 @@ double var_6 = 2.76;
 	</div>
 	<div class="para">
 		<emphasis class="highlight">
-			short and long:
+			short and long
 		</emphasis>
 	</div>
 	<div class="para">
@@ -262,7 +262,7 @@ long int var_2;
 
 <div class="para">
 	<emphasis class="highlight">
-		signed and unsigned:
+		signed and unsigned
 	</emphasis>
 </div>
 <div class="para">
@@ -293,3 +293,5 @@ Above example makes size of <emphasis class="code">var_3</emphasis> to be 4 byte
 <section>
 	<a class="button" href="{% post_url /courses/c101/2014-01-25-c101-input-output %}">Read Next</a>
 </section>
+
+{% include keywords.html %}

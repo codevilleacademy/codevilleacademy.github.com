@@ -45,6 +45,20 @@ $(document).ready( function() {
         return $el;
       });
     });
+
+    $(function() {
+      return $("#keywords").each(function(i, el) {
+        var $el, l="";
+        $el = $(el);
+
+        $("emphasis[class='highlight']").each(function(j, e) {
+            var text = $(e).html();
+            $el.append('<emphasis class="keyword">' + text + '</emphasis>');
+        });
+        return $el;
+      });
+    });
+
 });
 
 $(document).ready(function() { 

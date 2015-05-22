@@ -10,7 +10,7 @@ category: c101
 
 <section>
 	<div class="para">
-		C language is a general-purpose computer programming language; with general purpose it is implied that the C language is used to create general-purpose applications, that is, it is not meant to do some specific tasks only, rather it is designed to suit any system in the world and can be used to create any application possible. C language hands down beats other programming languages in terms of speed. The ability of C language to be able to execute efficiently on any system makes it an important language to learn. It is believed that C language creates a foundation that is very useful in learning any higher level languages.
+		C language is a <emphasis class="highlight">general-purpose</emphasis> computer programming language; with general purpose it is implied that the C language is used to create general-purpose applications, that is, it is not meant to do some specific tasks only, rather it is designed to suit any system in the world and can be used to create any application possible. C language hands down beats other programming languages in terms of speed. The ability of C language to be able to execute efficiently on any system makes it an important language to learn. It is believed that C language creates a foundation that is very useful in learning any higher level languages.
 	</div>
 </section>
 
@@ -19,10 +19,10 @@ category: c101
 <section>
 	<div id="capabilities-of-c" class="section-title">Cool just got cooler</div>
 	<div class="para">
-		Here are some of the applications and devices that primarily use C language for its operations. The most important task that C can do most efficiently is the development of <emphasis class="italic">Operating Systems</emphasis>. Most of the operating systems has it core section implemented completely in C language. Unix and Linux operating systems are completely based on C language.
+		Here are some of the applications and devices that primarily use C language for its operations. The most important task that C can do most efficiently is the development of <emphasis class="bold">Operating Systems</emphasis>. Most of the operating systems has it core section implemented completely in C language. Unix and Linux operating systems are completely based on C language.
 	</div>
 	<div class="para">
-		Right from <emphasis class="italic">supercomputers</emphasis> to <emphasis class="italic">embedded systems</emphasis>, most of the devices somehow depend on C language for its operation. The high-definition <emphasis class="italic">computer games</emphasis> that you play on your computer, or the songs that you hear, or the video that you see are processed using C language.
+		Right from <emphasis class="bold">supercomputers</emphasis> to <emphasis class="bold">embedded systems</emphasis>, most of the devices somehow depend on C language for its operation. The high-definition <emphasis class="bold">computer games</emphasis> that you play on your computer, or the songs that you hear, or the video that you see are processed using C language.
 	</div>
 </section>
 
@@ -49,3 +49,5 @@ category: c101
 <section>
 	<a class="button" href="{% post_url /courses/c101/2014-01-28-c101-first-program %}">Read Next</a>
 </section>
+
+{% include keywords.html %}
