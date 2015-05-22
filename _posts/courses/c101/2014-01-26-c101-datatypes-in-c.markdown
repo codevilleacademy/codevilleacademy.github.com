@@ -2,6 +2,7 @@
 layout: lecture-session
 title: "Variables and Datatypes"
 category: c101
+comments: true
 ---
 <div class="lecture-title">
 	{{page.title}}

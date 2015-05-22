@@ -2,6 +2,7 @@
 layout: lecture-session
 title: "First Program in C"
 category: c101
+comments: true
 ---
 <div class="lecture-title">
 	{{page.title}}

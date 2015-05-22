@@ -2,6 +2,7 @@
 layout: lecture-session
 title: "Input and Output"
 category: c101
+comments: true
 ---
 <div class="lecture-title">
 	{{page.title}}
@@ -176,8 +177,8 @@ Value of a is 10 and value of b is !
 
 <div class="para">Format string, the first argument of the <emphasis class="code">printf</emphasis> function, contains two types of characters:
 	<ul>
-		<li>Ordinary Characters : Copied to the output as it is.</li>
-		<li>Conversion Specification : Prints the next successive argument to <emphasis class="code">printf</emphasis> as character stream.</li>
+		<li><emphasis class="bold">Ordinary Characters</emphasis> : Copied to the output as it is.</li>
+		<li><emphasis class="bold">Conversion Specification</emphasis> : Prints the next successive argument to <emphasis class="code">printf</emphasis> as character stream.</li>
 	</ul>
 </div>
 

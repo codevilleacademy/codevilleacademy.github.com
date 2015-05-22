@@ -2,6 +2,7 @@
 layout: lecture-session
 title: "Getting Started"
 category:	c101
+comments: true
 ---
 
 <div class="lecture-title">
