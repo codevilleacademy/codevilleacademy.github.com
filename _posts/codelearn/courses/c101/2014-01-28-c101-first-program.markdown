@@ -176,7 +176,7 @@ This is a closing curly bracket which implies the end of the scope of function <
 </section>
 
 <section>
-	<a class="button" href="{% post_url /courses/c101/2014-01-27-c101-codebud %}">Read Next</a>
+	<a class="button" href="{% post_url /codelearn/courses/c101/2014-01-27-c101-codebud %}">Read Next</a>
 </section>
 
 {% include keywords.html %}

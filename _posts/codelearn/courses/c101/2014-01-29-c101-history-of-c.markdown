@@ -48,7 +48,7 @@ comments: true
 </section>
 
 <section>
-	<a class="button" href="{% post_url /courses/c101/2014-01-28-c101-first-program %}">Read Next</a>
+	<a class="button" href="{% post_url /codelearn/courses/c101/2014-01-28-c101-first-program %}">Read Next</a>
 </section>
 
 {% include keywords.html %}

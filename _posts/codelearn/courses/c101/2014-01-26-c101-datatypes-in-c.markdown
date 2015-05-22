@@ -292,7 +292,7 @@ Above example makes size of <emphasis class="code">var_3</emphasis> to be 4 byte
 </section>
 
 <section>
-	<a class="button" href="{% post_url /courses/c101/2014-01-25-c101-input-output %}">Read Next</a>
+	<a class="button" href="{% post_url /codelearn/courses/c101/2014-01-25-c101-input-output %}">Read Next</a>
 </section>
 
 {% include keywords.html %}

@@ -54,7 +54,7 @@ comments: true
 <section>
 	<div id="compiler" class="section-title">Compiler</div>
 	<div class="para">
-		There are various C compilers present in the market like GNU C Compiler, Turbo C, Borland C etc. Instead of working with varied compilers we will focus to work on the most standard compiler, that is the GNU Compiler Collection (GCC) - the <emphasis class="highlight">GNU C Compiler</emphasis>.
+		There are various C compilers present in the market like GNU C Compiler, Turbo C, Borland C etc. We will focus on using the standard GNU Compiler Collection (GCC) - the <emphasis class="highlight">GNU C Compiler</emphasis>
 	</div>
 	<div class="para">
 		Before proceeding to the next tutorial, make sure you have a text editor to work with and GCC installed on your system. If so then you are ready to go on the next tutorial. See you there!
@@ -62,7 +62,7 @@ comments: true
 </section>
 
 <section>
-	<a class="button" href="{% post_url /courses/c101/2014-01-29-c101-history-of-c %}">Read Next</a>
+	<a class="button" href="{% post_url /codelearn/courses/c101/2014-01-29-c101-history-of-c %}">Read Next</a>
 </section>
 
 {% include keywords.html %}
