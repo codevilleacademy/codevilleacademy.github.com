@@ -7,18 +7,13 @@
 
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <meta name="description" content="I recently moved this blog from WordPress to Jekyll and created a site structure from the plain vanilla install of Jekyll. The first thing I noticed after mo...">
-    <meta property="og:description" content="I recently moved this blog from WordPress to Jekyll and created a site structure from the plain vanilla install of Jekyll. The first thing I noticed after mo...">
+    <meta name="description" content="{% if page.share_desc %} {{page.share_desc}} {% else %} {{site.share_desc}} {% endif %}">
+    <meta property="og:description" content="{% if page.share_desc %} {{page.share_desc}} {% else %} {{site.share_desc}} {% endif %}">
     <meta property="og:site_name" content="Codeville">
     <meta property="og:locale" content="en_us">
      
     <meta property="og:type" content="article">
-    <meta itemprop="datePublished" content="2015-05-13">
-    <meta property="article:published_time" content="2014-05-13">
-    <meta itemprop="dateModified" content="2015-05-13">
-    <meta property="article:modified_time" content="2015-05-13">
-    <meta property="og:updated_time" content="2015-04-13">
-    <meta property="og:title" content="{{page.title}} - {{site.title}}">
+    <meta property="og:title" content="{{page.title}}">
     <meta property="og:url" content="{{site.url}}{{page.url}}">
     <meta property="og:image" 
         content="{% if page.share_img %} {{site.url}}{{page.share_image}} {% else %} {{site.url}}{{site.share_image}} {% endif %} "/>
@@ -26,12 +21,9 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "/css/form.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/bootstrap.css" | prepend: site.baseurl }}">
-
-    <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
 
     <script src="/js/jquery.js"></script>
