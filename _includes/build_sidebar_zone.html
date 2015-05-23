@@ -1,8 +1,8 @@
 {% assign var=include.zone-id %}
 {% for en in site.categories[var] %}
     {% if page.url == en.url %}
-      <li class="active"><a href="{{en.url}}" class="active orange">{{en.title}}</a></li>
+      <li class="active"><a href="{{en.url}}" class="session-link active">{{en.title}}</a></li>
     {% else %}
-      <li><a href="{{en.url}}" class="orange">{{en.title}}</a></li>
+      <li><a href="{{en.url}}" class="session-link">{{en.title}}</a></li>
     {% endif %}
 {% endfor %}

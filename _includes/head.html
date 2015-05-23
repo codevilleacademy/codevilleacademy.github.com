@@ -1,5 +1,4 @@
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,17 +6,16 @@
 
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <meta name="keywords" content="coding, problem solving, c, script, sharing, c mcq, online practice"/>
-    <meta name="description" content="{% if page.share_desc %} {{page.share_desc}} {% else %} {{site.share_desc}} {% endif %}">
-    <meta property="og:description" content="{% if page.share_desc %} {{page.share_desc}} {% else %} {{site.share_desc}} {% endif %}">
+    <meta name="keywords" content="{% if page.keywords %}{{page.keywords}},{% endif %}{{site.keywords}}"/>
+    <meta name="description" content="{% if page.share_desc %}{{page.share_desc}}{% else %}{{site.share_desc}}{% endif %}">
+    <meta property="og:description" content="{% if page.share_desc %}{{page.share_desc}} {% else %}{{site.share_desc}}{% endif %}">
     <meta property="og:site_name" content="Codeville">
     <meta property="og:locale" content="en_us">
-     
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{page.title}}">
     <meta property="og:url" content="{{site.url}}{{page.url}}">
     <meta property="og:image" 
-        content="{% if page.share_img %} {{site.url}}{{page.share_image}} {% else %} {{site.url}}{{site.share_image}} {% endif %} "/>
+        content="{% if page.share_img %}{{site.url}}{{page.share_image}}{% else %}{{site.url}}{{site.share_image}}{% endif %}"/>
     <meta property="fb:app_id" content="302184056577324"/>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

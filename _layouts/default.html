@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-{% include head_course.html %}
-{% if page.product == 'codelearn' %}
+
+{% case page.product %}
+{% when 'codelearn' %}
+	{% include head_course.html %}
 	{% include cl_head.html %}
-{% endif %}
+{% when 'codezone' %}
+	{% include cz_head.html %}
+{% endcase %}
 <body>
-	{% if page.product == 'codelearn' %}
+	{% case page.product %}
+	{% when 'codelearn' %}
 		{% include cl_nav.html %}
-	{% endif %}
+	{% when 'codezone' %}
+		{% include cz_nav.html %}
+	{% endcase %}
 	{{content}}
 	{% include disqus.html %}
 </body>
