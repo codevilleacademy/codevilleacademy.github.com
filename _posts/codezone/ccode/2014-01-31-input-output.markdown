@@ -12,9 +12,7 @@ category: ccode
 <div class="question">
 	<div class="para">Write a program to take input an integer and print it as it is followed by a newline character.</div>
 </div>
-{% include code-upload.html 
-	qid="cc:1"
-%}
+{% include code-upload.html qid="cc:1" %}
 <div class="explanation">
 	<div class="actions text-right">
 		<button class="btn link-button explanation-button">How to?</button>

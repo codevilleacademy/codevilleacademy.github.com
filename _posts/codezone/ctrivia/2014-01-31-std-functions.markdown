@@ -24,13 +24,7 @@ int main(int argc, char * argv[]) {
 {% endhighlight %}
 </div>
 <div class="options">
-{% include options.html 
-	o1="0" 
-	o2="Compilation Error" 
-	o3="Runtime Error"
-	o4="2" 
-	qid="ct:1"
-%}
+{% include options.html o1="0" o2="Compilation Error" o3="Runtime Error" o4="2" qid="ct:1" %}
 </div>
 <div class="explanation">
 	<div class="actions text-right">
