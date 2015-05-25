@@ -212,7 +212,3 @@ emphasis[class="code"] {
 
 	background-color: #95A5A6;
 }
-
-emphasis[class="code"]:hover {
-	font-weight: 700;
-}

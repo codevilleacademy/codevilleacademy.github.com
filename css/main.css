@@ -376,6 +376,10 @@ input[readonly] {
   font-weight: 700;
 }
 
+.steps {
+  font-size: 13px;
+}
+
 .code-statement {
   border: 1px solid #000;
   padding: 10px;

@@ -93,7 +93,7 @@ comments: true
 			Write a program that prints the statement "Hello, Codeville C101!".
 		</div>
 
-{% include code_upload_form.html qid="c101:0" %}
+{% include code-upload.html qid="c101:0" %}
 	
 </div>
 
