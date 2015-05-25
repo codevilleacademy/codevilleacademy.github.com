@@ -210,8 +210,8 @@
   margin-top: 20px;
   background-color: #FFFFFF;
   font-size:13px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   border-top: 0px solid #BF5330 ;
 
   margin-left: auto;
@@ -236,6 +236,9 @@
   color: #818181;
   font-size: 13px;
   font-weight: 700;
+
+  margin-right: 20px;
+
   -webkit-transition:all 0.3s ease;
   -moz-transition:all 0.3s ease;
   -ms-transition:all 0.3s ease;
