@@ -18,5 +18,5 @@ int main() {
 {% endhighlight %}
 
 	</p>
-	{% include mcq_form.html qid="cq101:0" o1="Hello, Codeville!" o2="Hello, Codeville1!" o3="Hello, Codeville2!" o4="Hello, Codeville3!" %}
+	{% include options.html qid="cq101:0" o1="Hello, Codeville!" o2="Hello, Codeville1!" o3="Hello, Codeville2!" o4="Hello, Codeville3!" %}
 </div>

@@ -8,7 +8,7 @@ comments: true
 	{{page.title}}
 </div>
 
-{% include agenda.html %}
+{% include /ui/agenda.html %}
 
 <section>
 	<div id="variables" class="section-title">
@@ -295,4 +295,4 @@ Above example makes size of <emphasis class="code">var_3</emphasis> to be 4 byte
 	<a class="button" href="{% post_url /codelearn/courses/c101/2014-01-25-c101-input-output %}">Read Next</a>
 </section>
 
-{% include keywords.html %}
+{% include /ui/keywords.html %}

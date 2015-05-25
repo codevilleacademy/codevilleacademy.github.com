@@ -1,0 +1,31 @@
+{% assign o1 = include.o1 %}
+{% assign o2 = include.o2 %}
+{% assign o3 = include.o3 %}
+{% assign o4 = include.o4 %}
+{% assign qid = include.qid %}
+<form class="form-inline ansform" method="POST" action="https://vast-eyrie-2726.herokuapp.com/evalmcq" name="ansform" enctype="multipart/form-data" validate>
+	<div class="row">
+		<input class="button" type="hidden" value="{{qid}}" name="_id" class="form-control" placeholder="_id here" id="_id">
+	</div>
+	<div class="row mcq_options">
+		<div class="col-md-6">
+			<label><input type="radio" name="mcqgroup" value="a" required>&nbsp;&nbsp;{{o1}}</label>
+		</div>
+		<div class="col-md-6">
+			<label><input type="radio" name="mcqgroup" value="b" required>&nbsp;&nbsp;{{o2}}</label>
+		</div>
+	</div>
+	<div class="row mcq_options">
+		<div class="col-md-6">
+			<label><input type="radio" name="mcqgroup" value="c" required>&nbsp;&nbsp;{{o3}}</label>
+		</div>
+		<div class="col-md-6">
+			<label><input type="radio" name="mcqgroup" value="d" required>&nbsp;&nbsp;{{o4}}</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 actions">
+			<button type="submit" class="btn button">Check your answer</button>
+		</div>
+	</div>
+</form>

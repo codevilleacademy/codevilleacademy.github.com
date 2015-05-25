@@ -1,0 +1,40 @@
+<script>
+    $(function() {
+      return $(".section-title").each(function(i, el) {
+        var $el, icon, id;
+        $el = $(el);
+        id = $el.attr('id');
+        icon = 'Get Link';
+        if (id) {
+            /*return $el.append($("<a/>").addClass("header-link").attr("href", "#" + id).html(icon));*/
+            return $el.append($("<a/>").addClass("header-link get_link_button").attr("href", "#" + id).html(icon));
+        }
+      });
+    });
+    $(function() {
+      return $("#agenda").each(function(i, el) {
+        var $el, h="";
+        $el = $(el);
+
+        $(".section-title").each(function(j, e) {
+            var id = $(e).attr('id');
+            var li = $('<li/>').appendTo($el);
+            var aa = $('<a/>').attr("href", "#" + id).html($(e).text().replace("Get Link","")).appendTo(li);
+        });
+        return $el;
+      });
+    });
+
+    $(function() {
+      return $("#keywords").each(function(i, el) {
+        var $el, l="";
+        $el = $(el);
+
+        $("emphasis[class='highlight']").each(function(j, e) {
+            var text = $(e).html();
+            $el.append('<emphasis class="keyword">' + text + '</emphasis>');
+        });
+        return $el;
+      });
+    });
+</script>

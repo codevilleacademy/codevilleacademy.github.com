@@ -15,7 +15,7 @@ comments: true
 	</div>
 </section>
 
-{% include agenda.html %}
+{% include /ui/agenda.html %}
 
 <section>
 	<div id="capabilities-of-c" class="section-title">Cool just got cooler</div>
@@ -51,4 +51,4 @@ comments: true
 	<a class="button" href="{% post_url /codelearn/courses/c101/2014-01-28-c101-first-program %}">Read Next</a>
 </section>
 
-{% include keywords.html %}
+{% include /ui/keywords.html %}

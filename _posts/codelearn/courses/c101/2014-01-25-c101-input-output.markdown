@@ -8,7 +8,7 @@ comments: true
 	{{page.title}}
 </div>
 
-{% include agenda.html %}
+{% include /ui/agenda.html %}
 
 <section>
 	<div id="need-of-io" class="section-title">
@@ -356,4 +356,4 @@ Float : 3.140000
 	<a class="button" href="">Read Next</a>
 </section>
 
-{% include keywords.html %}
+{% include /ui/keywords.html %}

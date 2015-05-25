@@ -4,17 +4,21 @@
 
 {% case page.product %}
 {% when 'codelearn' %}
-	{% include head_course.html %}
+	{% include /scripts/codelearn_content.html %}
+	{% include /scripts/questions.html %}
 	{% include cl_head.html %}
 {% when 'codezone' %}
+	{% include /scripts/questions.html %}
 	{% include cz_head.html %}
 {% endcase %}
 <body>
 	{% case page.product %}
+	{% when 'codeville' %}
+		{% include /navigations/cv_nav.html %}
 	{% when 'codelearn' %}
-		{% include cl_nav.html %}
+		{% include /navigations/cl_nav.html %}
 	{% when 'codezone' %}
-		{% include cz_nav.html %}
+		{% include /navigations/cz_nav.html %}
 	{% endcase %}
 	{{content}}
 	{% include disqus.html %}

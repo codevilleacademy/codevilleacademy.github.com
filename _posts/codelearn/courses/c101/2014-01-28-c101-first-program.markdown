@@ -8,7 +8,7 @@ comments: true
 	{{page.title}}
 </div>
 
-{% include agenda.html %}
+{% include /ui/agenda.html %}
 
 <section>
 	<div class="section-title" id="program-and-problem">
@@ -179,4 +179,4 @@ This is a closing curly bracket which implies the end of the scope of function <
 	<a class="button" href="{% post_url /codelearn/courses/c101/2014-01-27-c101-codebud %}">Read Next</a>
 </section>
 
-{% include keywords.html %}
+{% include /ui/keywords.html %}

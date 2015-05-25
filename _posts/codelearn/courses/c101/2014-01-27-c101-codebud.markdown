@@ -8,7 +8,7 @@ comments: true
 	{{page.title}}
 </div>
 
-{% include agenda.html %}
+{% include /ui/agenda.html %}
 
 <section>
 	<div id="what-is-codebud" class="section-title">
@@ -133,4 +133,4 @@ comments: true
 	<a class="button" href="{% post_url /codelearn/courses/c101/2014-01-26-c101-datatypes-in-c %}">Read Next</a>
 </section>
 
-{% include keywords.html %}
+{% include /ui/keywords.html %}
