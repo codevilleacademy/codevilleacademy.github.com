@@ -5,7 +5,7 @@ share_desc:		"I had a project deadline during India vs South Africa Cricket Worl
 date:			2015-05-25
 author:			"Arpit Bhayani"
 category:		script
-tags:			["python", "cricket", "notification", "live"]
+tags:			["python", "cricket", "notification", "live-score"]
 keywords:		cricket, python, cricket, notification, score, live match
 comments:		true
 

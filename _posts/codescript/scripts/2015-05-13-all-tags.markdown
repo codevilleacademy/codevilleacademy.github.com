@@ -1,0 +1,14 @@
+---
+layout:			script-page
+title:			"All tags scripts"
+date:			2015-05-13
+author:			"Arpit Bhayani"
+category:		meta-script
+comments:		false
+short-desc:		Get all tags present in the site here.
+---
+<section>
+{% for t in site.tags %}
+{{t[0]}}
+{% endfor %}
+</section>

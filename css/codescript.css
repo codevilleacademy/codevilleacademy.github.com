@@ -41,7 +41,7 @@
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .recent-scripts {
@@ -82,7 +82,8 @@ section {
 }
 
 .script-page-tags {
-   margin-bottom: 15px;
+    font-size: 13px;
+    margin-bottom: 15px;
 }
 
 .script-page-metainfo {
@@ -114,6 +115,8 @@ section {
 .para {
     font-weight: 400;
     color: #515151;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .file-name {
@@ -168,7 +171,9 @@ section {
 }
 
 .script-tags {
-    font-size: 15px;
+    font-family: 'PT Sans', Arial, Ubuntu;
+    font-size: 13px;
+    
     line-height: 1.5;
 
     padding-top: 10px;
@@ -192,6 +197,10 @@ section {
 /*        Tag Cloud          */
 /*****************************/
 .tag-cloud {
+    
+    font-family: 'PT Sans', Arial, Ubuntu;
+    font-size: 13px;
+
     line-height: 40px;
 
     background-color: #FEFEFE;
@@ -213,9 +222,7 @@ section {
 }
 
 .tag-link {
-    font-family: 'PT Sans', Arial, Ubuntu;
     font-weight: 700;
-    font-size: 13px;
     color: #16a085;
 
     margin-right: 6px;
@@ -237,8 +244,9 @@ section {
     transition:all 0.3s ease;
 }
 
-.tag-link:hover {
-
+.tag-link:hover,
+.tag-link:focus,
+.tag-link:active {
     background-color: #1abc9c;
 
     color: #EFEFEF;

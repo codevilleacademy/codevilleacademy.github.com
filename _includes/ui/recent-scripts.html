@@ -10,7 +10,7 @@
                   <div class="script-tags">
                         <emphasis class="bold">Tags: </emphasis>
                         {% for t in en.tags %}
-                              <a href="" class="tag-link" title="Click to view all posts with tag : {{t}}">{{t}}</a>
+                              <a href="{{ "/tag/" | append: t | replace:" ","-" | prepend: site.baseurl }}" class="tag-link" title="Click to view all posts with tag : {{t}}">{{t}}</a>
                         {% endfor %}
                   </div>
             	<div class="script-metainfo">
@@ -19,5 +19,5 @@
                         <emphasis class="date">{{en.date | date: '%B %d, %Y' }}</emphasis>
             	</div>
             </div>
-      <section>
+      </section>
 {% endfor %}

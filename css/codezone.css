@@ -111,6 +111,13 @@
 	font-weight: 700;
 }
 
+.session-link.active {
+	text-decoration: none;
+	background-color: rgba(51, 122, 183, 0.8);
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
 /*****************************/
 /*  Lecture Session content  */
 /*****************************/

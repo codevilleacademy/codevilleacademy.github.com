@@ -24,7 +24,7 @@
                     {% include /ui/recent-scripts.html %}
                 </div>
                 <div class="actions">
-                    <a href="" class="button">View all scripts</a>
+                    <a href="{% post_url /tags/2015-05-13-all %}" class="button">View all scripts</a>
                 </div>
                 {% include share.html %}
             </div>
@@ -35,7 +35,7 @@
                     <emphasis class="code">Script count: {{ site.categories.script | size }}</emphasis>
                 </div>
             </div>
-            {% include /ui/top-contributor.html %}
+
         </div>
     </div>    
 </div>
