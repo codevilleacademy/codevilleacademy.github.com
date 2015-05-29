@@ -4,6 +4,8 @@ highlighter: "pygments"
 baseurl: ""
 title: "Codeville"
 
+permalink: /:categories/:title
+
 url: "http://codeville.org.in"
 share_image: "/img/logo/codeville_icon.png"
 share_desc: "Codeville is an open platform to show off your scripting skills. It also a platform to learn computer courses, practice coding online, solve trivia questions and improve coding and problem solving skills."
