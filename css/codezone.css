@@ -94,7 +94,7 @@
 .session-link {
 	display: block;
 	font-size: 13px;
-	color: #337AB7;
+	color: #2980B9;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
@@ -110,14 +110,6 @@
 	color: #FFFFFF;
 	font-weight: 700;
 }
-
-.session-link.active {
-	text-decoration: none;
-	background-color: rgba(51, 122, 183, 0.8);
-	color: #FFFFFF;
-	font-weight: 700;
-}
-
 
 /*****************************/
 /*  Lecture Session content  */

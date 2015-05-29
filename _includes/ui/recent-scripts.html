@@ -1,0 +1,23 @@
+{% for en in site.categories["script"] limit:5 %}
+      <section>
+            <div class="script-snippet">
+            	<div class="script-title">
+            		<a href="{{en.url}}" class="new-scripts-link">{{en.title}}</a>
+            	</div>
+            	<div class="script-excerpt">
+            		{{en.short-desc}}
+            	</div>
+                  <div class="script-tags">
+                        <emphasis class="bold">Tags: </emphasis>
+                        {% for t in en.tags %}
+                              <a href="" class="tag-link" title="Click to view all posts with tag : {{t}}">{{t}}</a>
+                        {% endfor %}
+                  </div>
+            	<div class="script-metainfo">
+            		By
+                        <a href="{{en.url}}" class="script-author">{{en.author}}</a> on
+                        <emphasis class="date">{{en.date | date: '%B %d, %Y' }}</emphasis>
+            	</div>
+            </div>
+      <section>
+{% endfor %}

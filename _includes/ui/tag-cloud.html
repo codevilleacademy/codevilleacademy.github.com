@@ -1,0 +1,4 @@
+{% assign tags = site.tags %}
+{% for tag in tags %}	
+    <a href="" class="tag-link" title="Click to view all posts with tag : {{tag[0]}}">{{tag[0]}} | {{ tag | last | size }}</a>
+{% endfor %}

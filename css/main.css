@@ -94,21 +94,6 @@
   margin: auto;
 }
 
-.profile_image {
-  /*background-image: url(/img/profile/arpit.jpg);
-  border-radius: 50%;
-  width: 400px;
-  height: auto;*/
-}
-
-.profile_image img {
-  display: block;
-  max-height:230px;
-  height: 230px;
-  width: auto;
-  margin: auto;
-}
-
 .landing_page {
     display: table;
     position: relative;
@@ -164,8 +149,9 @@
 #navigation-menu.robin .navbar-nav>li>a {
     font-family: Open-sans, Helvetica Neue, Helvetica, Arial, sans-serif, Ubuntu;
     font-size: 13px;
-    color: #E18881;
-    font-weight: bold;
+    /*color: #E18881;*/
+    color: #2EAADE;
+    font-weight: 700;
     background-color: transparent;
     -webkit-transition:all 0.3s ease;
     -moz-transition:all 0.3s ease;
@@ -175,14 +161,16 @@
 }
 #navigation-menu.robin .navbar-nav>li>a:hover,
 #navigation-menu.robin .navbar-nav>li>a:focus {
-    color: #CF4439;
+    /*color: #CF4439;*/
+    color: #176C8F;
     background-color: transparent;
-    border-bottom: 1px dashed #CF4439;
+    border-bottom: 1px dashed #176C8F;
 }
 #navigation-menu.robin .navbar-nav>.active>a,
 #navigation-menu.robin .navbar-nav>.active>a:hover,
 #navigation-menu.robin .navbar-nav>.active>a:focus {
-    color: #CF4439;
+    /*color: #CF4439;*/
+    color: #176C8F;
     background-color: transparent;
 }
 #navigation-menu.robin .navbar-toggle {
@@ -452,12 +440,6 @@ input[readonly] {
 
   border: none;
   border-radius: 5px;
-}
-
-.note-box:before {
-  content: "Note";
-  font-style: italic;
-  font-weight: 700;
 }
 
 .tip-box {

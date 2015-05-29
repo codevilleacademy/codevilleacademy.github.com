@@ -2,6 +2,7 @@
 layout: session-page
 title: "Standard Functions"
 category:	ctrivia
+comments: true
 ---
 
 <div class="session-title">

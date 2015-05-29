@@ -1,37 +1,41 @@
 ---
+    title: "Show off your script writing abilities here"
+    layout: default
+    product: codescript
 ---
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"> -->
-<head>
-
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Codeville is a platform for personalized learning, where you can learn new computer technologies."/>
-    <meta name="keywords" content="education, computers, c, blog, legends, c-language, articles, free, in-person, coaching, classes"/>
-    <title>Start coding your world today :: Codelearn - Codeville</title>
-    <link href="/css/bootstrap.css" rel="stylesheet" />
-    
-    <link href="/css/main.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="{{ "/css/codescript.css" | prepend: site.baseurl }}">
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    {% include /navigations/cs_nav.html %}
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <h3>Site Under Construction</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-md-offset-0">
+            <div class="notice-box">
+                <h3 class="text-center notice-body">Wanna show-off your scripting skills? Show it off here @Codescript. <span class="quoted"><a href="{{ "/contact.html" | prepend: site.baseurl }}">Click Here</a></span>.</h3>
             </div>
         </div>
     </div>
-
-    {% include footer.html %}
-    {% include low_head.html %}
-</body>
-</html>
+    <div class="row">
+        <div class="col-md-10">
+            <div class="main-content">
+                <div class="tag-cloud">
+                    {% include /ui/tag-cloud.html %}
+                </div>
+                <div class="recent-scripts">
+                    <emphasis class="italic">
+                        Recent Scripts
+                    </emphasis>
+                    {% include /ui/recent-scripts.html %}
+                </div>
+                <div class="actions">
+                    <a href="" class="button">View all scripts</a>
+                </div>
+                {% include share.html %}
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="row">
+                <div class="script-count">
+                    <emphasis class="code">Script count: {{ site.categories.script | size }}</emphasis>
+                </div>
+            </div>
+            {% include /ui/top-contributor.html %}
+        </div>
+    </div>    
+</div>

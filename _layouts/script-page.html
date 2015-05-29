@@ -1,0 +1,54 @@
+---
+layout: basic-page
+product: codescript
+---
+<div class="row">
+    <div class="col-md-12 col-md-offset-0">
+        <div class="notice-box">
+            <h3 class="text-center notice-body">Wanna show-off your scripting skills? Show it off here @Codescript. <span class="quoted"><a href="{{ "/contact.html" | prepend: site.baseurl }}">Click Here</a></span>.</h3>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10 col-md-offset-0">
+        <div class="script-content">
+            <div class="script-page-title">{{page.title}}</div>
+            <div class="script-page-metainfo">
+                By
+                    <a href="{{en.url}}" class="script-page-author">{{page.author}}</a> on
+                    <emphasis class="date">{{page.date | date: '%B %d, %Y' }}</emphasis>
+            </div>
+            <div class="script-page-tags">
+                <emphasis class="bold">Tags :&nbsp;</emphasis>
+                {% for t in page.tags %}
+                    <a href="" class="tag-link" title="Click to view all posts with tag : {{t}}">{{t}}</a>
+                {% endfor %}
+            </div>
+            {{content}}
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10 col-md-offset-0">
+        {% include share.html %}
+    </div>
+</div>
+{% if page.comments %}
+<div class="row">
+    <div class="col-md-10 col-md-offset-0">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'codeville';
+            
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </div>
+</div>
+{% endif %}

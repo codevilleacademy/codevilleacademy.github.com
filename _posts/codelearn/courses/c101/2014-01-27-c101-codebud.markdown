@@ -15,7 +15,7 @@ comments: true
 		What is Codebud?
 	</div>
 	<div class="para">
-		<emphasis class="highlight">Codebud</emphasis> is your on-the-go buddy that will tell you if you solved a problem-statement well or not. Codebud is available 24x7, and will help you through the learning process. Following are the steps that you will follow to test your program logic.
+		<emphasis class="highlight">Codebud</emphasis> is your on-the-go buddy that will tell you if you correctly solved a coding problem or not. Codebud is available 24x7, and will help you through the learning process. Following are the steps that you will follow to test your program logic.
 	</div>
 </section>
 

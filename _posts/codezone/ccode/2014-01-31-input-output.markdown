@@ -2,6 +2,7 @@
 layout: session-page
 title: "Input and Output"
 category: ccode
+comments: true
 ---
 
 <div class="session-title">

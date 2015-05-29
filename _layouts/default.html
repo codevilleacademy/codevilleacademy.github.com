@@ -10,6 +10,8 @@
 {% when 'codezone' %}
 	{% include /scripts/questions.html %}
 	{% include cz_head.html %}
+{% when 'codescript' %}
+	{% include cs_head.html %}
 {% endcase %}
 <body>
 	{% case page.product %}
@@ -19,6 +21,8 @@
 		{% include /navigations/cl_nav.html %}
 	{% when 'codezone' %}
 		{% include /navigations/cz_nav.html %}
+	{% when 'codescript' %}
+		{% include /navigations/cs_nav.html %}
 	{% endcase %}
 	{{content}}
 	{% include disqus.html %}

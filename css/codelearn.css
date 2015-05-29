@@ -28,7 +28,7 @@
 	font-weight: 700;
 	line-height: 30px;
 	font-size: 24px;
-	color: #4BA1B0;
+	color: #448AFF;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
@@ -200,7 +200,7 @@
 .lecture-link {
 	display: block;
 	font-size: 13px;
-	color: #337AB7;
+	color: #2980B9;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
@@ -380,14 +380,14 @@ emphasis[class="keyword"]:hover {
 }
 
 #agenda li a {
-	color: #337AB7;
+	color: #2980B9;
 }
 
 #agenda li a:hover,
 #agenda li a:focus,
 #agenda li a:active {
 	text-decoration: none;
-	border-bottom: 1px dashed #337AB7;
+	border-bottom: 1px dashed #2980B9;
 }
 
 #agenda {
