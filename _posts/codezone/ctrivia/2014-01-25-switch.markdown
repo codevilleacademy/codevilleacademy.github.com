@@ -1,0 +1,63 @@
+---
+layout: session-page
+title: "Switch"
+category:	ctrivia
+comments: true
+---
+
+<div class="session-title">
+	{{page.title}}
+</div>
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+
+        float a = 10;
+
+        switch(a) {
+                case 1:
+                        printf("1\n");
+                        break;
+                default:
+                        printf("DEFAULT\n");
+                        break;
+        }
+
+        return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="1" o2="DEFAULT" o3="Compit Time Error" o4="Runtime Error" qid="ct:13" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct13.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+		The expression that we give in the switch statement has to of type <emphasis class="code">int</emphasis>. Hence passing <emphasis class="code">float</emphasis> to it results in a compile time error.
+		</div>
+		<div class="para">
+			Error : <emphasis class="code">switch quantity not an integer</emphasis>
+		</div>
+		<div class="para">
+		Allowed values in switch expression are:
+		<ul>
+			<li>int</li>
+			<li>char</li>
+			<li>short</li>
+			<li>long</li>
+			<li>enum</li>
+		</ul>
+		because these are implemented as <emphasis class="bold">int</emphasis> in the system.
+		</div>
+	</div>
+</div>
+</section>
