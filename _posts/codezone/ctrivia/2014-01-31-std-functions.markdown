@@ -25,7 +25,7 @@ int main(int argc, char * argv[]) {
 {% endhighlight %}
 </div>
 <div class="options">
-{% include options.html o1="0" o2="Compilation Error" o3="Runtime Error" o4="2" qid="ct:1" %}
+{% include options.html o1="0" o2="Compile Time Error" o3="Runtime Error" o4="2" qid="ct:1" %}
 </div>
 <div class="explanation">
 	<div class="actions text-right">
@@ -34,7 +34,7 @@ int main(int argc, char * argv[]) {
 	</div>
 	<div class="explanation-content">
 		<div class="para">
-			The modulus operator returns the remainder obtained by dividing an <emphasis class="code">int</emphasis> by another <emphasis class="code">int</emphasis>. In above question the operands are of of type <emphasis class="code">float</emphasis>. Hence the compiler throws an error. Hence it is a Compilation Error.
+			The modulus operator returns the remainder obtained by dividing an <emphasis class="code">int</emphasis> by another <emphasis class="code">int</emphasis>. In above question the operands are of of type <emphasis class="code">float</emphasis>. Hence the compiler throws an error. Hence it is a Compile Time Error.
 		</div>
 		<div class="para">
 			To find the remainder after float division we use a function called <emphasis class="code">fmod</emphasis>. This function is defined in <emphasis class="code">math.h</emphasis> and it returns a <emphasis class="code">double</emphasis> value.
@@ -43,6 +43,5 @@ int main(int argc, char * argv[]) {
 			Ex: fmod( 4.0, 2.0 ) returns 0.000000
 		</div>
 	</div>
-	<br>
 </div>
 </section>

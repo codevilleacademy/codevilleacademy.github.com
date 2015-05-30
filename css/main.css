@@ -325,11 +325,25 @@ input[readonly] {
 /*************************/
 /*       MCQ Ques        */
 /*************************/
+
+.explanation-content {
+  margin-top: 20px;
+}
+
+.question .para {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #B6B6B6;
+}
+
 .question .para:before {
   content: 'Q';
   font-weight: 700;
   font-size: 150%;
   margin-right: 10px;
+}
+
+.answer {
 }
 
 .actions {

@@ -1,0 +1,56 @@
+---
+layout: session-page
+title: "Miscellaneous Information"
+category:	ctrivia
+comments: true
+---
+
+<div class="session-title">
+	{{page.title}}
+</div>
+
+<section>
+<div class="question">
+	<div class="para">How are real numbers treated in C language?</div>
+</div>
+<div class="answer">
+	<div class="para">
+	Real numbers are nothing but floating point numbers that does not have any imaginary component. So we can broadly classify real numbers into two categories
+	<ul>
+		<li><emphasis class="bold">Rational Numbers</emphasis>, example 42, 5/10</li>
+		<li><emphasis class="bold">Irrational Numbers</emphasis>, example PI</li>
+	</ul>
+	By default, all the real numbers in C language are treated as <emphasis class="code">double</emphasis>. Consider following example.
+	</div>
+
+{% highlight cpp %}
+int variable_1 = 10;
+{% endhighlight %}
+
+<div class="para">
+In above statement the value <emphasis class="bold">10</emphasis> is actually a <emphasis class="bold">double</emphasis> value. But since this value is then assigned to <emphasis class="code">variable_1</emphasis> which is of type <emphasis class="code">int</emphasis>, hence it is truncated to be an integer and then stored in the variable. Thus we get an integer <emphasis class="bold">10</emphasis> in <emphasis class="bold">variable_1</emphasis>.
+</div>
+</div>
+</section>
+
+
+<section>
+<div class="question">
+	<div class="para">Does extern keyword define a variable or declare a variable?</div>
+</div>
+<div class="answer">
+	<div class="para">
+	By using the keyword <exphasis class="code">extern</exphasis> before a variable declaration, we simply declare a variable and does not define it. Declaration of a variable is letting compiler know the existence of the variable. On other hand, when we define a variable we assign a memory space to it.
+	</div>
+	<div class="para">
+		<div class="note-box">
+			Declaration never reserves any space for variable or instance in the memory; it is a hint to the compiler that a use of that variable is expected in the program.
+		</div>
+	</div>
+	<div class="para">
+		<emphasis class="bold">
+			In a nutshell, <emphasis class="code">extern</emphasis> keyword declares a variable
+		</emphasis>
+	</div>
+</div>
+</section>
