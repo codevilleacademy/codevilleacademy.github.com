@@ -9,12 +9,12 @@ tags:			["python", "cricket", "notification", "live-score"]
 keywords:		cricket, python, cricket, notification, score, live match
 comments:		true
 
-short-desc:		We all had those days where we were busy with some important work or a quick deadline during, when the most critical match is in progress. You don't even have time to look at the score websites. I too was in same situation once, but I wrote a script that did a trick.
+short-desc:		If you don't want to look at the score websites again and again. If you want score to pop up after regular interval. If you want to continue with your work and still be updated with the cricket match proceedings ... heres a script for you.
 
 ---
 
 <div class="para">
-We all had those days where we were busy with some important work or a quick deadline during, when the most critical match is in progress. You don't even have time to look at the score websites. I too was in same situation once, but I wrote a script that did a trick.
+If you don't want to look at the score websites again and again. If you want score to pop up after regular interval. If you want to continue with your work and still be updated with the cricket match proceedings ... heres a script for you.
 </div>
 
 <div class="para">
