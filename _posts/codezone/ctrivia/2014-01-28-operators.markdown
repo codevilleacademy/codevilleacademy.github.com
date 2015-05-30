@@ -101,3 +101,53 @@ int main(int argc, char * argv[]) {
 </div>
 </div>
 </section>
+
+
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+	int a = 1, b = 1, c = 1;
+	
+	c = ++a || ++b && ++c;
+	printf("%d, %d, %d\n", a, b, c);
+
+	return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="2, 1, 1" o2="2, 2, 2" o3="1, 1, 1" o4="2, 2, 1" qid="ct:18" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct18.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+		This is an example of <emphasis class="bold">Short Circuit Boolean Expression Evaluation</emphasis>, where a boolean expression stops evaluating if the final outcome can accurately guessed.
+		</div>
+		<div class="para">
+			Building on aobve idea, let us see how the expression is evaluated:
+		</div>
+{% highlight cpp %}
+		++a || ++b && ++c
+{% endhighlight %}
+<div class="para">
+The left most <emphasis class="code">++a</emphasis> is evaluated which makes value of <emphasis class="bold">a = 2</emphasis>. Since it is pre-increment operator hence value <emphasis class="bold">2</emphasis> will be put in expression. Since there is a <emphasis class="bold">logical or</emphasis> operator used, so because of short circuit evaluation, ++b and ++c are not evaluated and whole expression evaluates to value <emphasis class="code">1</emphasis>.
+</div>
+{% highlight cpp %}
+		++a || ++b && ++c;
+	=>	2   || ++b && ++c;		// a = 2, b = 1 and c = 1
+	=>	1						// TRUE because of short circuit boolean evaluation
+{% endhighlight %}
+<div class="para">Hence condition evaluates to 1 (TRUE) so output is <emphasis class="code">2, 1, 1</emphasis>
+</div>
+</div>
+</div>
+</section>

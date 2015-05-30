@@ -1,6 +1,6 @@
 ---
 layout: session-page
-title: "Switch"
+title: "Switch Statement"
 category:	ctrivia
 comments: true
 ---
@@ -57,6 +57,136 @@ int main(int argc, char * argv[]) {
 			<li>enum</li>
 		</ul>
 		because these are implemented as <emphasis class="bold">int</emphasis> in the system.
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+
+	int a = 10;
+
+	switch(a) {
+		case 1:
+			printf("1\n");
+			continue;
+		default:
+			printf("DEFAULT\n");
+			break;
+	}
+
+	return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="Compile Time Error" o2="DEFAULT" o3="1" o4="None of these" qid="ct:16" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct16.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+		<emphasis class="code">continue</emphasis> keyword is not allowed within <emphasis class="code">switch</emphasis> statemt. Hence the compile time error.
+		</div>
+		<div class="para">
+			<emphasis class="code">continue statement not within a loop</emphasis>
+		</div>
+	</div>
+</div>
+</section>
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+
+        int a = 10;
+
+        switch(a) {
+                printf("Hello All ");
+                case 10:
+                        printf("10\n");
+                        break;
+                default:
+                        printf("DEFAULT\n");
+                        break;
+        }
+
+        return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="Hello All 10" o2="Compile Time Error" o3="10" o4="Hello All" qid="ct:17" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct17.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+		Above code snippet is syntactically correct. The <emphasis class="code">printf("Hello All ");</emphasis> will be totally ignored because of the implementation of <emphasis class="bold">switch</emphasis> statement at assembly level. Thus it will never be executed.
+		</div>
+		<div class="para">
+		So the output of above snippet is <emphasis class="code">10</emphasis>
+		</div>
+	</div>
+</div>
+</section>
+
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+
+	int a = 9;
+
+	switch(a) {
+		case 9:
+			printf("10\n");
+			break;
+		case 4+5:
+			printf("11\n");
+			break;
+	}
+
+	return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="11" o2="10" o3="Compile Time Error" o4="9" qid="ct:19" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct19.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+		Expression <emphasis class="code">4 + 5</emphasis> evaluates to <emphasis class="code">9</emphasis>. This value <emphasis class="bold">9</emphasis> is same as the third case value <emphasis class="bold">9</emphasis>. Hence it throws an Compile Time Error.
+		</div>
+		<div class="para">
+		Error: <emphasis class="code">duplicate case value</emphasis>
 		</div>
 	</div>
 </div>
