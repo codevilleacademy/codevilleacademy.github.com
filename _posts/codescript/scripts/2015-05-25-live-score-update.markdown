@@ -1,7 +1,7 @@
 ---
 layout:			script-page
-title:			"Script to get live match score update on your computer"
-share_desc:		"I had a project deadline during India vs South Africa Cricket World Cup 2015 and didn't had bandwidth to stream it live. I wrote a script that notified me the score regularly."
+title:			"Get live match score update on your computer"
+share_desc:		"I had a project deadline during India vs South Africa Cricket World Cup 2015 and didn't had bandwidth to stream it live. I wrote a script that notified me the score regularly ... do check it out!."
 date:			2015-05-25
 author:			"Arpit Bhayani"
 category:		script
@@ -43,10 +43,10 @@ sudo apt-get install python-notify2
 
 <section>
 	<div class="para">
-	To execute the script, you first need to make changes into the variable <emphasis class="code">match_url</emphasis>, which is the URL of the json object of the match. This URL can be obtained from the match page of espncricinfo.com.
+	To execute the script, you first need to make changes into the variable <emphasis class="code">match_url</emphasis>, which is the URL of the json object of the match. This URL can be obtained from the match page of espncricinfo.com through "Inspect Element".
 	</div>
 	<div class="para">
-	After making above changes, execute the script as a regular python file
+	After making above changes, execute the script as a regular python file, and remember to make changes with respect to proxy as mentioned in the script.
 	</div>
 {% highlight text %}
 python cricnot.py
@@ -64,12 +64,17 @@ import json
 match_url = 'http://www.espncricinfo.com/ci/engine/match/743935.json'
 
 
-'''proxy = urllib2.ProxyHandler(
+proxy = urllib2.ProxyHandler(
 	{
-		'http': 'your_proxy_here',
-		'https': 'your_proxy_here'
+		'http': 'put_proxy_here',
+		'https': 'put_proxy_here'
 	}
-)'''
+)
+
+""" In Case you have proxy uncomment line below """
+"""opener = urllib2.build_opener(proxy)"""
+
+""" When No Proxy un-comment line below """
 opener = urllib2.build_opener()
 urllib2.install_opener(opener)
 
@@ -90,6 +95,7 @@ while True:
 
 	n.show()
 	time.sleep(20)
+
 
 {% endhighlight %}
 </section>
