@@ -61,11 +61,18 @@ section {
 /*     Script Page     */
 /***********************/
 
+.screenshot {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 95%;
+    height: auto;
+}
+
 .script-content {
     font-family: 'PT Sans', Arial, Ubuntu, sans-serif;
     font-size: 17px;
     font-weight: 400;
-    text-align: justify;
+    
     line-height: 1.5;
     color: #515151;
 }
@@ -115,8 +122,8 @@ section {
 .para {
     font-weight: 400;
     color: #515151;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .file-name {

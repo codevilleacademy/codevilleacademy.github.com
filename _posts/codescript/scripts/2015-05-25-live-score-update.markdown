@@ -43,14 +43,35 @@ sudo apt-get install python-notify2
 
 <section>
 	<div class="para">
-	To execute the script, you first need to make changes into the variable <emphasis class="code">match_url</emphasis>, which is the URL of the json object of the match. This URL can be obtained from the match page of espncricinfo.com through "Inspect Element".
+	To execute the script, follow the following steps:
 	</div>
 	<div class="para">
-	After making above changes, execute the script as a regular python file, and remember to make changes with respect to proxy as mentioned in the script.
+		<emphasis class="bold">Step 1:</emphasis> Open the live match page on espncricinfo website.
+		<br/>
+		This page is the one where you see the score of the match in progress. The URL looks something like this.
+		<emphasis class="bold">http://www.espncricinfo.com/pakistan-zimbabwe-2015/engine/match/868731.html</emphasis>
+	</div>
+	<div class="para">
+		<emphasis class="bold">Step 2:</emphasis> Pick the last number from the URL.
+		<br/>
+		<img class="screenshot" src="/img/script/image01.png" alt="Pick match number from the URL"/><br/>
+	</div>
+	<div class="para">
+		<emphasis class="bold">Step 3:</emphasis> Open the script and replace XXXXXX with this number.
+		<br/>
+		<img class="screenshot" src="/img/script/image02.png" alt="Replace XXXXXX with 868731"/><br/>
+	</div>
+	<div class="para">
+		<emphasis class="bold">Step 4:</emphasis> Execute the script.
 	</div>
 {% highlight text %}
 python cricnot.py
 {% endhighlight %}
+
+<div class="para">
+You should see output something like this:
+<img class="screenshot" src="/img/script/image03.png" alt="Sample Screenshot"/><br/>
+</div>
 </section>
 
 <section>
@@ -61,40 +82,38 @@ import time
 import urllib2
 import json
 
-match_url = 'http://www.espncricinfo.com/ci/engine/match/743935.json'
+match_url = 'http://www.espncricinfo.com/ci/engine/match/XXXXXX.json'
 
 
 proxy = urllib2.ProxyHandler(
-	{
-		'http': 'put_proxy_here',
-		'https': 'put_proxy_here'
-	}
+        {
+                'http': 'put_proxy_here',
+                'https': 'put_proxy_here'
+        }
 )
 
-""" In Case you have proxy """
+""" In Case you have proxy uncomment line below """
 """opener = urllib2.build_opener(proxy)"""
 
-""" When No Proxy """
+""" When No Proxy un-comment line below """
 opener = urllib2.build_opener()
 urllib2.install_opener(opener)
 
 notify2.init('cricnot')
 
 while True:
-	r = urllib2.urlopen(match_url)
-	j = json.loads(r.read())
+        r = urllib2.urlopen(match_url)
+        j = json.loads(r.read())
 
-	print j
+        msg = j['live']['status']
 
-	msg = j['live']['status']
+        for i in j['centre']['batting']:
+                msg += ('<br/>' + i['popular_name'] + ' - ' + i['runs']  + ' (' + i['balls_faced']  + ')')
 
-	for i in j['centre']['batting']:
-		msg += ('<br/>' + i['popular_name'] + ' - ' + i['runs']  + ' (' + i['balls_faced']  + ')')
+        n = notify2.Notification(j['description'].split(':')[0],msg)
 
-	n = notify2.Notification(j['description'].split(':')[0],msg)
-
-	n.show()
-	time.sleep(20)
+        n.show()
+        time.sleep(20)
 
 
 {% endhighlight %}
