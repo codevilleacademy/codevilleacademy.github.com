@@ -71,10 +71,10 @@ proxy = urllib2.ProxyHandler(
 	}
 )
 
-""" In Case you have proxy uncomment line below """
+""" In Case you have proxy """
 """opener = urllib2.build_opener(proxy)"""
 
-""" When No Proxy un-comment line below """
+""" When No Proxy """
 opener = urllib2.build_opener()
 urllib2.install_opener(opener)
 
