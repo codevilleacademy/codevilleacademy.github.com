@@ -14,7 +14,7 @@ short-desc:		If you don't want to look at the score websites again and again. If
 ---
 
 <div class="para">
-If you don't want to look at the score websites again and again. If you want score to pop up after regular interval. If you want to continue with your work and still be updated with the cricket match proceedings ... heres a script for you.
+If you don't want to look at the score websites again and again. If you want score to pop up after regular interval. If you want to continue with your work and still be updated with the cricket match proceedings ... here is a script for you.
 </div>
 
 <div class="para">
@@ -98,4 +98,10 @@ while True:
 
 
 {% endhighlight %}
+</section>
+
+<section>
+	<div class="para">
+		<emphasis class="bold">If you liked the script then do share it ;)</emphasis>
+	</div>
 </section>
