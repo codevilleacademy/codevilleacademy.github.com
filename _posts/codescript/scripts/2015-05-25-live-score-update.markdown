@@ -36,8 +36,15 @@ I wrote a script that would fetch the score json object from <a href="http://esp
 {% highlight text %}
 sudo apt-get install python-notify2
 {% endhighlight %}
-
 </div>
+
+<div class="para">
+	To install <emphasis class="code">notify2</emphasis> using <emphasis class="code">pip</emphasis> execute following statement:
+{% highlight text %}
+pip install notify2
+{% endhighlight %}
+</div>
+
 <div class="para">Typically other modules are built-in in python. Still if you get any error during execution of script you can easily install other modules in your system.</div>
 </section>
 
