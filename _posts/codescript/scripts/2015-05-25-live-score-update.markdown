@@ -75,7 +75,9 @@ You should see output something like this:
 </section>
 
 <section>
-<div class="file-name">File: cricnot.py</div>
+<div class="file-name">
+	File: <a href="/files/scripts/cricnot.py">cricnot.py</a>
+</div>
 {% highlight python %}
 import notify2
 import time
