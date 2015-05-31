@@ -195,3 +195,48 @@ int main(int argc, char * argv[]) {
 </div>
 </div>
 </section>
+
+
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int foo() {
+	(1 > 2) ? return 1 : return 2;
+}
+
+int main(int argc, char * argv[]) {
+
+	printf("%d\n", foo());
+
+	return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="Garbage Value" o2="2" o3="1" o4="Compile Time Error" qid="ct:24" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct24.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+		One cannot use C statements like <emphasis class="code">return</emphasis> as operand to ternary operator <emphasis class="code">? :</emphasis>. This is syntactically wrong, hence the compile time error.
+		</div>
+		<div class="para">
+		Error : <emphasis class="code">expected expression before return</emphasis>
+		</div>
+		<div class="para">
+			The correct way to write the statement is
+		</div>
+{% highlight cpp %}
+	return (1 > 2) ? 1 : 2;
+{% endhighlight %}
+</div>
+</div>
+</section>
