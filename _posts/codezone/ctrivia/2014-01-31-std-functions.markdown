@@ -86,3 +86,56 @@ int main(int argc, char * argv[]) {
 	</div>
 </div>
 </section>
+
+
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+	float a = 94.83;
+
+	printf("%e, %f, %g\n", a, a, a);
+
+	return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="Compile Time Error" o2="9.483000e+01, 94.830002, 94.83" o3="94.83, 94.83, 94.83" o4="9.483000e+02, 94.830002, 94.83" qid="ct:23" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct23.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+			<emphasis class="code">printf</emphasis> function has some format specifiers that are used to pretty print some of the value. Format specifiers <emphasis class="bold">%e, %f and %g</emphasis> has following purpose: 
+		</div>
+		<table class="table table-hover">
+			<thead>
+				<th>Specifier</th>
+				<th>Use</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>%e</td>
+					<td>prints in scientific notation (exponent notation)</td>
+				</tr>
+				<tr>
+					<td>%f</td>
+					<td>prints in decimal point floating notation (default 6 places after decimal)</td>
+				</tr>
+				<tr>
+					<td>%g</td>
+					<td>prints a number in shorter notation</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</section>

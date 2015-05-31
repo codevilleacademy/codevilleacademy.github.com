@@ -51,7 +51,6 @@ int main(int argc, char * argv[]) {
 </section>
 
 
-
 <section>
 <div class="question">
 	<div class="para">All twists and turns with the use of typedef</div>
