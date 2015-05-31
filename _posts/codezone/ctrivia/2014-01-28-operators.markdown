@@ -151,3 +151,47 @@ The left most <emphasis class="code">++a</emphasis> is evaluated which makes val
 </div>
 </div>
 </section>
+
+
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+	int a = 16, b;
+
+	b = a >= 8 ? b = 10: b = 20;
+
+	printf("%d\n", b);
+
+	return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="1" o2="200" o3="100" o4="Compile Time Error" qid="ct:20" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct20.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+		<emphasis class="code">? :</emphasis> is a ternary operator in C language. This operator works similar to <emphasis class="bold">if - else</emphasis>. During compilation of above code snippet, the Compile Time Error is thrown.
+		</div>
+		<div class="para">
+			Error :<emphasis class="code">lvalue required as left operand of assignment</emphasis>
+		</div>
+		<div class="para">
+			The correct way to write the statement is
+		</div>
+{% highlight cpp %}
+		b = a >= 8 ? 10 : 20;
+{% endhighlight %}
+</div>
+</div>
+</section>

@@ -45,3 +45,44 @@ int main(int argc, char * argv[]) {
 	</div>
 </div>
 </section>
+
+
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+	int a = 100;
+
+	printf("%d, %d, %d\n", a <= 10, a = 10, a > 10);
+
+	return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="1, 10, 1" o2="0, 10, 0" o3="1, 1, 1" o4="0, 1, 0" qid="ct:22" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct22.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+			The arguments passed to printf are evaluated from right to left (since they are pushed onto stack). So evaluating <emphasis class="code">printf</emphasis> statement from right to left, we get:
+		</div>
+		<div class="para">
+			<ul>
+				<li><emphasis class="code">a > 10 => 100 > 10 => 1</emphasis></li>
+				<li><emphasis class="code">a = 10 => 10 	// This makes value of variable a to be 10 and returns value 10</emphasis></li>
+				<li><emphasis class="code">a <= 10 => 10 <= 10 => 1</emphasis></li>
+			</ul>
+			Hence the output of above code snippet is <emphasis class="code">1, 10, 1</emphasis>
+		</div>
+	</div>
+</div>
+</section>

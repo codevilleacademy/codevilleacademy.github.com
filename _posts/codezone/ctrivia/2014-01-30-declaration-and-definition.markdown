@@ -144,3 +144,46 @@ int main(int argc, char * argv[]) {
 </div>
 </div>
 </section>
+
+
+
+<section>
+<div class="question">
+	<div class="para">What will be the output of the following code snippet?</div>
+{% highlight cpp %}
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+	
+	int a = 1 + (10, 20, 30, 40);
+
+	printf("%d\n", a);
+
+	return 0;
+}
+{% endhighlight %}
+</div>
+<div class="options">
+{% include options.html o1="Compile Time Error" o2="11" o3="41" o4="None of these" qid="ct:21" %}
+</div>
+<div class="explanation">
+	<div class="actions text-right">
+		<a href="{{ "/files/ctrivia/ct21.c" | prepend: site.baseurl }}" class="btn link-button">Download source</a>
+		<button class="btn link-button explanation-button">Explanation</button>
+	</div>
+	<div class="explanation-content">
+		<div class="para">
+			The code snippet above is syntactically correct. Hence there will not be any Compile Time Error.
+		</div>
+		<div class="para">
+			In the statement <emphasis class="code">(10, 20, 30, 40)</emphasis>, the right most value is evaluated last and hence the resultatant value of expression is the rightmost value i.e. <emphasis class="bold">40</emphasis>. The expression is evaluated as:
+		</div>
+{% highlight cpp %}
+		a = 1 + (10, 20, 30, 40);
+	=>	a = 1 + (40);
+	=>	a = 41;
+{% endhighlight %}
+<div class="para">The value stored in variable <emphasis class="code">a</emphasis> will be <emphasis class="bold">41</emphasis>.</div>
+</div>
+</div>
+</section>
