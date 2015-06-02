@@ -45,7 +45,9 @@ pip install notify2
 {% endhighlight %}
 </div>
 
-<div class="para">Typically other modules are built-in in python. Still if you get any error during execution of script you can easily install other modules in your system.</div>
+<div class="para">
+	Typically other modules are built-in in python. Still if you get any error during execution of script you can easily install other modules in your system.
+</div>
 </section>
 
 <section>

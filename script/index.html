@@ -1,0 +1,63 @@
+---
+    title: "Share your scripts, or ask for a script"
+    layout: default
+    product: codescript
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="top-tags">
+                <div class="section-title">
+                    Top Tags
+                </div>
+                {% include /ui/top-tags.html %}
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="main-content">
+                <!-- <div class="tag-cloud">
+                    {% include /ui/tag-cloud.html %}
+                </div> -->
+                <div class="recent-scripts">
+                    <div class="section-title">
+                        Recent Scripts
+                    </div>
+                    {% include /ui/recent-scripts.html %}
+                </div>
+                <div class="recent-scripts">
+                    <div class="section-title">
+                        Recent Scripts
+                    </div>
+                    {% include /ui/recent-scripts.html %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="top-tags">
+                <div class="section-title">
+                    Ask Me
+                </div>
+                Want a script? Ask it here.
+            </div>
+
+            <div class="top-tags">
+                <div class="section-title">
+                    All Scripts
+                </div>
+                Click here to view all scripts.
+                <a href="{% post_url /tags/2015-05-13-all %}" class="text-right">View all scripts</a>
+            </div>
+
+
+            <div class="top-tags">
+                <div class="section-title">
+                    All the scripts asked
+                </div>
+                Click here to view all scripts.
+                <a href="{% post_url /tags/2015-05-13-all %}" class="text-right">View all scripts</a>
+            </div>
+
+        </div>
+    </div>
+</div>

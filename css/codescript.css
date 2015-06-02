@@ -32,6 +32,18 @@
 /***********************/
 /*       Content       */
 /***********************/
+.section-title {
+    font-family: "Arial Narrow", "Courier", "Ubuntu";
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #777777;
+
+    margin-bottom: 10px;
+    border-bottom: 1px solid #777777;
+
+}
+
 .main-content {
     padding-right: 20px;
     text-align: justify;
@@ -46,15 +58,6 @@ section {
 
 .recent-scripts {
     margin-top: 20px;
-}
-
-.script-count {
-    font-family: "PT Sans", Arial, Ubuntu;
-    font-size: 18px;
-    color: #717171;
-
-    display: block;
-    padding-bottom: 15px;
 }
 
 /***********************/
@@ -107,17 +110,6 @@ section {
     text-decoration: none;
     color: #2980B9;
 }
-
-/*.section-title {
-    font-size: 24px;
-    font-weight: 700;
-    
-    line-height: 1.5;
-
-    margin-bottom: 15px;
-
-    color: #313131;
-}*/
 
 .para {
     font-weight: 400;
@@ -215,48 +207,79 @@ section {
 }
 
 /*****************************/
-/*        Tag Cloud          */
+/*         Top Tag           */
 /*****************************/
-.tag-cloud {
-    
-    font-family: 'PT Sans', Arial, Ubuntu;
+.top-tags {
+    font-family: Arial, Ubuntu;
     font-size: 13px;
-
-    line-height: 40px;
-
-    background-color: #FEFEFE;
-
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 50px;
 
     margin-top: 20px;
     margin-bottom: 20px;
 
-    border: 1px solid #B6B6B6;
-    border-radius: 5px;
 }
 
-.tag-cloud:hover {
-    background-color: #FAFAFA;
+.top-tags ul {
+    margin: 0;
+    padding: 0;
 }
 
-.tag-link {
+.top-tags li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-tags .tag {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
     font-weight: 700;
-    color: #16a085;
 
-    margin-right: 6px;
+    color: #EB7347;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    display: block;
+    background-color: transparent;
 
     padding-left: 10px;
-    padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
 
-    border: 1px solid #1abc9c;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+
+.top-tags .tag:hover {
+
+    text-decoration: none;
+
+    color: #EFEFEF;
+    background-color: #EB7347;
+}
+
+.tag-link {
+
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+
+    color: #EB7347;
+
+    border: 1px solid #EB7347;
     border-radius: 5px;
 
-    background-color: #FFFFFF;
+    background-color: transparent;
+
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+
+    margin-left: 2px;
+    margin-right: 2px;
 
     -webkit-transition:all 0.3s ease;
     -moz-transition:all 0.3s ease;
@@ -268,12 +291,13 @@ section {
 .tag-link:hover,
 .tag-link:focus,
 .tag-link:active {
-    background-color: #1abc9c;
-
-    color: #EFEFEF;
-    border: 1px solid #1abc9c;
 
     text-decoration: none;
+    color: #EFEFEF;
+
+    background-color: #EB7347;
+    border: 1px solid transparent;
+    
 }
 
 /*****************************/
@@ -322,35 +346,6 @@ emphasis[class="code"] {
 
 emphasis[class="code"]:hover {
     font-weight: 700;
-}
-
-emphasis[class="tag"] {
-    font-family: 'PT Sans', Arial, Ubuntu;
-    font-weight: 700;
-    font-size: 13px;
-    color: #16a085;
-
-    margin-right: 10px;
-
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-    border: 1px solid #16a085;
-    border-radius: 5px;
-
-    background-color: #FFFFFF;
-}
-
-emphasis[class="tag"]:hover {
-
-    background-color: #1abc9c;
-
-    color: #EFEFEF;
-    font-weight: 700;
-
-    border: 1px solid #1abc9c;
 }
 
 emphasis[class="date"] {
