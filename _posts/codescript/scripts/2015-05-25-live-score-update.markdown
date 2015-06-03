@@ -4,7 +4,7 @@ title:			"Get live match score update on your computer"
 share_desc:		"I had a project deadline during India vs South Africa Cricket World Cup 2015 and didn't had bandwidth to stream it live. I wrote a script that notified me the score regularly ... do check it out!."
 date:			2015-05-25
 author:			"Arpit Bhayani"
-author-link:	/about/arpit
+author-link:	/profile/arpit
 category:		script
 tags:			["python", "cricket", "notification", "live-score"]
 keywords:		cricket, python, cricket, notification, score, live match
