@@ -33,13 +33,13 @@
 /*       Content       */
 /***********************/
 .section-title {
-    font-family: "Arial Narrow", "Courier", "Ubuntu";
+    font-family: "Arial Narrow", "Arial";
     font-size: 17px;
     font-weight: 700;
 
     color: #777777;
 
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #777777;
 
 }
@@ -48,8 +48,7 @@
     padding-right: 20px;
     text-align: justify;
 
-    font-family: "PT Sans", Arial, Ubuntu;
-
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 section {
@@ -65,6 +64,8 @@ section {
 /***********************/
 
 .screenshot {
+    box-shadow: 0px 5px 5px #777777;
+
     margin-top: 15px;
     margin-bottom: 15px;
     width: 95%;
@@ -72,7 +73,7 @@ section {
 }
 
 .script-content {
-    font-family: 'PT Sans', Arial, Ubuntu, sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 17px;
     font-weight: 400;
     
@@ -81,12 +82,16 @@ section {
 }
 
 .script-page-title {
+    font-family: 'Ubuntu', Arial, sans-serif, serif;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 400;
     
     line-height: 1.5;
 
+    padding-bottom: 5px;
     margin-bottom: 15px;
+
+    border-bottom: 1px solid #B6B6B6;
 
     color: #313131;
 }
@@ -161,6 +166,7 @@ section {
 }
 
 .script-title {
+    font-family: 'Ubuntu', Arial, sans-serif, serif;
     font-size: 22px;
     border-bottom: 1px solid #B6B6B6;
 }
@@ -184,7 +190,7 @@ section {
 }
 
 .script-tags {
-    font-family: 'PT Sans', Arial, Ubuntu;
+    font-family: 'Roboto', Arial, Ubuntu;
     font-size: 13px;
     
     line-height: 1.5;
@@ -226,7 +232,7 @@ section {
 .top-tags li {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 5px;
 }
 
 .top-tags .tag {
@@ -234,10 +240,10 @@ section {
     font-size: 14px;
     font-weight: 700;
 
-    color: #EB7347;
+    color: #717171;
 
-    border: 1px solid transparent;
-    border-radius: 10px;
+    border: 1px solid #717171;
+    border-radius: 5px;
 
     display: block;
     background-color: transparent;
@@ -256,9 +262,8 @@ section {
 .top-tags .tag:hover {
 
     text-decoration: none;
-
     color: #EFEFEF;
-    background-color: #EB7347;
+    background-color: #717171;
 }
 
 .tag-link {
@@ -335,8 +340,8 @@ emphasis[class="highlight"]:hover {
 
 emphasis[class="code"] {
     font-family: Courier, Ubuntu, Arial;
-    font-weight: 400;
-    color: #FEFEFE;
+    font-weight: 700;
+    color: #EFEFEF;
 
     padding: 5px;
     border-radius: 5px;
@@ -360,7 +365,22 @@ emphasis[class="date"] {
 }
 
 emphasis[class="date"]:hover {
-    color: #212121;
+    color: #717171;
 }
 
 
+/******************************/
+/*         Right Sidebar      */
+/******************************/
+
+.right-sidebar-item {
+
+    text-align: justify;
+
+    font-family: Arial, Ubuntu;
+    font-size: 13px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}

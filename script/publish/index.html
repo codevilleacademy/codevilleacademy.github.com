@@ -1,0 +1,163 @@
+---
+    title: "Show off your script here"
+    layout: default
+    product: codescript
+---
+
+<div class="">
+    <div class="container">
+        <div class="row">
+        	<div class="col-md-1">
+        	</div>
+            <div class="col-md-10">
+
+            	<div class="script-page-title">
+	            	Publish your script @Codeville
+	            </div>
+	            <div class="main-content">
+	            	<div class="para">
+	            		<emphasis class="bold">Hello!</emphasis>
+	            	</div>
+	            	<div class="para">
+	            		Thank you for contributing. To publish your script you need to fill out a simple form. <emphasis class="bold">Thats it!</emphasis> All the formating and beautification will we taken care off.
+	            	</div>
+	            	<div class="para">
+	            		Fill out the fields below which represent different sections of the script. Once you submit the script to us, <a href="/about/team">Codeville Team</a> will verify your script, format it in the best possible way and publish it.
+	            	</div>
+	            	<emphasis class="bold">Cheers!</emphasis>
+	            </div>
+
+	            <br/><br/>
+
+                <form method="POST" action="//formspree.io/arpit.b.bhayani@gmail.com" name="script-publish" id="script-publish" class="structured-form" validate>
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                            <label>Script Title</label>
+                        </div>
+                        <div class="col-md-9 text-right">
+                            <input type="text" name="title" required data-validation-required-message="Please enter title of the script">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="input-info">
+                                The title should be self-explanatory.
+                                <br/>
+                                Ex: Get live scores of a cricket match
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                            <label>Author Name</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" name="name" required data-validation-required-message="Please enter author display name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="input-info">
+                                The display name of the Author of the script.
+                                <br/>
+                                Ex: Arpit Bhayani
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                            <label>Website Link</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" name="link" required data-validation-required-message="Please enter your website address.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="input-info">
+                                Profile link: your web presence. Should be your website address or even your facebook profile link is cool!
+                                <br/>
+                                Ex: <a href="http://facebook.com/itsmearpit">http://facebook.com/itsmearpit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                            <label>Email Address</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="email" name="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="input-info">
+                                Email address will be used for contact.
+                            </div>
+                        </div>
+                    </div>
+                	<div class="row">
+                		<div class="col-md-3 text-left">
+                			<label>Tags</label>
+                		</div>
+                		<div class="col-md-9 text-right">
+                			<input type="text" name="tags">
+                		</div>
+                	</div>
+                	<div class="row">
+                		<div class="col-md-12 text-right">
+                			<div class="input-info">
+                				Comma (,) separated list of tags that you want to associate with the script.
+                				<br/>
+                				Ex: python, live-score, cricket, notification
+                			</div>
+                		</div>
+                	</div>
+                	<div class="row">
+                		<div class="col-md-3 text-left">
+                			<label>Script Description</label>
+                		</div>
+                		<div class="col-md-9 text-right">
+                            <textarea name="intro" rows="5" required data-validation-required-message="Please enter script description here."></textarea>
+                		</div>
+                	</div>
+                	<div class="row">
+                		<div class="col-md-12 text-right">
+                			<div class="input-info">
+                				In few lines describe your script. This short description will be used while sharing and publishing your script.
+                			</div>
+                		</div>
+                	</div>
+                	<div class="row">
+                		<div class="col-md-3 text-left">
+                			<label>Content</label>
+                		</div>
+                		<div class="col-md-9 text-right">
+                			<textarea name="content" rows="15" required data-validation-required-message="Please enter content of the script."></textarea>
+                		</div>
+                	</div>
+                	<div class="row">
+                		<div class="col-md-12 text-right">
+                			<div class="input-info">
+                				The actual script body goes here, which will include everything you want to write about it.
+                				<br/>
+                				Ex: script source, how to execute, and anything else that you want to include.
+                			</div>
+                		</div>
+                	</div>
+                	<div class="row">
+                		<input type="text" name="_gotcha" style="display:none" />
+                    	<input type="hidden" name="_next" value="{{ site.url }}" />
+                	</div>
+                    <div class="row">
+                    	<div class="col-md-12 text-center">
+                        	<input type="submit" class="large_button" value="Submit"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1">
+        	</div>
+        </div>
+    </div>
+</div>

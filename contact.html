@@ -1,56 +1,91 @@
 ---
-layout: default
-title: "Drop us a mail"
-product: codeville
+    layout: default
+    title: "Contact Us"
+    product: codescript
 ---
 
-<div class="landing_page">
-    <div class="container text-center">
-        <div class="row">&nbsp;</div>
+
+<div class="">
+    <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Drop us a mail by filling in your details below.</h3>
+            <div class="col-md-1">
             </div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <form method="POST" action="//formspree.io/arpit.b.bhayani@gmail.com" name="sentMessage" id="contactForm" validate>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input type="text" name="name" class="form-control" placeholder="your name here" id="name" required data-validation-required-message="Please enter your name.">
-                            <p class="help-block text-danger"></p>
-                        </div>
+            <div class="col-md-10">
+
+                <div class="script-page-title">
+                    Contact @Codeville
+                </div>
+                <div class="main-content">
+                    <div class="para">
+                        <emphasis class="bold">Hello!</emphasis>
                     </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control" placeholder="your email address here" id="email" required data-validation-required-message="Please enter your email address." name="_replyto">
-                            <p class="help-block text-danger"></p>
-                        </div>
+                    <div class="para">
+                        You can contact us by filling in the following one simple form.
                     </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Message</label>
-                            <textarea name="message" rows="5" class="form-control" placeholder="your message here" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <input type="text" name="_gotcha" style="display:none" />
-                    <input type="hidden" name="_next" value="{{ site.url }}" />
-                    <br>
-                    <div id="success"></div>
+                    <emphasis class="bold">Cheers!</emphasis>
+                </div>
+
+                <br/><br/>
+
+                <form method="POST" action="//formspree.io/arpit.b.bhayani@gmail.com" name="contact-form" id="script-pitch" class="structured-form" validate>
                     <div class="row">
-                        <div class="form-group col-xs-12">
-                            <input type="submit" class="large_button" value="Send Email"/>
+                        <div class="col-md-3 text-left">
+                            <label>Your Name</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" name="name" required data-validation-required-message="Please enter your name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="input-info">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                            <label>Email Address</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="email" name="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="input-info">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                            <label>Message</label>
+                        </div>
+                        <div class="col-md-9 text-right">
+                            <textarea name="message" rows="5" required data-validation-required-message="Oops, Your forgot your message!"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="input-info">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <input type="hidden" name="_next" value="{{ site.url }}" />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <input type="submit" class="large_button" value="Submit"/>
                         </div>
                     </div>
                 </form>
             </div>
+            <div class="col-md-1">
+            </div>
         </div>
-        <div class="row">&nbsp;</div>
     </div>
 </div>
-
-

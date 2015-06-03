@@ -1,4 +1,4 @@
-{% for en in site.categories["script"] limit:5 %}
+{% for en in site.categories["script-pitch"] limit:5 %}
       <section>
             <div class="script-snippet">
             	<div class="script-title">
@@ -15,7 +15,7 @@
                   </div>
             	<div class="script-metainfo">
             		By
-                        <a href="{{en.author-link}}" class="script-author">{{en.author}}</a> on
+                        <a href="{{en.url}}" class="script-author">{{en.author}}</a> on
                         <emphasis class="date">{{en.date | date: '%B %d, %Y' }}</emphasis>
             	</div>
             </div>

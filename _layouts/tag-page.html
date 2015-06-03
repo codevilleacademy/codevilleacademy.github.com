@@ -2,29 +2,18 @@
 layout: basic-page
 product: codescript
 ---
+
 <div class="row">
-    <div class="col-md-12 col-md-offset-0">
-        <div class="notice-box">
-            <h3 class="text-center notice-body">Wanna show-off your scripting skills? Show it off here @Codescript. <span class="quoted"><a href="{{ "/contact.html" | prepend: site.baseurl }}">Click Here</a></span>.</h3>
-        </div>
+    <div class="col-md-2">
+        {% include /ui/sidebar/left-sidebar.html %}
     </div>
-</div>
-<div class="row">
-    <div class="col-md-10 col-md-offset-0">
-        <div class="script-content">
-            <div class="script-page-title">All posts with tag
-                <a href="" class="tag-link">{{page.passed-tag}}</a>
-            </div>
+    <div class="col-md-8">
+        <div class="script-page-title">All posts with tag
+            <a href="" class="tag-link">{{page.passed-tag}}</a>
         </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-10">
         {{content}}
     </div>
-</div>
-<div class="row">
-    <div class="col-md-10">
-        {% include share.html %}
+    <div class="col-md-2">
+        {% include /ui/sidebar/right-sidebar.html %}
     </div>
 </div>

@@ -4,12 +4,13 @@ title:			"Get live match score update on your computer"
 share_desc:		"I had a project deadline during India vs South Africa Cricket World Cup 2015 and didn't had bandwidth to stream it live. I wrote a script that notified me the score regularly ... do check it out!."
 date:			2015-05-25
 author:			"Arpit Bhayani"
+author-link:	/about/arpit
 category:		script
 tags:			["python", "cricket", "notification", "live-score"]
 keywords:		cricket, python, cricket, notification, score, live match
 comments:		true
 
-short-desc:		If you don't want to look at the score websites again and again. If you want score to pop up after regular interval. If you want to continue with your work and still be updated with the cricket match proceedings ... heres a script for you.
+short-desc:		If you don't want to look at the score websites again and again. If you want score to pop up after regular interval. If you want to continue with your work and still be updated with the cricket match proceedings ... here is a script for you.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout:			tag-page
-title:			"Tag Tempalate"
+title:			"All scripts with tag"
 date:			2015-05-13
 author:			"Arpit Bhayani"
 category:		tag

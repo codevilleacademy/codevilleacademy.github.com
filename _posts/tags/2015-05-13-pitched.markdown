@@ -1,15 +1,15 @@
 ---
 layout:			tag-page
-title:			"All scripts with tag"
+title:			"All pitched scripts"
 date:			2015-05-13
 author:			"Arpit Bhayani"
 category:		tag
 comments:		false
-passed-tag:		python
+passed-tag:		pitched
 ---
 
 
-{% for p in site.tags[page.passed-tag] %}
+{% for p in site.categories["script-pitch"] %}
 <div class="script-content">
     <div class="script-title">
     	<a href="{{p.url}}" class="new-scripts-link">{{p.title}}</a>

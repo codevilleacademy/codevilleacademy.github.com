@@ -24,10 +24,13 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav pull-right">
         <li>
-            <a href="{{ "/script/contribute" | prepend: site.baseurl }}" onclick = $("#menu-close").click();>Contribute a script</a>
+            <a href="{{ "/script" | prepend: site.baseurl }}" onclick = $("#menu-close").click();>Home</a>
         </li>
         <li>
-            <a href="{{ "/script/pitch" | prepend: site.baseurl }}" onclick = $("#menu-close").click();>Pitch an idea</a>
+            <a href="{{ "/script/publish" | prepend: site.baseurl }}" onclick = $("#menu-close").click(); title="Publish your script">Publish your script</a>
+        </li>
+        <li>
+            <a href="{{ "/script/pitch" | prepend: site.baseurl }}" onclick = $("#menu-close").click(); title="Pitch your script idea">Pitch your idea</a>
         </li>
     </ul>   
 </div>

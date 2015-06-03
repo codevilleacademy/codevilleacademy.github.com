@@ -1,5 +1,5 @@
 .zone-box {
-	font-family: 'PT Sans', Arial, Ubuntu, sans-serif;
+	font-family: 'Roboto', Arial, Ubuntu, sans-serif;
 	font-size: 13px;
 
 	border: 0px solid #212121;
@@ -147,7 +147,7 @@ section li {
 }
 
 .session-content{
-	font-family: 'PT Sans', Arial, Ubuntu, sans-serif;
+	font-family: 'Roboto', Arial, Ubuntu, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	text-align: justify;
@@ -167,7 +167,7 @@ section li {
 
 .para {
 	margin-bottom: 10px;
-	/*font-family: 'PT Sans', Ubuntu, Arial, sans-serif;*/
+	/*font-family: 'Roboto', Ubuntu, Arial, sans-serif;*/
 	/*font-family: "Source Sans Pro", Ubuntu, Arial, sans-serif;*/
 }
 
