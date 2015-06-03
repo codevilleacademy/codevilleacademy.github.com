@@ -237,7 +237,7 @@ section {
 
 .top-tags .tag {
     font-family: "Arial", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
 
     color: #717171;
@@ -377,7 +377,7 @@ emphasis[class="date"]:hover {
 
     text-align: justify;
 
-    font-family: Arial, Ubuntu;
+    font-family: "Roboto", Arial, Ubuntu;
     font-size: 13px;
 
     margin-top: 20px;
