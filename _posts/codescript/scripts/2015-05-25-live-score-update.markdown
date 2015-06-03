@@ -1,7 +1,7 @@
 ---
 layout:			script-page
 title:			"Get live match score update on your computer"
-share_desc:		"I had a project deadline during India vs South Africa Cricket World Cup 2015 and didn't had bandwidth to stream it live. I wrote a script that notified me the score regularly ... do check it out!."
+share_desc:		"If you don't want to look at the score websites again and again. If you want score to pop up after regular interval. If you want to continue with your work and still be updated with the cricket match proceedings ... here is a script for you."
 date:			2015-05-25
 author:			"Arpit Bhayani"
 author-link:	/profile/arpit
