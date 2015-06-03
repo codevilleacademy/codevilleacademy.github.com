@@ -18,7 +18,7 @@
         content="{% if page.share_img %}{{site.url}}{{page.share_image}}{% else %}{{site.url}}{{site.share_image}}{% endif %}"/>
     <meta property="fb:app_id" content="302184056577324"/>
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{site.url}}{{page.url}}">
 
     <link rel="stylesheet" href="{{ "/css/form.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
