@@ -2,7 +2,6 @@
 title:          "Arpit Bhayani, Founder of codeville.org.in"
 layout:         default
 product:        codescript
-title:			"All scripts"
 date:			2015-05-13
 author:			"Arpit Bhayani"
 category:		profile
