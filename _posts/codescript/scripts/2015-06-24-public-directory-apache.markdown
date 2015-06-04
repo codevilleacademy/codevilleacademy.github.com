@@ -2,7 +2,7 @@
 layout:			script-page
 title:			"Share unlimited data on LAN for Windows"
 share_desc:		"Ever wanted to share files with your colleagues or friends and at that very moment you couldn't find your external hard-drive or flash drive. No worries! the solution to this problem is very simple and elegant plus NO DATA LIMIT ON TRANSFER. Check it out!"
-date:			2015-05-25
+date:			2015-06-04
 author:			"Arpit Bhayani"
 author-link:	/profile/arpit
 category:		script
