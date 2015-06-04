@@ -63,13 +63,12 @@ pip install notify2
 	</div>
 	<div class="para">
 		<emphasis class="bold">Step 2:</emphasis> Pick the last number from the URL.
-		<br/>
-		<img class="screenshot" src="/img/script/image01.png" alt="Pick match number from the URL"/><br/>
+		<img class="screenshot" src="/img/script/image01.png" alt="Pick match number from the URL"/>
 	</div>
 	<div class="para">
 		<emphasis class="bold">Step 3:</emphasis> Open the script and replace XXXXXX with this number.
 		<br/>
-		<img class="screenshot" src="/img/script/image02.png" alt="Replace XXXXXX with 868731"/><br/>
+		<img class="screenshot" src="/img/script/image02.png" alt="Replace XXXXXX with 868731"/>
 	</div>
 	<div class="para">
 		<emphasis class="bold">Step 4:</emphasis> Execute the script.
@@ -80,7 +79,7 @@ python cricnot.py
 
 <div class="para">
 You should see output something like this:
-<img class="screenshot" src="/img/script/image03.png" alt="Sample Screenshot"/><br/>
+<img class="screenshot" src="/img/script/image03.png" alt="Sample Screenshot"/>
 </div>
 </section>
 
