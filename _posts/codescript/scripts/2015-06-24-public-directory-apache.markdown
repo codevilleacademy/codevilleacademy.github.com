@@ -82,6 +82,12 @@ Alias /my_alias "F:/Pic"
 	<img class="screenshot" src="/img/script/s2/s7.png" alt="Browser View"/><br/>
 </div>
 </section>
+
+<section>
+	<div class="para">
+		<emphasis class="bold">You can thus share any number of folders you want; just add corresponding lines to <emphasis class="code">httpd.conf</emphasis>.</emphasis>
+	</div>
+</section>
 	
 <section>
 	<div class="para">
