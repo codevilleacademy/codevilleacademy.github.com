@@ -14,6 +14,12 @@ product: codescript
                 By
                     <a href="{{page.author-link}}" class="script-page-author">{{page.author}}</a> on
                     <emphasis class="date">{{page.date | date: '%B %d, %Y' }}</emphasis>
+                <br/>
+                {% if page.asked-by %}
+                Asked by
+                    <a href="{{page.asked-by-link}}" class="script-page-author">{{page.asked-by}}</a> on
+                    <emphasis class="date">{{page.asked-by-date | date: '%B %d, %Y' }}</emphasis>
+                {% endif %}
             </div>
             <div class="script-page-tags">
                 <emphasis class="bold">Tags :&nbsp;</emphasis>
