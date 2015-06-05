@@ -81,6 +81,8 @@ section {
     
     line-height: 1.5;
     color: #515151;
+
+    margin-bottom: 25px;
 }
 
 .script-page-title {
@@ -375,7 +377,8 @@ emphasis[class="date"]:hover {
 /*         Right Sidebar      */
 /******************************/
 
-.right-sidebar-item {
+.right-sidebar-item,
+.left-sidebar-item {
 
     text-align: justify;
 

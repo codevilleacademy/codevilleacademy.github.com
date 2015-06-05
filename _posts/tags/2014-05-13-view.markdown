@@ -1,0 +1,20 @@
+---
+layout:			script-page
+title:			"Tag Cloud"
+date:			2015-05-13
+author:			"Arpit Bhayani"
+category:		tag
+comments:		false
+short-desc:		All tags present in the site are here.
+---
+<div class="para">
+	
+</div>
+
+<div class="script-content">
+	<div class="script-page-tags">
+		{% for t in site.tags %}
+			<a href="{{ "/tag/" | append: t[0] | replace:" ","-" | prepend: site.baseurl }}" class="tag-link" style="line-height:2.5;" title="Click to view all posts with tag : {{t[0]}}">{{t[0]}} | {{t[1] | size}}</a>
+		{% endfor %}
+	</div>
+</div>

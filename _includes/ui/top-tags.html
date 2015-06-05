@@ -5,13 +5,19 @@
     {% endif %}
 {% endfor %}
 
+{% assign count = 0 %}
+
 <ul>
-{% for i in (1..tags_max) reversed limit:5 %}
+{% for i in (1..tags_max) reversed %}
     {% for tag in site.tags %}
         {% if tag[1].size == i %}
-        <li>
-            <a class="tag" href="/tag/{{ tag[0] }}/">{{ tag[0] }}</a>
-        </li>
+            <li>
+                <a class="tag" href="/tag/{{ tag[0] }}/">{{ tag[0] }}</a>
+            </li>
+            {% assign count = count | plus: 1 %}
+            {% if count == 10 %}
+                {% break %}
+            {% endif %}
         {% endif %}
     {% endfor %}
 {% endfor %}

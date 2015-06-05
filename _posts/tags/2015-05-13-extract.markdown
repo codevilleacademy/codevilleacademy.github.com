@@ -1,15 +1,15 @@
 ---
 layout:			tag-page
-title:			"All pitched scripts"
+title:			"All scripts with tag"
 date:			2015-05-13
 author:			"Arpit Bhayani"
 category:		tag
 comments:		false
-passed-tag:		pitched
+passed-tag:		extract
 ---
 
 
-{% for p in site.categories["script-pitch"] %}
+{% for p in site.tags[page.passed-tag] %}
 <div class="script-content">
     <div class="script-title">
     	<a href="{{p.url}}" class="new-scripts-link">{{p.title}}</a>
@@ -19,7 +19,7 @@ passed-tag:		pitched
     </div>
     <div class="script-metainfo">
         By
-            <a href="{{p.author-link}}" class="script-page-author">{{p.author}}</a> on
+            <a href="{{page.url}}" class="script-page-author">{{p.author}}</a> on
             <emphasis class="date">{{p.date | date: '%B %d, %Y' }}</emphasis>
     </div>
     <div class="script-tags">
