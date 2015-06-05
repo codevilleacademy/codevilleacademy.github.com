@@ -15,7 +15,7 @@ asked-by-date:	2015-06-05
 
 category:		script-pitch
 
-tags:			["audio", "video", "python", "extract", "mp4-to-mp3", "ubuntu"]
+tags:			["audio", "video", "python", "extract", "mp4-to-mp3"]
 keywords:		audio, video, python, extract, mp4 to mp3
 comments:		true
 
