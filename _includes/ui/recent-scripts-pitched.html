@@ -17,6 +17,12 @@
             		By
                         <a href="{{en.author-link}}" class="script-author">{{en.author}}</a> on
                         <emphasis class="date">{{en.date | date: '%B %d, %Y' }}</emphasis>
+                        <br/>
+                        {% if en.asked-by %}
+                            Asked by
+                                <a href="{{en.asked-by-link}}" class="script-page-author">{{en.asked-by}}</a> on
+                                <emphasis class="date">{{en.asked-by-date | date: '%B %d, %Y' }}</emphasis>
+                        {% endif %}
             	</div>
             </div>
       </section>

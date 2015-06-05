@@ -1,7 +1,7 @@
 ---
 layout:			script-page
 title:			"Extract audio from video"
-share_desc:		"A python script that converts MP4 files to MP3."
+share_desc:		"A tiny python script along with necessary setup files (pip installer script) that allows us to save MP3 from a video (say, MP4)."
 
 
 author:			"Harshil Goel"
@@ -19,7 +19,7 @@ tags:			["audio", "video", "python", "extract", "mp4-to-mp3"]
 keywords:		audio, video, python, extract, mp4 to mp3
 comments:		true
 
-short-desc:		"A python script that converts MP4 files to MP3."
+short-desc:		"A tiny python script along with necessary setup files (pip installer script) that allows us to save MP3 from a video (say, MP4)."
 
 ---
 
