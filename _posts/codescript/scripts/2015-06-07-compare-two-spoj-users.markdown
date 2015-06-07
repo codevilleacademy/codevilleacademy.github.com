@@ -18,7 +18,7 @@ short-desc:		"A python script to compare two users on spoj by questions they sol
 ---
 
 <div class="para">
-    Whenever you are practicing questions on SPOJ you tend to follow some user. Since you are following him/her you need to look for the questions that were solved by him/her and not by you. So Instead of manually looking at all the question codes, you can <emphasis class="bold">EXECUTE THIS SCRIPT</emphasis>.
+    Whenever you are practicing questions on <a href="http://spoj.com/">SPOJ</a> you tend to follow some user. Since you are following him/her you need to look for the questions that were solved by him/her and not by you. So Instead of manually looking at all the question codes, you can <emphasis class="bold">EXECUTE THIS SCRIPT</emphasis>.
 </div>
 <div class="para">
     The following python script will tell you which questions the other user solved and you didn't. Instead of spending a lot of time checking every question code if it has been solved by you or not; you can simply execute following script and find out the answer ;)
