@@ -1,7 +1,7 @@
 ---
 layout:			script-page
 title:			"Compare two SPOJ users"
-share_desc:		"A python script to compare two users on spoj by questions they solved. It will in one go, tell you which questions you didn't solve that the other user did."
+share_desc:		"A python script to compare two users on spoj by questions they solved. It will output the question codes that you didn't solve and that were solved by the other user."
 
 author:			"Arpit Bhayani"
 author-link:	/profile/arpit
@@ -13,7 +13,7 @@ tags:			["spoj", "python", "urllib2", "beautifulsoup4"]
 keywords:		spoj, python, urllib2, beautifulsoup4
 comments:		true
 
-short-desc:		"A python script to compare two users on spoj by questions they solved. It will in one go, tell you which questions you didn't solve that the other user did."
+short-desc:		"A python script to compare two users on spoj by questions they solved. It will output the question codes that you didn't solve and that were solved by the other user."
 
 ---
 
