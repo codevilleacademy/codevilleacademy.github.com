@@ -1,6 +1,6 @@
 ---
 layout:			script-page
-title:			"Compare Spoj Users"
+title:			"Compare two SPOJ users"
 share_desc:		"A python script to compare two users on spoj by questions they solved. It will in one go, tell you which questions you didn't solve that the other user did."
 
 author:			"Arpit Bhayani"
